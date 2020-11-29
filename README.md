@@ -1,7 +1,4 @@
-Tutorial
---------
-
-- [Next.js](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/introduction)
+For the project README, please navigate to: [the original API repo](https://github.com/dylanesque/MPQChampAppAPI/blob/master/README.md)
 
 Tech stack
 ----------
@@ -13,7 +10,3 @@ Tech stack
 - Auth
     - Auth0
 
-Run the app
------------
-
-Run `yarn dev` to start the todo app.
