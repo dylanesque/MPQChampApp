@@ -1,6 +1,5 @@
 export const seedDB = [
   {
-    char_id: 1,
     name: 'America Chavez (Young Avengers)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172993/mpq/america4.png',
@@ -11,12 +10,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'green',
-    feedee_id: 'Jessica Jones (Alias Investigations)',
-    feeder_id: 'none',
+    feedees: 'Jessica Jones (Alias Investigations)',
+    feeders: 'none',
     char_level: 70,
   },
   {
-    char_id: 2,
     name: 'Angel (All New X-Men)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172993/mpq/angel3.png',
@@ -27,12 +25,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedee_id: 'Nightcrawler (Classic), Jean Grey (All New X-Men)',
-    feeder_id: 'none',
+    feedees: 'Nightcrawler (Classic), Jean Grey (All New X-Men)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 3,
     name: 'Ant-Man (Scott Lang)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172993/mpq/antman4.png',
@@ -43,12 +40,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'yellow',
-    feedee_id: 'Squirrel-Girl (Unbeatable)',
-    feeder_id: 'Wasp (Hope Van Dyne)',
+    feedees: 'Squirrel-Girl (Unbeatable)',
+    feeders: 'Wasp (Hope Van Dyne)',
     char_level: 70,
   },
   {
-    char_id: 4,
     name: 'Ares (Dark Avengers)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172994/mpq/ares2.png',
@@ -59,12 +55,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'yellow',
-    feedee_id: 'Ragnarok (Dark Avengers)',
-    feeder_id: 'none',
+    feedees: 'Ragnarok (Dark Avengers)',
+    feeders: 'none',
     char_level: 15,
   },
   {
-    char_id: 5,
     name: 'Beast (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172994/mpq/beast3.png',
@@ -75,12 +70,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'yellow',
-    feedee_id: 'Jean Grey (All New X-Men), Jubilee (Uncanny X-Men)',
-    feeder_id: 'none',
+    feedees: 'Jean Grey (All New X-Men), Jubilee (Uncanny X-Men)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 6,
     name: 'Black Bolt (Inhuman King)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172994/mpq/blockbolt5.png',
@@ -91,12 +85,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'black',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Medusa (Inhuman Queen)',
+    feedees: 'none',
+    feeders: 'Medusa (Inhuman Queen)',
     char_level: 255,
   },
   {
-    char_id: 7,
     name: 'Black Panther (Civil War)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172994/mpq/blackpanther5.png',
@@ -107,12 +100,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'yellow',
     power_three_color: 'red',
-    feedee_id: 'Black Panther (King of Wakanda)',
-    feeder_id: 'none',
+    feedees: 'Black Panther (King of Wakanda)',
+    feeders: 'none',
     char_level: 255,
   },
   {
-    char_id: 8,
     name: 'Black Panther (King of Wakanda)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172994/mpq/blackpanther4.png',
@@ -123,12 +115,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'blue',
     power_three_color: 'red',
-    feedee_id: 'Black Panther (Civil War)',
-    feeder_id: "Black Panther (T'Challa)",
+    feedees: 'Black Panther (Civil War)',
+    feeders: "Black Panther (T'Challa)",
     char_level: 70,
   },
   {
-    char_id: 9,
     name: "Black Panther (T'Challa)",
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172994/mpq/blackpanther3.png',
@@ -139,12 +130,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'blue',
     power_three_color: 'black',
-    feedee_id: 'Black Panther (King of Wakanda)',
-    feedee_id: 'none',
+    feedees: 'Black Panther (King of Wakanda)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 10,
     name: 'Black Widow (Natasha Romanoff)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/blackwidow5.png',
@@ -155,12 +145,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Black Widow (Infinity War)',
+    feedees: 'none',
+    feeders: 'Black Widow (Infinity War)',
     char_level: 255,
   },
   {
-    char_id: 11,
     name: 'Black Widow (Infinity War)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/blackwidow4.png',
@@ -171,12 +160,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'yellow',
-    feedee_id: 'Black Widow (Natasha Romanoff)',
-    feedee_id: 'none',
+    feedees: 'Black Widow (Natasha Romanoff)',
+    feeders: 'none',
     char_level: 70,
   },
   {
-    char_id: 12,
     name: 'Black Widow (Grey Suit)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/blackwidow3.png',
@@ -187,13 +175,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'green',
     power_three_color: 'red',
-    feedee_id:
-      'Nick Fury (Director of S.H.I.E.L.D.),Black Widow (Infinity War)',
-    feeder_id: 'Black Widow (Original)',
+    feedees: 'Nick Fury (Director of S.H.I.E.L.D.),Black Widow (Infinity War)',
+    feeders: 'Black Widow (Original)',
     char_level: 70,
   },
   {
-    char_id: 13,
     name: 'Black Widow (Original)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/blackwidow2.png',
@@ -204,12 +190,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'black',
-    feedee_id: 'Black Widow (Grey Suit)',
-    feedee_id: 'none',
+    feedees: 'Black Widow (Grey Suit)',
+    feeders: 'none',
     char_level: 15,
   },
   {
-    char_id: 14,
     name: 'Blade (Modern)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172994/mpq/blade4.png',
@@ -220,12 +205,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'green',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Blade (Daywalker)',
+    feedees: 'none',
+    feeders: 'Blade (Daywalker)',
     char_level: 70,
   },
   {
-    char_id: 15,
     name: 'Blade (Daywalker)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172993/mpq/blade3.png',
@@ -236,12 +220,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'Blade (Modern)',
-    feedee_id: 'none',
+    feedees: 'Blade (Modern)',
+    feedees: 'none',
     char_level: 40,
   },
   {
-    char_id: 16,
     name: 'Bullseye (Dark Avengers)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/bullseye2.png',
@@ -252,12 +235,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedee_id: 'Bullseye (Classic)',
-    feedee_id: 'none',
+    feedees: 'Bullseye (Classic)',
+    feedees: 'none',
     char_level: 15,
   },
   {
-    char_id: 17,
     name: 'Bullseye (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/bullseye3.png',
@@ -268,12 +250,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedee_id: 'Kingpin (Wilson Fisk)',
-    feeder_id: 'Bullseye (Dark Avengers)',
+    feedees: 'Kingpin (Wilson Fisk)',
+    feeders: 'Bullseye (Dark Avengers)',
     char_level: 40,
   },
   {
-    char_id: 18,
     name: 'Captain America (The First Avenger)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/captainamerica5.png',
@@ -284,12 +265,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'red',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'Peggy Carter (Captain America)',
+    feedees: 'none',
+    feeders: 'Peggy Carter (Captain America)',
     char_level: 255,
   },
   {
-    char_id: 19,
     name: 'Captain America (Infinity War)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173002/mpq/infinitycap5.png',
@@ -300,12 +280,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'purple',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Captain America (Worthy)',
+    feedees: 'none',
+    feeders: 'Captain America (Worthy)',
     char_level: 255,
   },
   {
-    char_id: 20,
     name: 'Captain America (Super Soldier)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/captainamerica3.png',
@@ -316,12 +295,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'red',
     power_three_color: 'blue',
-    feedee_id: 'Captain America (Worthy), Winter Soldier (Bucky Barnes)',
-    feeder_id: 'Captain America (Steve Rogers)',
+    feedees: 'Captain America (Worthy), Winter Soldier (Bucky Barnes)',
+    feeders: 'Captain America (Steve Rogers)',
     char_level: 40,
   },
   {
-    char_id: 21,
     name: 'Captain America (Steve Rogers)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/captainamerica2.png',
@@ -332,12 +310,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'red',
     power_three_color: 'blue',
-    feedee_id: 'Captain America (Super Soldier)',
-    feedee_id: 'none',
+    feedees: 'Captain America (Super Soldier)',
+    feedees: 'none',
     char_level: 15,
   },
   {
-    char_id: 22,
     name: 'Captain Marvel (Galactic Warrior)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604181720/mpq/captainmarvel5.png',
@@ -348,12 +325,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'green',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Captain Marvel (Carol Danvers)',
+    feedees: 'none',
+    feeders: 'Captain Marvel (Carol Danvers)',
     char_level: 255,
   },
   {
-    char_id: 23,
     name: 'Captain Marvel (Carol Danvers)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/captainmarvel4.jpg',
@@ -364,12 +340,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'yellow',
     power_three_color: 'green',
-    feedee_id: 'Captain Marvel (Galactic Warrior)',
-    feeder_id: 'Captain Marvel (Modern)',
+    feedees: 'Captain Marvel (Galactic Warrior)',
+    feeders: 'Captain Marvel (Modern)',
     char_level: 70,
   },
   {
-    char_id: 24,
     name: 'Captain Marvel (Modern)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/captainmarvel3.png',
@@ -380,12 +355,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'yellow',
     power_three_color: 'green',
-    feedee_id: 'Captain Marvel (Carol Danvers),Talos (Skrull Warlord)',
-    feeder_id: 'Captain Marvel (Ms. Marvel)',
+    feedees: 'Captain Marvel (Carol Danvers),Talos (Skrull Warlord)',
+    feeders: 'Captain Marvel (Ms. Marvel)',
     char_level: 40,
   },
   {
-    char_id: 25,
     name: 'Captain Marvel (Ms. Marvel)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172995/mpq/captainmarvel2.png',
@@ -396,12 +370,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'yellow',
-    feedee_id: 'Captain Marvel (Modern)',
-    feedee_id: 'none',
+    feedees: 'Captain Marvel (Modern)',
+    feedees: 'none',
     char_level: 15,
   },
   {
-    char_id: 26,
     name: 'Carnage (Cletus Kassady)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172996/mpq/carnage4.png',
@@ -412,12 +385,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedee_id: 'Doctor Octopus (Classic)',
-    feeder_id: 'Doctor Octopus (Otto Octavius)',
+    feedees: 'Doctor Octopus (Classic)',
+    feeders: 'Doctor Octopus (Otto Octavius)',
     char_level: 70,
   },
   {
-    char_id: 27,
     name: 'Colossus (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172996/mpq/colossus3.png',
@@ -428,12 +400,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedee_id: 'Wolverine (X-Force), Magik (Classic)',
-    feedee_id: 'none',
+    feedees: 'Wolverine (X-Force), Magik (Classic)',
+    feedees: 'none',
     char_level: 40,
   },
   {
-    char_id: 28,
     name: 'Cyclops (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172996/mpq/cyclops4.png',
@@ -444,12 +415,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'blue',
-    feedee_id: 'Cable (Nathan Summers)',
-    feeder_id: 'Cyclops (Uncanny X-Men),Emma Frost (Astonishing X-Men)',
+    feedees: 'Cable (Nathan Summers)',
+    feeders: 'Cyclops (Uncanny X-Men),Emma Frost (Astonishing X-Men)',
     char_level: 70,
   },
   {
-    char_id: 29,
     name: 'Cyclops (Uncanny X-Men)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172996/mpq/cyclops3.png',
@@ -460,12 +430,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'black',
-    feeder_id: 'none',
-    feedee_id: 'Cyclops (Classic)',
+    feeders: 'none',
+    feedees: 'Cyclops (Classic)',
     char_level: 40,
   },
   {
-    char_id: 30,
     name: 'Daken (Dark Avengers)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172996/mpq/daken2.png',
@@ -476,12 +445,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'black',
     power_three_color: 'blue',
-    feedee_id: 'Daken (Classic)',
-    feedee_id: 'none',
+    feedees: 'Daken (Classic)',
+    feedees: 'none',
     char_level: 15,
   },
   {
-    char_id: 31,
     name: 'Daken (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172997/mpq/daken3.png',
@@ -492,12 +460,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'black',
-    feedee_id: 'X-23 (All-New Wolverine)',
-    feeder_id: 'Daken (Dark Avengers)',
+    feedees: 'X-23 (All-New Wolverine)',
+    feeders: 'Daken (Dark Avengers)',
     char_level: 40,
   },
   {
-    char_id: 32,
     name: 'Daredevil (Man Without Fear)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172997/mpq/daredevil3.png',
@@ -508,12 +475,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'red',
-    feeder_id: 'Elektra (Unkillable)',
-    feedee_id: 'none',
+    feeders: 'Elektra (Unkillable)',
+    feedees: 'none',
     char_level: 40,
   },
   {
-    char_id: 33,
     name: 'Daredevil (Matt Murdock)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172997/mpq/daredevil5.png',
@@ -524,12 +490,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Kingpin (Wilson Fisk)',
+    feedees: 'none',
+    feeders: 'Kingpin (Wilson Fisk)',
     char_level: 255,
   },
   {
-    char_id: 34,
     name: "Deadpool (It's Me, Deadpool!)",
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172997/mpq/deadpool3.png',
@@ -540,12 +505,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'purple',
     power_three_color: 'black',
-    feeder_id: 'Deadpool (Uncanny X-Force),Domino (X-Force)',
-    feedee_id: 'none',
+    feeders: 'Deadpool (Uncanny X-Force),Domino (X-Force)',
+    feedees: 'none',
     char_level: 40,
   },
   {
-    char_id: 35,
     name: 'Deadpool (Uncanny X-Force)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172997/mpq/deadpool4.png',
@@ -556,12 +520,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'purple',
-    feedee_id: 'none',
-    feeder_id: "Deadpool (It's Me, Deadpool!)",
+    feedees: 'none',
+    feeders: "Deadpool (It's Me, Deadpool!)",
     char_level: 70,
   },
   {
-    char_id: 36,
     name: 'Doctor Doom (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172998/mpq/docdoom3.png',
@@ -572,12 +535,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'blue',
     power_three_color: 'purple',
-    feedee_id: 'Invisible Woman (Classic)',
-    feedee_id: 'none',
+    feedees: 'Invisible Woman (Classic)',
+    feedees: 'none',
     char_level: 40,
   },
   {
-    char_id: 37,
     name: 'Doctor Octopus (Otto Octavius)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172998/mpq/dococtopus3.png',
@@ -588,12 +550,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedee_id: 'Carnage (Cletus Kassady), Sandman (Flint Marko)',
-    feeder_id: 'none',
+    feedees: 'Carnage (Cletus Kassady), Sandman (Flint Marko)',
+    feeders: 'none',
     char_level: 255,
   },
   {
-    char_id: 38,
     name: 'Doctor Octopus (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172998/mpq/droctopus5.png',
@@ -604,12 +565,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'blue',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Carnage (Cletus Kassady)',
+    feedees: 'none',
+    feeders: 'Carnage (Cletus Kassady)',
     char_level: 255,
   },
   {
-    char_id: 39,
     name: 'Doctor Strange (Stephen Strange)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172998/mpq/drstrnage3.png',
@@ -620,12 +580,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'purple',
     power_three_color: 'yellow',
-    feedee_id: 'Nova (Sam Alexander), Mordo (Master of the Mystic Arts)',
-    feeder_id: 'none',
+    feedees: 'Nova (Sam Alexander), Mordo (Master of the Mystic Arts)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 40,
     name: 'Doctor Strange (Sorcerer Supreme)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172998/mpq/drstrange5.png',
@@ -636,12 +595,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'purple',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Mordo (Master of the Mystic Arts)',
+    feedees: 'none',
+    feeders: 'Mordo (Master of the Mystic Arts)',
     char_level: 255,
   },
   {
-    char_id: 41,
     name: 'Drax (The Destroyer)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172998/mpq/drax4.png',
@@ -652,12 +610,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'red',
-    feedee_id: 'Star Lord (Awesome Mix Volume 2)',
-    feeder_id: 'Rocket & Groot (Most Wanted)',
+    feedees: 'Star Lord (Awesome Mix Volume 2)',
+    feeders: 'Rocket & Groot (Most Wanted)',
     char_level: 70,
   },
   {
-    char_id: 42,
     name: 'Elektra (Assassin)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172999/mpq/elektra3.png',
@@ -668,12 +625,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'black',
     power_three_color: 'red',
-    feedee_id: 'Elektra (Unkillable)',
-    feedee_id: 'none',
+    feedees: 'Elektra (Unkillable)',
+    feedees: 'none',
     char_level: 40,
   },
   {
-    char_id: 43,
     name: 'Elektra (Unkillable)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172999/mpq/elektra4.png',
@@ -684,12 +640,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'black',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Daredevil (Man Without Fear)',
+    feedees: 'none',
+    feeders: 'Daredevil (Man Without Fear)',
     char_level: 70,
   },
   {
-    char_id: 44,
     name: 'Gambit (Modern)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604182471/mpq/gambit3.png',
@@ -700,12 +655,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedee_id: 'Rogue (Classic), Dazzler (Classic)',
-    feeder_id: 'none',
+    feedees: 'Rogue (Classic), Dazzler (Classic)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 45,
     name: 'Gamora (Guardians of the Galaxy)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172999/mpq/gamora3.png',
@@ -716,12 +670,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedee_id: 'Star-Lord (Legendary Outlaw),Gamora (Awesome Mix Volume 2)',
-    feedee_id: 'none',
+    feedees: 'Star-Lord (Legendary Outlaw),Gamora (Awesome Mix Volume 2)',
+    feedees: 'none',
     char_level: 40,
   },
   {
-    char_id: 46,
     name: 'Gamora (Awesome Mix Volume 2)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172999/mpq/gamora4.png',
@@ -732,12 +685,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'blue',
-    feedee_id: 'Thanos (The Mad Titan)',
-    feedee_id: 'none',
+    feedees: 'Thanos (The Mad Titan)',
+    feedees: 'none',
     char_level: 70,
   },
   {
-    char_id: 47,
     name: 'Ghost Rider (Robbie Reyes)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173000/mpq/ghostrider5.png',
@@ -748,12 +700,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Ghost Rider (Johnny Blaze)',
+    feedees: 'none',
+    feeders: 'Ghost Rider (Johnny Blaze)',
     char_level: 255,
   },
   {
-    char_id: 48,
     name: 'Ghost Rider (Johnny Blaze)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173000/mpq/ghostrider4.png',
@@ -764,12 +715,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedee_id: 'Ghost Rider (Robbie Reyes)',
-    feeder_id: 'The Hood (Classic)',
+    feedees: 'Ghost Rider (Robbie Reyes)',
+    feeders: 'The Hood (Classic)',
     char_level: 70,
   },
   {
-    char_id: 49,
     name: 'Green Goblin (Norman Osborn)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173000/mpq/greengoblin5.png',
@@ -780,12 +730,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Sandman (Flint Marko)',
+    feedees: 'none',
+    feeders: 'Sandman (Flint Marko)',
     char_level: 255,
   },
   {
-    char_id: 50,
     name: 'Gwenpool (Gwen Poole)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173000/mpq/gwenpool4.png',
@@ -796,12 +745,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'She-Hulk (Modern)',
+    feedees: 'none',
+    feeders: 'She-Hulk (Modern)',
     char_level: 70,
   },
   {
-    char_id: 51,
     name: 'Hawkeye (Clint Barton)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173001/mpq/hawkeye5.png',
@@ -812,12 +760,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Kate Bishop (Hawkeye)',
+    feedees: 'none',
+    feeders: 'Kate Bishop (Hawkeye)',
     char_level: 255,
   },
   {
-    char_id: 52,
     name: 'Hawkeye (Hawkguy)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173001/mpq/hawkeye3.png',
@@ -828,12 +775,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'black',
-    feedee_id: 'Kate Bishop (Hawkeye)',
-    feeder_id: 'Hawkeye (Modern)',
+    feedees: 'Kate Bishop (Hawkeye)',
+    feeders: 'Hawkeye (Modern)',
     char_level: 15,
   },
   {
-    char_id: 53,
     name: 'Hawkeye (Modern)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173000/mpq/hawkeye2.png',
@@ -844,12 +790,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'red',
     power_three_color: 'purple',
-    feedee_id: 'Hawkeye (Hawkguy)',
-    feeder_id: 'none',
+    feedees: 'Hawkeye (Hawkguy)',
+    feeders: 'none',
     char_level: 15,
   },
   {
-    char_id: 54,
     name: 'Human Torch (Johnny Storm)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173002/mpq/humantorch2.png',
@@ -860,12 +805,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedee_id: 'Human Torch (Classic)',
-    feeder_id: 'none',
+    feedees: 'Human Torch (Classic)',
+    feeders: 'none',
     char_level: 15,
   },
   {
-    char_id: 55,
     name: 'Human Torch (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173002/mpq/humantorch3.png',
@@ -876,12 +820,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedee_id: 'The Thing (Classic), Human Torch (Jim Hammond)',
-    feeder_id: '54',
+    feedees: 'The Thing (Classic), Human Torch (Jim Hammond)',
+    feeders: '54',
     char_level: 40,
   },
   {
-    char_id: 56,
     name: 'The Hood (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173001/mpq/hood3.png',
@@ -892,12 +835,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'blue',
     power_three_color: 'black',
-    feedee_id: 'Ghost Rider (Johnny Blaze)',
-    feeder_id: 'none',
+    feedees: 'Ghost Rider (Johnny Blaze)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 57,
     name: 'The Hulk (Indestructible)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173001/mpq/hulk3.png',
@@ -908,12 +850,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedee_id: 'The Hulk (Totally Awesome), The Hulk (Main Event)',
-    feeder_id: 'Moonstone (Dark Avengers)',
+    feedees: 'The Hulk (Totally Awesome), The Hulk (Main Event)',
+    feeders: 'Moonstone (Dark Avengers)',
     char_level: 40,
   },
   {
-    char_id: 58,
     name: 'The Hulk (Totally Awesome)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172996/mpq/chohulk4.png',
@@ -924,12 +865,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'blue',
     power_three_color: 'black',
-    feedee_id: 'The Hulk (Bruce Banner)',
-    feeder_id: 'The Hulk (Indestructible)',
+    feedees: 'The Hulk (Bruce Banner)',
+    feeders: 'The Hulk (Indestructible)',
     char_level: 70,
   },
   {
-    char_id: 59,
     name: 'The Hulk (Main Event)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173001/mpq/hulk4.png',
@@ -940,12 +880,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'purple',
     power_three_color: 'yellow',
-    feedee_id: 'Loki (God of Mischief)',
-    feeder_id: 'The Hulk (Indestructible)',
+    feedees: 'Loki (God of Mischief)',
+    feeders: 'The Hulk (Indestructible)',
     char_level: 70,
   },
   {
-    char_id: 60,
     name: 'Iceman (All New X-Men)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173002/mpq/iceman4.png',
@@ -956,12 +895,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'blue',
     power_three_color: 'purple',
-    feedee_id: 'Iceman (Bobby Drake)',
-    feeder_id: 'Mystique (Raven Darkholme)',
+    feedees: 'Iceman (Bobby Drake)',
+    feeders: 'Mystique (Raven Darkholme)',
     char_level: 70,
   },
   {
-    char_id: 61,
     name: 'Invisible Woman (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173003/mpq/iw4.png',
@@ -972,12 +910,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'blue',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Doctor Doom (Classic)',
+    feedees: 'none',
+    feeders: 'Doctor Doom (Classic)',
     char_level: 70,
   },
   {
-    char_id: 62,
     name: 'Iron Fist (Immortal Weapon)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173002/mpq/ironfist3.png',
@@ -988,12 +925,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'purple',
     power_three_color: 'black',
-    feedee_id: 'Iron Fist (Danny Rand)',
-    feeder_id: 'none',
+    feedees: 'Iron Fist (Danny Rand)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 63,
     name: 'Iron Fist (Danny Rand)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173002/mpq/ironfist4.png',
@@ -1004,12 +940,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Iron Fist (Immortal Weapon)',
+    feedees: 'none',
+    feeders: 'Iron Fist (Immortal Weapon)',
     char_level: 70,
   },
   {
-    char_id: 64,
     name: 'Iron Man (Mark XLVI)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173003/mpq/ironman5.png',
@@ -1020,12 +955,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'red',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: '133',
+    feedees: 'none',
+    feeders: '133',
     char_level: 255,
   },
   {
-    char_id: 65,
     name: 'Iron Man (Model 40)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173003/mpq/ironman3.png',
@@ -1036,12 +970,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'blue',
     power_three_color: 'yellow',
-    feedee_id: 'Iron Man (Hulkbuster), Riri Williams (Ironheart)',
-    feeder_id: 'none',
+    feedees: 'Iron Man (Hulkbuster), Riri Williams (Ironheart)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 66,
     name: 'Iron Man (Hulkbuster)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173001/mpq/hulkbuster4.png',
@@ -1052,12 +985,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'blue',
-    feedee_id: 'Rescue (Pepper Potts)',
-    feeder_id: 'Iron Man (Model 40)',
+    feedees: 'Rescue (Pepper Potts)',
+    feeders: 'Iron Man (Model 40)',
     char_level: 70,
   },
   {
-    char_id: 67,
     name: 'Jean Grey (Phoenix)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173008/mpq/phoenix5.png',
@@ -1068,12 +1000,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'purple',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Jubilee (Uncanny X-Men)',
+    feedees: 'none',
+    feeders: 'Jubilee (Uncanny X-Men)',
     char_level: 255,
   },
   {
-    char_id: 68,
     name: 'Jean Grey (All New X-Men)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173003/mpq/jeangrey4.png',
@@ -1084,12 +1015,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'purple',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'Angel (All New X-Men), Beast (Classic)',
+    feedees: 'none',
+    feeders: 'Angel (All New X-Men), Beast (Classic)',
     char_level: 70,
   },
   {
-    char_id: 69,
     name: 'Jessica Jones (Alias Investigations)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173003/mpq/jessicajones5.png',
@@ -1100,12 +1030,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'America Chavez (Young Avengers)',
+    feedees: 'none',
+    feeders: 'America Chavez (Young Avengers)',
     char_level: 255,
   },
   {
-    char_id: 70,
     name: 'Jubilee (Uncanny X-Men)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173004/mpq/jubilee4.png',
@@ -1116,12 +1045,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'Jean Grey (Phoenix)',
-    feeder_id: 'none',
+    feedees: 'Jean Grey (Phoenix)',
+    feeders: 'none',
     char_level: 70,
   },
   {
-    char_id: 71,
     name: 'Kamala Khan (Ms. Marvel)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173007/mpq/msmarvel3.png',
@@ -1132,12 +1060,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'Medusa (Inhuman Queen), Lockjaw (Royal Bulldog)',
-    feeder_id: 'none',
+    feedees: 'Medusa (Inhuman Queen), Lockjaw (Royal Bulldog)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 72,
     name: 'Kate Bishop (Hawkeye)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173004/mpq/katebishop4.jpg',
@@ -1148,12 +1075,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'black',
     power_three_color: 'purple',
-    feedee_id: 'Hawkeye (Clint Barton)',
-    feeder_id: 'Hawkeye (Hawkguy)',
+    feedees: 'Hawkeye (Clint Barton)',
+    feeders: 'Hawkeye (Hawkguy)',
     char_level: 70,
   },
   {
-    char_id: 73,
     name: 'Kingpin (Spider-Verse)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173004/mpq/kingpin5.png',
@@ -1164,12 +1090,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'black',
     power_three_color: 'purple',
-    feedee_id: 'none',
-    feeder_id: 'Miles Morales (Spider-Man)',
+    feedees: 'none',
+    feeders: 'Miles Morales (Spider-Man)',
     char_level: 255,
   },
   {
-    char_id: 74,
     name: 'Kingpin (Wilson Fisk)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173004/mpq/kingpin4.png',
@@ -1180,12 +1105,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'yellow',
-    feedee_id: 'Daredevil (Matt Murdock)',
-    feeder_id: 'Bullseye (Classic)',
+    feedees: 'Daredevil (Matt Murdock)',
+    feeders: 'Bullseye (Classic)',
     char_level: 70,
   },
   {
-    char_id: 75,
     name: 'Loki (God of Mischief)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173005/mpq/loki5.png',
@@ -1196,12 +1120,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'green',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'The Hulk (Main Event)',
+    feedees: 'none',
+    feeders: 'The Hulk (Main Event)',
     char_level: 255,
   },
   {
-    char_id: 76,
     name: 'Loki (Dark Reign)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173005/mpq/loki3.png',
@@ -1212,12 +1135,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'Venom (Eddie Brock), Mysterio (Quentin Beck)',
-    feeder_id: 'none',
+    feedees: 'Venom (Eddie Brock), Mysterio (Quentin Beck)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 77,
     name: 'Luke Cage (Hero For Hire)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173005/mpq/lukecage3.png',
@@ -1228,12 +1150,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedee_id: 'Luke Cage (Power Man)',
-    feeder_id: 'none',
+    feedees: 'Luke Cage (Power Man)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 78,
     name: 'Luke Cage (Power Man)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173005/mpq/lukecage4.png',
@@ -1244,12 +1165,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'black',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Luke Cage (Hero For Hire)',
+    feedees: 'none',
+    feeders: 'Luke Cage (Hero For Hire)',
     char_level: 70,
   },
   {
-    char_id: 79,
     name: 'Magneto (Marvel NOW!)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173006/mpq/magneto2.png',
@@ -1260,12 +1180,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'purple',
     power_three_color: 'red',
-    feedee_id: 'Magneto (Classic)',
-    feeder_id: 'none',
+    feedees: 'Magneto (Classic)',
+    feeders: 'none',
     char_level: 15,
   },
   {
-    char_id: 80,
     name: 'Magneto (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173006/mpq/magneto3.png',
@@ -1276,12 +1195,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'blue',
     power_three_color: 'yellow',
-    feedee_id: 'Professor X (Charles Xavier),Juggernaut (Fear Itself)',
-    feeder_id: 'Magneto (Marvel NOW!)',
+    feedees: 'Professor X (Charles Xavier),Juggernaut (Fear Itself)',
+    feeders: 'Magneto (Marvel NOW!)',
     char_level: 40,
   },
   {
-    char_id: 81,
     name: 'Medusa (Inhuman Queen)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173006/mpq/medusa4.png',
@@ -1292,12 +1210,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'Black Bolt (Inhuman King)',
-    feeder_id: 'Medusa (Inhuman Queen)',
+    feedees: 'Black Bolt (Inhuman King)',
+    feeders: 'Medusa (Inhuman Queen)',
     char_level: 70,
   },
   {
-    char_id: 82,
     name: 'Miles Morales (Spider-Man)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173006/mpq/miles4.png',
@@ -1308,12 +1225,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'yellow',
     power_three_color: 'red',
-    feedee_id: 'Kingpin (Spiderverse)',
-    feeder_id: 'Spider-Man (Classic)',
+    feedees: 'Kingpin (Spiderverse)',
+    feeders: 'Spider-Man (Classic)',
     char_level: 70,
   },
   {
-    char_id: 83,
     name: 'Moon Knight (Marc Spector)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173006/mpq/moonknight4.png',
@@ -1324,12 +1240,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Sentry (Dark Avengers)',
+    feedees: 'none',
+    feeders: 'Sentry (Dark Avengers)',
     char_level: 70,
   },
   {
-    char_id: 84,
     name: 'Moonstone (Dark Avengers)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173007/mpq/moonstone2.png',
@@ -1340,12 +1255,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'black',
     power_three_color: 'red',
-    feedee_id: 'The Hulk (Indestructible)',
-    feeder_id: 'none',
+    feedees: 'The Hulk (Indestructible)',
+    feeders: 'none',
     char_level: 15,
   },
   {
-    char_id: 85,
     name: 'Mordo (Master of the Mystic Arts)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173007/mpq/mordo4.png',
@@ -1356,12 +1270,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'blue',
     power_three_color: 'purple',
-    feedee_id: 'Doctor Strange (Sorcerer Supreme)',
-    feeder_id: 'none',
+    feedees: 'Doctor Strange (Sorcerer Supreme)',
+    feeders: 'none',
     char_level: 70,
   },
   {
-    char_id: 86,
     name: 'Mr. Fantastic (Reed Richards)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173007/mpq/mrfantastic4.png',
@@ -1372,12 +1285,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'yellow',
     power_three_color: 'black',
-    feedee_id: 'Silver Surfer (Skyrider)',
-    feeder_id: "Black Panther (T'Challa)",
+    feedees: 'Silver Surfer (Skyrider)',
+    feeders: "Black Panther (T'Challa)",
     char_level: 70,
   },
   {
-    char_id: 87,
     name: 'Mystique (Raven Darkholme)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173007/mpq/mystique3.png',
@@ -1388,12 +1300,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'black',
-    feedee_id: 'Iceman (All New X-Men)',
-    feeder_id: 'none',
+    feedees: 'Iceman (All New X-Men)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 88,
     name: 'Nick Fury (Director of S.H.I.E.L.D.)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173007/mpq/nickfury4.png',
@@ -1404,12 +1315,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'yellow',
     power_three_color: 'purple',
-    feedee_id: 'none',
-    feeder_id: 'Black Widow (Grey Suit)',
+    feedees: 'none',
+    feeders: 'Black Widow (Grey Suit)',
     char_level: 70,
   },
   {
-    char_id: 89,
     name: 'Nova (Sam Alexander)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173007/mpq/nova4.png',
@@ -1420,12 +1330,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Doctor Strange (Stephen Strange)',
+    feedees: 'none',
+    feeders: 'Doctor Strange (Stephen Strange)',
     char_level: 70,
   },
   {
-    char_id: 90,
     name: 'Okoye (Warrior General)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173008/mpq/okoye4.png',
@@ -1436,12 +1345,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'yellow',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Shuri (Master Engineer)',
+    feedees: 'none',
+    feeders: 'Shuri (Master Engineer)',
     char_level: 255,
   },
   {
-    char_id: 91,
     name: 'Peggy Carter (Captain America)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173008/mpq/peggycarter4.png',
@@ -1452,12 +1360,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'blue',
-    feedee_id: 'Captain America (Super Soldier)',
-    feeder_id: 'Psylocke (Classic)',
+    feedees: 'Captain America (Super Soldier)',
+    feeders: 'Psylocke (Classic)',
     char_level: 70,
   },
   {
-    char_id: 92,
     name: 'Professor X (Charles Xavier)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173008/mpq/profx4.png',
@@ -1468,12 +1375,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'purple',
     power_three_color: 'yellow',
-    feedee_id: 'Professor X (Classic)',
-    feeder_id: 'Magneto (Classic)',
+    feedees: 'Professor X (Classic)',
+    feeders: 'Magneto (Classic)',
     char_level: 70,
   },
   {
-    char_id: 93,
     name: 'Psylocke (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173009/mpq/psylocke3.png',
@@ -1484,12 +1390,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'blue',
     power_three_color: 'black',
-    feedee_id: 'Peggy Carter (Captain America)',
-    feeder_id: 'none',
+    feedees: 'Peggy Carter (Captain America)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 94,
     name: 'The Punisher (Dark Reign)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173008/mpq/punisher3.png',
@@ -1500,12 +1405,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'green',
     power_three_color: 'red',
-    feedee_id: 'The Punisher (MAX)',
-    feeder_id: 'none',
+    feedees: 'The Punisher (MAX)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 95,
     name: 'The Punisher (MAX)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173009/mpq/punisher4.png',
@@ -1516,12 +1420,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'green',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'The Punisher (Dark Reign)',
+    feedees: 'none',
+    feeders: 'The Punisher (Dark Reign)',
     char_level: 70,
   },
   {
-    char_id: 96,
     name: 'Quake (Daisy Johnson)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173009/mpq/quake4.png',
@@ -1532,12 +1435,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'yellow',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'Scarlet Witch (Wanda Maximoff)',
+    feedees: 'none',
+    feeders: 'Scarlet Witch (Wanda Maximoff)',
     char_level: 70,
   },
   {
-    char_id: 97,
     name: 'Quicksilver (Pietro Maximoff)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173009/mpq/quicksilver3.png',
@@ -1548,12 +1450,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'blue',
     power_three_color: 'green',
-    feedee_id: 'War Machine (James Rhodes)',
-    feeder_id: 'none',
+    feedees: 'War Machine (James Rhodes)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 98,
     name: 'Ragnarok (Dark Avengers)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173009/mpq/raganrok3.png',
@@ -1564,12 +1465,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'red',
-    feedee_id: 'Valkyrie (Asgardian Warrior), X-23 (All-New Wolverine)',
-    feeder_id: 'Ares (Dark Avengers)',
+    feedees: 'Valkyrie (Asgardian Warrior), X-23 (All-New Wolverine)',
+    feeders: 'Ares (Dark Avengers)',
     char_level: 40,
   },
   {
-    char_id: 99,
     name: 'Red Hulk (Thunderbolt Ross)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173009/mpq/redhulk4.png',
@@ -1580,12 +1480,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'green',
     power_three_color: 'purple',
-    feedee_id: 'none',
-    feeder_id: 'Thor (Modern)',
+    feedees: 'none',
+    feeders: 'Thor (Modern)',
     char_level: 70,
   },
   {
-    char_id: 100,
     name: 'Rocket & Groot (Most Wanted)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173000/mpq/grocket3.png',
@@ -1596,12 +1495,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'green',
     power_three_color: 'blue',
-    feedee_id: 'Drax (The Destroyer), Rocket & Groot (Awesome Mix Volume 2)',
-    feeder_id: 'none',
+    feedees: 'Drax (The Destroyer), Rocket & Groot (Awesome Mix Volume 2)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 101,
     name: 'Rogue (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173010/mpq/rogue4.png',
@@ -1612,12 +1510,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'yellow',
-    feedee_id: 'Gambit (Classic)',
-    feeder_id: 'Gambit (Modern)',
+    feedees: 'Gambit (Classic)',
+    feeders: 'Gambit (Modern)',
     char_level: 70,
   },
   {
-    char_id: 102,
     name: 'Sam Wilson (Falcon)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172999/mpq/falcon3.png',
@@ -1628,12 +1525,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'blue',
     power_three_color: 'purple',
-    feedee_id: 'Sam Wilson (Captain America)',
-    feeder_id: 'none',
+    feedees: 'Sam Wilson (Captain America)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 103,
     name: 'Sam Wilson (Captain America)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173010/mpq/samwilson4.png',
@@ -1644,12 +1540,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'blue',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Sam Wilson (Falcon)',
+    feedees: 'none',
+    feeders: 'Sam Wilson (Falcon)',
     char_level: 70,
   },
   {
-    char_id: 104,
     name: 'Sandman (Flint Marko)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173010/mpq/sandman4.png',
@@ -1660,12 +1555,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'purple',
     power_three_color: 'yellow',
-    feedee_id: 'Green Goblin (Norman Osborn)',
-    feeder_id: 'Doctor Octopus (Otto Octavius)',
+    feedees: 'Green Goblin (Norman Osborn)',
+    feeders: 'Doctor Octopus (Otto Octavius)',
     char_level: 70,
   },
   {
-    char_id: 105,
     name: 'Scarlet Witch (Wanda Maximoff)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173010/mpq/scarletwitch3.png',
@@ -1676,12 +1570,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'green',
     power_three_color: 'blue',
-    feedee_id: 'Quake (Daisy Johnson), Wiccan (Billy Kaplan)',
-    feeder_id: 'none',
+    feedees: 'Quake (Daisy Johnson), Wiccan (Billy Kaplan)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 106,
     name: 'Sentry (Dark Avengers)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173010/mpq/sentry3.png',
@@ -1692,12 +1585,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'green',
     power_three_color: 'yellow',
-    feedee_id: 'Moon Knight (Marc Spector)',
-    feeder_id: 'none',
+    feedees: 'Moon Knight (Marc Spector)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 107,
     name: 'She-Hulk (Modern)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173011/mpq/shehulk3.png',
@@ -1708,12 +1600,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'red',
-    feedee_id: 'Gwenpool (Gwen Poole)',
-    feeder_id: 'none',
+    feedees: 'Gwenpool (Gwen Poole)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 108,
     name: 'Shuri (Master Engineer)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173011/mpq/shuri4.png',
@@ -1724,12 +1615,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'red',
-    feedee_id: 'Okoye (Warrior General)',
-    feeder_id: 'none',
+    feedees: 'Okoye (Warrior General)',
+    feeders: 'none',
     char_level: 70,
   },
   {
-    char_id: 109,
     name: 'Silver Surfer (Skyrider)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173011/mpq/silversurfer5.png',
@@ -1740,12 +1630,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Mr. Fantastic (Reed Richards)',
+    feedees: 'none',
+    feeders: 'Mr. Fantastic (Reed Richards)',
     char_level: 255,
   },
   {
-    char_id: 110,
     name: 'Spider-Man (Bag-Man)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173011/mpq/spiderman2.png',
@@ -1756,12 +1645,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'yellow',
-    feedee_id: 'Spider-Man (Classic)',
-    feeder_id: 'none',
+    feedees: 'Spider-Man (Classic)',
+    feeders: 'none',
     char_level: 15,
   },
   {
-    char_id: 111,
     name: 'Spider-Man (Back In Black)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172994/mpq/bibsm5.png',
@@ -1772,12 +1660,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'purple',
-    feedee_id: 'none',
-    feeder_id: 'Spider-Man (Classic)',
+    feedees: 'none',
+    feeders: 'Spider-Man (Classic)',
     char_level: 255,
   },
   {
-    char_id: 112,
     name: 'Spider-Man (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173011/mpq/spiderman3.png',
@@ -1788,12 +1675,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'yellow',
     power_three_color: 'blue',
-    feedee_id: 'Miles Morales (Spider-Man)',
-    feeder_id: 'Spider-Man (Bag-Man)',
+    feedees: 'Miles Morales (Spider-Man)',
+    feeders: 'Spider-Man (Bag-Man)',
     char_level: 40,
   },
   {
-    char_id: 113,
     name: 'Spider-Man (Infinity War)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173006/mpq/mcuspiderman4.png',
@@ -1804,12 +1690,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'red',
-    feedee_id: 'Spider-Man (Infinity War)',
-    feeder_id: 'none',
+    feedees: 'Spider-Man (Infinity War)',
+    feeders: 'none',
     char_level: 70,
   },
   {
-    char_id: 114,
     name: 'Spider-Man (Peter Parker)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173012/mpq/spiderman5.png',
@@ -1820,12 +1705,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Vulture (Adrian Toomes)',
+    feedees: 'none',
+    feeders: 'Vulture (Adrian Toomes)',
     char_level: 255,
   },
   {
-    char_id: 115,
     name: 'Spider-Woman (Jessica Drew)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173012/mpq/spiderwoman4.png',
@@ -1836,12 +1720,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Thanos (Modern)',
+    feedees: 'none',
+    feeders: 'Thanos (Modern)',
     char_level: 70,
   },
   {
-    char_id: 116,
     name: 'Squirrel-Girl (Unbeatable)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173012/mpq/squirrelgirl3.png',
@@ -1852,12 +1735,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'Ant-Man (Scott Lang), KravenThe Hunter (Sergei Kravinoff)',
-    feeder_id: 'none',
+    feedees: 'Ant-Man (Scott Lang), KravenThe Hunter (Sergei Kravinoff)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 117,
     name: 'Star-Lord (Awesome Mix Volume 2)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173012/mpq/starlord5.png',
@@ -1868,12 +1750,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Drax (The Destroyer)',
+    feedees: 'none',
+    feeders: 'Drax (The Destroyer)',
     char_level: 255,
   },
   {
-    char_id: 118,
     name: 'Star-Lord (Legendary Outlaw)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173012/mpq/starlord4.png',
@@ -1884,12 +1765,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'yellow',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Star-Lord (Peter Quill), Gamora (Guardians of the Galaxy)',
+    feedees: 'none',
+    feeders: 'Star-Lord (Peter Quill), Gamora (Guardians of the Galaxy)',
     char_level: 70,
   },
   {
-    char_id: 119,
     name: 'Star-Lord (Peter Quill)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173012/mpq/starlord3.png',
@@ -1900,12 +1780,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'yellow',
     power_three_color: 'red',
-    feedee_id: 'Star-Lord (Legendary Outlaw)',
-    feeder_id: 'none',
+    feedees: 'Star-Lord (Legendary Outlaw)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 120,
     name: 'Storm (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604031220/mpq/Storm__28Classic_29.png',
@@ -1916,12 +1795,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'blue',
     power_three_color: 'yellow',
-    feedee_id: 'Storm (Mohawk)',
-    feeder_id: 'none',
+    feedees: 'Storm (Mohawk)',
+    feeders: 'none',
     char_level: 15,
   },
   {
-    char_id: 121,
     name: 'Storm (Mohawk)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173012/mpq/storm5.png',
@@ -1932,12 +1810,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'yellow',
     power_three_color: 'black',
-    feedee_id: 'Thor (Goddess of Thunder)',
-    feeder_id: 'Storm (Classic)',
+    feedees: 'Thor (Goddess of Thunder)',
+    feeders: 'Storm (Classic)',
     char_level: 40,
   },
   {
-    char_id: 122,
     name: 'Thanos (The Mad Titan)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173013/mpq/thanos5.png',
@@ -1948,12 +1825,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Gamora (Awesome Mix Volume 2)',
+    feedees: 'none',
+    feeders: 'Gamora (Awesome Mix Volume 2)',
     char_level: 255,
   },
   {
-    char_id: 123,
     name: 'Thanos (Modern)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173013/mpq/thanos3.png',
@@ -1964,12 +1840,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedee_id: 'Spider-Woman (Jessica Drew), Thanos (Endgame)',
-    feeder_id: 'none',
+    feedees: 'Spider-Woman (Jessica Drew), Thanos (Endgame)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 124,
     name: 'The Thing (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173013/mpq/thing4.png',
@@ -1980,12 +1855,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: '55',
+    feedees: 'none',
+    feeders: '55',
     char_level: 70,
   },
   {
-    char_id: 125,
     name: 'Thor (Goddess of Thunder)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173013/mpq/thor4.png',
@@ -1996,12 +1870,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'blue',
-    feedee_id: 'Storm (Ororo Munroe)',
-    feeder_id: 'Storm (Mohawk)',
+    feedees: 'Storm (Ororo Munroe)',
+    feeders: 'Storm (Mohawk)',
     char_level: 70,
   },
   {
-    char_id: 126,
     name: 'Thor (Marvel NOW!)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173013/mpq/thor2.png',
@@ -2012,12 +1885,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'green',
-    feedee_id: 'Thor (Modern)',
-    feeder_id: 'none',
+    feedees: 'Thor (Modern)',
+    feeders: 'none',
     char_level: 15,
   },
   {
-    char_id: 127,
     name: 'Thor (Modern)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173014/mpq/thor3.png',
@@ -2028,12 +1900,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'green',
-    feedee_id: 'Red Hulk (Thunderbolt Ross)',
-    feeder_id: 'Thor (Marvel NOW!)',
+    feedees: 'Red Hulk (Thunderbolt Ross)',
+    feeders: 'Thor (Marvel NOW!)',
     char_level: 40,
   },
   {
-    char_id: 128,
     name: 'Thor (Gladiator)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173014/mpq/thor5.png',
@@ -2044,12 +1915,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Valkyrie (Asgardian Warrior)',
+    feedees: 'none',
+    feeders: 'Valkyrie (Asgardian Warrior)',
     char_level: 255,
   },
   {
-    char_id: 129,
     name: 'Valkyrie (Asgardian Warrior)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173014/mpq/valkyrie4.png',
@@ -2060,12 +1930,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'yellow',
-    feedee_id: 'Thor (Gladiator)',
-    feeder_id: 'Ragnarok (Dark Avengers)',
+    feedees: 'Thor (Gladiator)',
+    feeders: 'Ragnarok (Dark Avengers)',
     char_level: 70,
   },
   {
-    char_id: 130,
     name: 'Venom (Eddie Brock)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173014/mpq/venom4.png',
@@ -2076,12 +1945,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'black',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Loki (Dark Reign)',
+    feedees: 'none',
+    feeders: 'Loki (Dark Reign)',
     char_level: 70,
   },
   {
-    char_id: 131,
     name: 'Vision (Android Avenger)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173014/mpq/vision3.png',
@@ -2092,12 +1960,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'red',
     power_three_color: 'yellow',
-    feedee_id: 'Wasp (Janet Vna Dyne)',
-    feeder_id: 'none',
+    feedees: 'Wasp (Janet Vna Dyne)',
+    feeders: 'none',
     char_level: 40,
   },
   {
-    char_id: 132,
     name: 'Vulture (Adrian Toomes)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173014/mpq/vulture4.png',
@@ -2108,12 +1975,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'green',
     power_three_color: 'blue',
-    feedee_id: 'Spider-Man (Peter Parker)',
-    feeder_id: 'none',
+    feedees: 'Spider-Man (Peter Parker)',
+    feeders: 'none',
     char_level: 70,
   },
   {
-    char_id: 133,
     name: 'War Machine (James Rhodes)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173015/mpq/warmachine4.png',
@@ -2124,12 +1990,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'blue',
     power_three_color: 'green',
-    feedee_id: 'Iron Man (Mark XLVI)',
-    feeder_id: 'Quicksilver (Pietro Maximoff)',
+    feedees: 'Iron Man (Mark XLVI)',
+    feeders: 'Quicksilver (Pietro Maximoff)',
     char_level: 70,
   },
   {
-    char_id: 134,
     name: 'Wasp (Hope Van Dyne)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173015/mpq/wasp5.png',
@@ -2140,12 +2005,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'yellow',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Ant Man (Scott Lang)',
+    feedees: 'none',
+    feeders: 'Ant Man (Scott Lang)',
     char_level: 255,
   },
   {
-    char_id: 135,
     name: 'Wasp (Janet Van Dyne)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173015/mpq/wasp4.png',
@@ -2156,12 +2020,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'blue',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Vision (Android Avenger)',
+    feedees: 'none',
+    feeders: 'Vision (Android Avenger)',
     char_level: 70,
   },
   {
-    char_id: 136,
     name: 'Winter Soldier (Bucky Barnes)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173015/mpq/wintersoldier4.png',
@@ -2172,12 +2035,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'red',
-    feedee_id: 'Captain America (Infinity War)',
-    feeder_id: 'Captain America (Super-Soldier)',
+    feedees: 'Captain America (Infinity War)',
+    feeders: 'Captain America (Super-Soldier)',
     char_level: 70,
   },
   {
-    char_id: 137,
     name: 'Wolverine (Astonishing X-Men)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173016/mpq/wolverine2.png',
@@ -2188,12 +2050,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'yellow',
-    feedee_id: 'Wolverine (Patch)',
-    feeder_id: 'none',
+    feedees: 'Wolverine (Patch)',
+    feeders: 'none',
     char_level: 15,
   },
   {
-    char_id: 138,
     name: 'Wolverine (Patch)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173016/mpq/wolverine3.png',
@@ -2204,12 +2065,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'yellow',
-    feedee_id: 'Wolverine (X-Force), Sabretooth (Victor Creed)',
-    feeder_id: 'Wolverine (Astonishing X-Men)',
+    feedees: 'Wolverine (X-Force), Sabretooth (Victor Creed)',
+    feeders: 'Wolverine (Astonishing X-Men)',
     char_level: 40,
   },
   {
-    char_id: 139,
     name: 'Wolverine (Old Man Logan)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173008/mpq/oldmanlogan5.png',
@@ -2220,12 +2080,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'yellow',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Wolverine (X-Force)',
+    feedees: 'none',
+    feeders: 'Wolverine (X-Force)',
     char_level: 255,
   },
   {
-    char_id: 140,
     name: 'Wolverine (X-Force)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173016/mpq/wolverine4.png',
@@ -2236,12 +2095,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'black',
     power_three_color: 'yellow',
-    feedee_id: 'Wolverine (Old Man Logan)',
-    feeder_id: 'Colossus (Classic), Wolverine (Patch)',
+    feedees: 'Wolverine (Old Man Logan)',
+    feeders: 'Colossus (Classic), Wolverine (Patch)',
     char_level: 70,
   },
   {
-    char_id: 141,
     name: 'X-23 (All-New Wolverine)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173017/mpq/x234.png',
@@ -2252,12 +2110,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'purple',
-    feedee_id: 'none',
-    feeder_id: 'Daken (Classic), X-23 (All-New Wolverine)',
+    feedees: 'none',
+    feeders: 'Daken (Classic), X-23 (All-New Wolverine)',
     char_level: 70,
   },
   {
-    char_id: 142,
     name: 'Nightcrawler (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173007/mpq/nightcrawler4.png',
@@ -2268,12 +2125,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'red',
     power_three_color: 'blue',
-    feedee_id: 'Archangel (Classic)',
-    feeder_id: 'Angel (All-New X-Men)',
+    feedees: 'Archangel (Classic)',
+    feeders: 'Angel (All-New X-Men)',
     char_level: 70,
   },
   {
-    char_id: 143,
     name: 'Archangel (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172993/mpq/archangel5.png',
@@ -2284,12 +2140,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Nightcrawler (Classic)',
+    feedees: 'none',
+    feeders: 'Nightcrawler (Classic)',
     char_level: 255,
   },
   {
-    char_id: 144,
     name: 'Captain America (Worthy)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173016/mpq/worthycap4.png',
@@ -2300,12 +2155,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'red',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Captain America (Super Soldier)',
+    feedees: 'none',
+    feeders: 'Captain America (Super Soldier)',
     char_level: 70,
   },
   {
-    char_id: 145,
     name: 'Talos (Skrull Warlord)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173013/mpq/talos4.png',
@@ -2316,12 +2170,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Captain Marvel (Modern)',
+    feedees: 'none',
+    feeders: 'Captain Marvel (Modern)',
     char_level: 70,
   },
   {
-    char_id: 146,
     name: 'Magik (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173005/mpq/magik4.png',
@@ -2332,12 +2185,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'red',
     power_three_color: 'blue',
-    feedee_id: 'Hela (Goddess of Death)',
-    feeder_id: 'Colossus (Classic)',
+    feedees: 'Hela (Goddess of Death)',
+    feeders: 'Colossus (Classic)',
     char_level: 70,
   },
   {
-    char_id: 147,
     name: 'Hela (Goddess of Death)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173001/mpq/hela5.png',
@@ -2348,12 +2200,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'green',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Magik (Classic)',
+    feedees: 'none',
+    feeders: 'Magik (Classic)',
     char_level: 255,
   },
   {
-    char_id: 148,
     name: 'Emma Frost (Astonishing X-Men)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172999/mpq/emmafrost4.png',
@@ -2364,12 +2215,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'black',
     power_three_color: 'yellow',
-    feedee_id: 'Kitty Pryde (Uncanny X-Men)',
-    feeder_id: 'Cyclops (Uncanny X-Men)',
+    feedees: 'Kitty Pryde (Uncanny X-Men)',
+    feeders: 'Cyclops (Uncanny X-Men)',
     char_level: 70,
   },
   {
-    char_id: 149,
     name: 'Kitty Pryde (Uncanny X-Men)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173004/mpq/kittypryde5.png',
@@ -2380,12 +2230,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'purple',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Emma Frost (Astonishing X-Men)',
+    feedees: 'none',
+    feeders: 'Emma Frost (Astonishing X-Men)',
     char_level: 255,
   },
   {
-    char_id: 150,
     name: 'Domino (X-Force)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172998/mpq/domino4.png',
@@ -2396,12 +2245,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: "Deadpool (It's Me, Deadpool!)",
+    feedees: 'none',
+    feeders: "Deadpool (It's Me, Deadpool!)",
     char_level: 70,
   },
   {
-    char_id: 151,
     name: 'Dazzler (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172997/mpq/dazzler4.png',
@@ -2412,12 +2260,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'red',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Gambit (Modern)',
+    feedees: 'none',
+    feeders: 'Gambit (Modern)',
     char_level: 70,
   },
   {
-    char_id: 152,
     name: 'The Hulk (Bruce Banner)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172994/mpq/brucebanner5.png',
@@ -2428,12 +2275,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'black',
     power_three_color: 'purple',
-    feedee_id: 'none',
-    feeder_id: 'The Hulk (Totally Awesome)',
+    feedees: 'none',
+    feeders: 'The Hulk (Totally Awesome)',
     char_level: 255,
   },
   {
-    char_id: 153,
     name: 'Hawkeye (Ronin)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173010/mpq/ronin4.png',
@@ -2444,12 +2290,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'purple',
-    feedee_id: 'none',
-    feeder_id: 'Hawkeye (Hawkguy)',
+    feedees: 'none',
+    feeders: 'Hawkeye (Hawkguy)',
     char_level: 70,
   },
   {
-    char_id: 154,
     name: 'Human Torch (Jim Hammond)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173003/mpq/jimhammond4.png',
@@ -2460,12 +2305,11 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'green',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Human Torch (Classic)',
+    feedees: 'none',
+    feeders: 'Human Torch (Classic)',
     char_level: 70,
   },
   {
-    char_id: 155,
     name: 'Riri Williams (Ironheart)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173003/mpq/ironheart4.png',
@@ -2476,12 +2320,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'red',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Iron Man (Model 40)',
+    feedees: 'none',
+    feeders: 'Iron Man (Model 40)',
     char_level: 70,
   },
   {
-    char_id: 156,
     name: 'Lockjaw (Royal Bulldog)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173005/mpq/lockjaw4.png',
@@ -2492,12 +2335,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'blue',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Kamala Khan (Ms. Marvel)',
+    feedees: 'none',
+    feeders: 'Kamala Khan (Ms. Marvel)',
     char_level: 70,
   },
   {
-    char_id: 157,
     name: 'Mysterio (Quentin Beck)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173007/mpq/mysterio4.jpg',
@@ -2508,12 +2350,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Loki (Dark Reign)',
+    feedees: 'none',
+    feeders: 'Loki (Dark Reign)',
     char_level: 70,
   },
   {
-    char_id: 158,
     name: 'Iceman (Bobby Drake)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173002/mpq/iceman5.png',
@@ -2524,12 +2365,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'green',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'Iceman (All-New X-Men)',
+    feedees: 'none',
+    feeders: 'Iceman (All-New X-Men)',
     char_level: 255,
   },
   {
-    char_id: 159,
     name: 'Doctor Doom (God Emperor)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604172998/mpq/docdoom5.png',
@@ -2540,12 +2380,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'black',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'Invisible Woman (Classic)',
+    feedees: 'none',
+    feeders: 'Invisible Woman (Classic)',
     char_level: 255,
   },
   {
-    char_id: 160,
     name: 'Rescue (Pepper Potts)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173009/mpq/rescue5.png',
@@ -2556,12 +2395,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'yellow',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Iron Man (Hulkbuster)',
+    feedees: 'none',
+    feeders: 'Iron Man (Hulkbuster)',
     char_level: 255,
   },
   {
-    char_id: 161,
     name: 'Professor X (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173008/mpq/profx5.png',
@@ -2572,12 +2410,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'purple',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Professor X (Charles Xavier)',
+    feedees: 'none',
+    feeders: 'Professor X (Charles Xavier)',
     char_level: 255,
   },
   {
-    char_id: 162,
     name: 'Gambit (Classic)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173000/mpq/ganbit5.png',
@@ -2588,12 +2425,11 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedee_id: 'none',
-    feeder_id: 'Rogue (Classic)',
+    feedees: 'none',
+    feeders: 'Rogue (Classic)',
     char_level: 255,
   },
   {
-    char_id: 163,
     name: 'Storm (Ororo Munroe)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173012/mpq/storm5.png',
@@ -2604,12 +2440,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'green',
     power_three_color: 'yellow',
-    feedee_id: 'none',
-    feeder_id: 'Thor (Goddess of Thunder)',
+    feedees: 'none',
+    feeders: 'Thor (Goddess of Thunder)',
     char_level: 255,
   },
   {
-    char_id: 164,
     name: 'Juggernaut (Fear Itself)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173004/mpq/juggernaut5.png',
@@ -2620,12 +2455,11 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'Magneto (Classic)',
+    feedees: 'none',
+    feeders: 'Magneto (Classic)',
     char_level: 70,
   },
   {
-    char_id: 165,
     name: 'Rocket & Groot (Awesome Mix Volume 2)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173000/mpq/grocket4.png',
@@ -2636,12 +2470,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'green',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'Rocket & Groot (Most Wanted)',
+    feedees: 'none',
+    feeders: 'Rocket & Groot (Most Wanted)',
     char_level: 70,
   },
   {
-    char_id: 166,
     name: 'Wiccan (Billy Kaplan)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173015/mpq/wiccan4.png',
@@ -2652,12 +2485,11 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'yellow',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Scarlet Witch (Wanda Maximoff)',
+    feedees: 'none',
+    feeders: 'Scarlet Witch (Wanda Maximoff)',
     char_level: 70,
   },
   {
-    char_id: 167,
     name: 'Kraven The Hunter (Sergei Kravinoff)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173005/mpq/kraven4.png',
@@ -2668,12 +2500,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'Squirrel-Girl (Unbeatable)',
+    feedees: 'none',
+    feeders: 'Squirrel-Girl (Unbeatable)',
     char_level: 70,
   },
   {
-    char_id: 168,
     name: 'Yondu (Awesome Mix Volume 2)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173016/mpq/yondu4.jpg',
@@ -2684,12 +2515,11 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'black',
     power_three_color: 'blue',
-    feedee_id: 'none',
-    feeder_id: 'Star Lord (Peter Quill)',
+    feedees: 'none',
+    feeders: 'Star Lord (Peter Quill)',
     char_level: 70,
   },
   {
-    char_id: 169,
     name: 'Thanos (Endgame)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173013/mpq/thanos4.png',
@@ -2700,12 +2530,11 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'blue',
     power_three_color: 'green',
-    feedee_id: 'none',
-    feeder_id: 'Thanos (Modern)',
+    feedees: 'none',
+    feeders: 'Thanos (Modern)',
     char_level: 70,
   },
   {
-    char_id: 170,
     name: 'Sabretooth (Victor Creed)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173010/mpq/sabretooth4.png',
@@ -2716,8 +2545,8 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'black',
     power_three_color: 'red',
-    feedee_id: 'none',
-    feeder_id: 'Wolverine (Patch)',
+    feedees: 'none',
+    feeders: 'Wolverine (Patch)',
     char_level: 70,
   },
 ];
