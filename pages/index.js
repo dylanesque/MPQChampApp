@@ -22,8 +22,6 @@ const IndexPage = () => {
     variables: { id: 'auth0|5f9b45577305a20076914879' },
   });
 
-  // https://stackoverflow.com/questions/60899880/next-js-reduce-data-fetching-and-share-data-between-pages
-
   // Apollo queries database to see if the user has any characters
   // TODO: Test this query
   // 1. Query db for a characters table for this user
@@ -43,7 +41,9 @@ const IndexPage = () => {
       <>
         <h1>Welcome to the Marvel Puzzle Quest Champion Tracker!</h1>
         <div>You have {charCount} characters right now</div>
-
+        {/*
+          {charCount < 1 && <addDB />}
+          */}
         {characterDb.loading && <div>Loading...</div>}
         {characterDb.data && (
           <div>
