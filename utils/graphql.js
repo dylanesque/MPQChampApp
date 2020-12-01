@@ -15,17 +15,22 @@ export const ADD_CHAR_DB = gql`
 `;
 
 export const AddDB = () => {
-   seedDB.forEach((char) => {
-     char.id = uuidv4();
-     char.user_id = 'auth0|5f9b45577305a20076914879';
-   });
+
+  seedDB.forEach((char) => {
+    char.id = uuidv4();
+    char.user_id = 'auth0|5f9b45577305a20076914879';
+  });
   const db = seedDB;
 
-  return <Mutation mutation={ADD_CHAR_DB}>
-    {(insert_characters, { data }) => (
-      <button onClick={insert_characters({ variables: { objects: db } })}>Create Database</button>
-    )}
-  </Mutation>
+  return (
+    <Mutation mutation={ADD_CHAR_DB}>
+      {(insert_characters, { data }) => (
+        <button onClick={() => insert_characters({ variables: { objects: db } })}>
+          Create Database
+        </button>
+      )}
+    </Mutation>
+  );
 };
 
 export const CHECK_CHAR_LIST = gql`
@@ -39,7 +44,6 @@ export const CHECK_CHAR_LIST = gql`
     }
   }
 `;
-
 
 export const GET_CHARACTERS = gql`
   query GetCharacters($user_id: String!) {
@@ -56,6 +60,30 @@ export const GET_CHARACTERS = gql`
       rarity
       power_two_level
       power_two_color
+      power_three_level
+    }
+  }
+`;
+
+export const UpdateCharacter = (id, fields) => {
+   return (
+     <Mutation mutation={UPDATE_CHARACTER}>
+       {(update_characters_by_pk, { data }) => (
+         <button onClick={() => update_characters_by_pk({ variables: { id, changes: fields } })}>
+           Save Changes
+         </button>
+       )}
+     </Mutation>
+   );
+}
+
+export const UPDATE_CHARACTER = gql`
+  mutation UpdateCharacter($id: String!, $changes: characters_set_input!) {
+    update_characters_by_pk(pk_columns: { id: $id }, _set: $changes) {
+      name
+      char_level
+      power_one_level
+      power_two_level
       power_three_level
     }
   }
