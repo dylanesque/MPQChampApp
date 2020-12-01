@@ -4,10 +4,7 @@ import { useFetchUser } from '../lib/user';
 import { withApollo } from '../lib/withApollo';
 import Login from '../components/Auth/Login';
 import parseFeeds from '../utils/parse';
-import {
-  CHECK_CHAR_LIST,
-  GET_CHARACTERS,
-} from '../utils/graphql';
+import { CHECK_CHAR_LIST, GET_CHARACTERS } from '../utils/graphql';
 
 const IndexPage = () => {
   let charCount = null;
@@ -41,9 +38,8 @@ const IndexPage = () => {
       <>
         <h1>Welcome to the Marvel Puzzle Quest Champion Tracker!</h1>
         <div>You have {charCount} characters right now</div>
-        {/*
-          {charCount < 1 && <addDB />}
-          */}
+        {charCount < 1 && !characterDb.data.characters && <addDB />}
+
         {characterDb.loading && <div>Loading...</div>}
         {characterDb.data && (
           <div>
@@ -52,32 +48,34 @@ const IndexPage = () => {
                 <div key={character.id}>
                   <p>{character.name}</p>
                   <label>Character Level</label>
-                  <select>
+                  <select value={character.char_level}>
                     {charLevels.map((level) => {
-                      return <option>{level}</option>;
+                      return <option key={level}>{level}</option>;
                     })}
                   </select>
                   <div className="power-select">
                     <label>Power One </label>
-                    <select>
+                    <select value={character.power_one_level}>
                       {powerLevels.map((level) => {
-                        return <option>{level}</option>;
+                        return <option key={level}>{level}</option>;
                       })}
                     </select>
                     <label>Power Two </label>
-                    <select>
+                    <select value={character.power_two_level}>
                       {powerLevels.map((level) => {
-                        return <option>{level}</option>;
+                        return <option key={level}>{level}</option>;
                       })}
                     </select>
                     <label>Power Three </label>
-                    <select>
+                    <select value={character.power_three_level}>
                       {powerLevels.map((level) => {
-                        return <option>{level}</option>;
+                        return <option key={level}>{level}</option>;
                       })}
                     </select>
                   </div>
+                    <button >Save</button>
                 </div>
+              
               );
             })}
           </div>
