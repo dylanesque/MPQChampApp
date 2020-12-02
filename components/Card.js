@@ -10,60 +10,68 @@ const Card = ({ character }) => {
     power_three_level,
   } = character;
   // set state for char_level & power levels
+  // TODO: Refactor to remove duplication
   const [charLevel, setCharLevel] = React.useState(char_level);
   const [powerOneLevel, setPowerOneLevel] = React.useState(power_one_level);
   const [powerTwoLevel, setPowerTwoLevel] = React.useState(power_two_level);
   const [powerThreeLevel, setPowerThreeLevel] = React.useState(
     power_three_level
   );
-  // handle change function takes in event and setState function
 
   const powerLevels = [0, 1, 2, 3, 4, 5];
+
+  // TODO: Refactor this value to be a derived value based on rarity and number of covers
   const charLevels = [...Array(400).keys()];
-  function handleChange(e) {
-    e.preventDefault();
-    // React.setFunc(e.target.value);
-    console.log(e.target.value);
+
+  function nameChange(e) {
+    setCharLevel(e.target.value);
+  }
+  function powerOneChange(e) {
+    setPowerOneLevel(e.target.value);
+  }
+  function powerTwoChange(e) {
+    setPowerTwoLevel(e.target.value);
+  }
+  function powerThreeChange(e) {
+    setPowerThreeLevel(e.target.value);
   }
   return (
     <div key={id}>
       <p>{name}</p>
       <label>Character Level</label>
-      <select onChange={handleChange} value={charLevel}>
+      <select onChange={nameChange} value={charLevel}>
         {charLevels.map((level) => {
           return <option key={level}>{level}</option>;
         })}
       </select>
       <div className="power-select">
         <label>Power One </label>
-        <select onChange={handleChange} value={powerOneLevel}>
+        <select onChange={powerOneChange} value={powerOneLevel}>
           {powerLevels.map((level) => {
             return <option key={level}>{level}</option>;
           })}
         </select>
         <label>Power Two </label>
-        <select onChange={handleChange} value={powerTwoLevel}>
+        <select onChange={powerTwoChange} value={powerTwoLevel}>
           {powerLevels.map((level) => {
             return <option key={level}>{level}</option>;
           })}
         </select>
         <label>Power Three </label>
-        <select onChange={handleChange} value={powerThreeLevel}>
+        <select onChange={powerThreeChange} value={powerThreeLevel}>
           {powerLevels.map((level) => {
             return <option key={level}>{level}</option>;
           })}
         </select>
       </div>
       <UpdateCharacter
-        props={
-          (id,
-          {
-            char_level: charLevel,
-            power_one_level: powerOneLevel,
-            power_two_level: powerTwoLevel,
-            power_three_level: powerThreeLevel,
-          })
-        }
+        id={id}
+        changes={{
+          char_level: parseInt(charLevel),
+          power_one_level: parseInt(powerOneLevel),
+          power_two_level: parseInt(powerTwoLevel),
+          power_three_level: parseInt(powerThreeLevel),
+        }}
       />
     </div>
   );

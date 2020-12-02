@@ -44,11 +44,11 @@ Application flow will work like this:
 
 **Phase One:** This phase consists of creating and configuring Hasura, Auth0, and the basic Next.js app skeleton, and getting these parts communicating and working as expected. **This phase is complete.**
 
-**Phase Two:** This phase will consist of getting the seed database updated, and writing, testing, and implementing all Hasura GraphQL queries and mutations. When this phase is complete, the backend of the app will be essentially finished. While I won't be writing automated tests at this point, I will be earmarking portions of code that need to have tests written for at a later date. **This phase is underway and nearly completed.**
+**Phase Two:** This phase will consist of getting the seed database updated, and writing, testing, and implementing all Hasura GraphQL queries and mutations. When this phase is complete, the backend of the app will be essentially finished. While I won't be writing automated tests at this point, I will be earmarking portions of code that need to have tests written for at a later date. **This phase is completed.**
 
-**Phase Three:** I will begin to introduce basic styling at this point, flesh out individual pages, etc. When this phase is complete, I will be able to deploy the app for basic user testing. 
+**Phase Three:** I will begin to introduce basic styling at this point, flesh out individual pages, etc. When this phase is complete, I will be able to deploy the app for basic user testing. **This phase is underway.**
 
-**Phase Four:** This phase will see styling beyond the basics, with no missing content on any pages. Automated testing will begin, and I will will be focusing my energy on getting the minutiae of the character report page filtering and other features on that page complete.
+**Phase Four:** This phase will see styling beyond the basics, with no missing content on any pages. Automated testing will begin, and I will will be focusing my energy on getting the finer details of the character report page filtering and other features on that page complete.
 
 **Phase Five:** Advanced styling, automated testing, full deployment to a proper URL, tests and adjustments for performance and other metrics.
 

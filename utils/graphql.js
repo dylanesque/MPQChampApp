@@ -65,11 +65,11 @@ export const GET_CHARACTERS = gql`
   }
 `;
 
-export const UpdateCharacter = (id, fields) => {
+export const UpdateCharacter = ({ id, changes }) => {
    return (
      <Mutation mutation={UPDATE_CHARACTER}>
        {(update_characters_by_pk, { data }) => (
-         <button onClick={() => update_characters_by_pk({ variables: { id, changes: fields } })}>
+         <button onClick={() => update_characters_by_pk({ variables: { id, changes } })}>
            Save Changes
          </button>
        )}
