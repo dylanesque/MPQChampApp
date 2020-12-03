@@ -1,10 +1,11 @@
 import { useQuery } from '@apollo/react-hooks';
 
-import { useFetchUser } from '../lib/user';
 import { withApollo } from '../lib/withApollo';
 import Login from '../components/Auth/Login';
-import parseFeeds from '../utils/parse';
-import Card from '../components/Card'
+import LogoutBtn from '../components/Auth/Logout'
+import { useFetchUser } from '../lib/user';
+import CharCard from '../components/Card'
+import CharacterGrid from '../components/CharacterGrid'
 import {
   CHECK_CHAR_LIST,
   GET_CHARACTERS,
@@ -14,24 +15,17 @@ import {
 const IndexPage = () => {
   // Variables
   let charCount = null;
+  const { user, loading } = useFetchUser();
 
-  
   // Queries
   const characterDb = useQuery(GET_CHARACTERS, {
     variables: { user_id: 'auth0|5f9b45577305a20076914879' },
   });
-  const { user, loading } = useFetchUser();
+  
   const dbCheck = useQuery(CHECK_CHAR_LIST, {
     variables: { id: 'auth0|5f9b45577305a20076914879' },
   });
 
-
-
-  // Apollo queries database to see if the user has any characters
-  // TODO: Test this query
-  // 1. Query db for a characters table for this user
-
-  // 2. If the above query is complete, check to see if the number of characters in the db is greater than zero
   if (!dbCheck.loading && user) {
     charCount = dbCheck.data.users[0].characters_aggregate.aggregate.count;
   }
@@ -50,14 +44,15 @@ const IndexPage = () => {
 
         {characterDb.loading && <div>Loading...</div>}
         {characterDb.data && (
-          <div>
+          <CharacterGrid>
             {characterDb.data.characters.map((character) => {
               return (
-                <Card key={character.id} character={character} />
+                <CharCard key={character.id} character={character} />
               );
             })}
-          </div>
+          </CharacterGrid>
         )}
+        {user && <LogoutBtn />}
       </>
     );
   }

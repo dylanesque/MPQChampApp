@@ -15,7 +15,6 @@ export const ADD_CHAR_DB = gql`
 `;
 
 export const AddDB = () => {
-
   seedDB.forEach((char) => {
     char.id = uuidv4();
     char.user_id = 'auth0|5f9b45577305a20076914879';
@@ -25,7 +24,9 @@ export const AddDB = () => {
   return (
     <Mutation mutation={ADD_CHAR_DB}>
       {(insert_characters, { data }) => (
-        <button onClick={() => insert_characters({ variables: { objects: db } })}>
+        <button
+          onClick={() => insert_characters({ variables: { objects: db } })}
+        >
           Create Database
         </button>
       )}
@@ -47,7 +48,7 @@ export const CHECK_CHAR_LIST = gql`
 
 export const GET_CHARACTERS = gql`
   query GetCharacters($user_id: String!) {
-    characters(where: { user_id: { _eq: $user_id } }) {
+    characters(where: { user_id: { _eq: $user_id } }, order_by: { name: asc }) {
       char_level
       feedees
       feeders
@@ -66,16 +67,20 @@ export const GET_CHARACTERS = gql`
 `;
 
 export const UpdateCharacter = ({ id, changes }) => {
-   return (
-     <Mutation mutation={UPDATE_CHARACTER}>
-       {(update_characters_by_pk, { data }) => (
-         <button onClick={() => update_characters_by_pk({ variables: { id, changes } })}>
-           Save Changes
-         </button>
-       )}
-     </Mutation>
-   );
-}
+  return (
+    <Mutation mutation={UPDATE_CHARACTER}>
+      {(update_characters_by_pk, { data }) => (
+        <button
+          onClick={() =>
+            update_characters_by_pk({ variables: { id, changes } })
+          }
+        >
+          Save Changes
+        </button>
+      )}
+    </Mutation>
+  );
+};
 
 export const UPDATE_CHARACTER = gql`
   mutation UpdateCharacter($id: String!, $changes: characters_set_input!) {

@@ -1,10 +1,12 @@
 import { UpdateCharacter } from '../utils/graphql';
+import Card from '@material-ui/core/Card';
 
-const Card = ({ character }) => {
+const CharCard = ({ character }) => {
   const {
     id,
     name,
     char_level,
+    image,
     power_one_level,
     power_two_level,
     power_three_level,
@@ -36,8 +38,9 @@ const Card = ({ character }) => {
     setPowerThreeLevel(e.target.value);
   }
   return (
-    <div key={id}>
+    <Card key={id}>
       <p>{name}</p>
+      <img className="char-image" src={image} />
       <label>Character Level</label>
       <select onChange={nameChange} value={charLevel}>
         {charLevels.map((level) => {
@@ -73,8 +76,8 @@ const Card = ({ character }) => {
           power_three_level: parseInt(powerThreeLevel),
         }}
       />
-    </div>
+    </Card>
   );
 };
 
-export default Card;
+export default CharCard;

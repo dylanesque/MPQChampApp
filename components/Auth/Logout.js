@@ -6,7 +6,7 @@ const LogoutBtn = ({ logoutHandler }) => (
   <Button
     id="qsLogoutBtn"
     variant="primary"
-    className="btn-margin logoutBtn"
+    className="btn-margin loginBtn"
     onClick={() => Router.push('/api/logout')}
   >
     Log Out
