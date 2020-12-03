@@ -1,7 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
 a {
   color: white;
+}
+
+option {
+  text-align: center;
+}
+
+select {
+  border: 0;
+  outline: 0;
+  margin: 0.1rem 0.1rem 0.1rem 1rem;
+  padding: 1rem;
+  width: 7rem;
+}
+
+.power-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .character-grid {
@@ -28,5 +49,4 @@ a {
 }
 
 .power-select {
-
 }

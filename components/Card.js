@@ -8,11 +8,13 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+    alignItems: 'center',
     textAlign: 'center',
   },
   middle: {
     display: 'flex',
     flexDirection: 'row',
+    justifyContent: 'center',
   },
   image: {
     display: 'inline-block',
@@ -22,6 +24,7 @@ const useStyles = makeStyles({
   powerSelect: {
     display: 'flex',
     flexDirection: 'column',
+
     paddingBottom: '1.5rem',
   },
 });
@@ -36,6 +39,9 @@ const CharCard = ({ character }) => {
     power_one_level,
     power_two_level,
     power_three_level,
+    power_one_color,
+    power_two_color,
+    power_three_color,
   } = character;
   // set state for char_level & power levels
   // TODO: Refactor to remove duplication
@@ -63,26 +69,65 @@ const CharCard = ({ character }) => {
   function powerThreeChange(e) {
     setPowerThreeLevel(e.target.value);
   }
+
+  function generateColors(color) {
+    let palette;
+    switch (color) {
+      case 'red':
+        palette = { color: 'white', backgroundColor: 'red' };
+        break;
+      case 'yellow':
+        palette = { color: 'black', backgroundColor: 'yellow' };
+        break;
+      case 'blue':
+        palette = { color: 'white', backgroundColor: 'blue' };
+        break;
+      case 'black':
+        palette = { color: 'white', backgroundColor: 'black' };
+        break;
+      case 'green':
+        palette = { color: 'white', backgroundColor: 'green' };
+        break;
+      case 'purple':
+        palette = { color: 'white', backgroundColor: 'purple' };
+        break;
+    }
+    return palette;
+  }
   return (
     <Card className={classes.root} key={id}>
       <p>{name}</p>
       <div className={classes.middle}>
         <img className={classes.image} src={image} />
         <div className={classes.powerSelect}>
-          <label>Power One </label>
-          <select onChange={powerOneChange} value={powerOneLevel}>
+          <select
+            className="power-select"
+            style={generateColors(`${power_one_color}`)}
+            onChange={powerOneChange}
+            value={powerOneLevel}
+          >
             {powerLevels.map((level) => {
               return <option key={level}>{level}</option>;
             })}
           </select>
-          <label>Power Two </label>
-          <select onChange={powerTwoChange} value={powerTwoLevel}>
+
+          <select
+            className="power-select"
+            style={generateColors(`${power_two_color}`)}
+            onChange={powerTwoChange}
+            value={powerTwoLevel}
+          >
             {powerLevels.map((level) => {
               return <option key={level}>{level}</option>;
             })}
           </select>
-          <label>Power Three </label>
-          <select onChange={powerThreeChange} value={powerThreeLevel}>
+
+          <select
+            className="power-select"
+            style={generateColors(`${power_three_color}`)}
+            onChange={powerThreeChange}
+            value={powerThreeLevel}
+          >
             {powerLevels.map((level) => {
               return <option key={level}>{level}</option>;
             })}
