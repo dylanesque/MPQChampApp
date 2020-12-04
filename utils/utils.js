@@ -1,3 +1,5 @@
+
+// parses an array of feedees/feeders from string value
 function parseFeeds(data) {
   if (data === 'none') {
     return;

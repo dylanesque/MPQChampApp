@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
+// import '@reach/tabs/styles.css';
 import Layout from '../components/Layout';
 
 // This default export is required in a new `pages/_app.js` file.

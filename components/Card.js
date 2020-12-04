@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   },
   image: {
     display: 'inline-block',
-    width: '100px',
+    width: '95px',
     height: '125px',
   },
   powerSelect: {
@@ -42,8 +42,9 @@ const CharCard = ({ character }) => {
     power_one_color,
     power_two_color,
     power_three_color,
+    rarity
   } = character;
-  // set state for char_level & power levels
+
   // TODO: Refactor to remove duplication
   const [charLevel, setCharLevel] = React.useState(char_level);
   const [powerOneLevel, setPowerOneLevel] = React.useState(power_one_level);
@@ -53,9 +54,18 @@ const CharCard = ({ character }) => {
   );
 
   const powerLevels = [0, 1, 2, 3, 4, 5];
+  const totalLevel = powerOneLevel + powerTwoLevel + powerThreeLevel;
 
   // TODO: Refactor this value to be a derived value based on rarity and number of covers
   const charLevels = [...Array(400).keys()];
+
+  /* 
+  
+  function calculateLevelRange(rarity, totalLevel) {
+   // feeds the totalLevel into calculation functions that differ on level
+   
+  }
+  */
 
   function nameChange(e) {
     setCharLevel(e.target.value);
