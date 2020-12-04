@@ -59,14 +59,6 @@ const CharCard = ({ character }) => {
   // TODO: Refactor this value to be a derived value based on rarity and number of covers
   const charLevels = [...Array(400).keys()];
 
-  /* 
-  
-  function calculateLevelRange(rarity, totalLevel) {
-   // feeds the totalLevel into calculation functions that differ on level
-   
-  }
-  */
-
   function nameChange(e) {
     setCharLevel(e.target.value);
   }
