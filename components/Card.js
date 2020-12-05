@@ -16,11 +16,6 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     justifyContent: 'center',
   },
-  image: {
-    display: 'inline-block',
-    width: '95px',
-    height: '125px',
-  },
   powerSelect: {
     display: 'flex',
     flexDirection: 'column',
@@ -52,14 +47,17 @@ const CharCard = ({ character }) => {
   const [powerThreeLevel, setPowerThreeLevel] = React.useState(
     power_three_level
   );
+  const [totalLevel, setTotalLevel] = React.useState(
+    powerOneLevel + powerTwoLevel + powerThreeLevel
+  );
 
   const powerLevels = [0, 1, 2, 3, 4, 5];
-  const totalLevel = powerOneLevel + powerTwoLevel + powerThreeLevel;
+  // selectable power levels should be limited to 13 minus the total of the other two power levels, up to 5
 
   // TODO: Refactor this value to be a derived value based on rarity and number of covers
-  const charLevels = [...Array(400).keys()];
+  const charLevels = [...Array(501).keys()];
 
-  function nameChange(e) {
+  function levelChange(e) {
     setCharLevel(e.target.value);
   }
   function powerOneChange(e) {
@@ -76,16 +74,16 @@ const CharCard = ({ character }) => {
     let palette;
     switch (color) {
       case 'red':
-        palette = { color: 'white', backgroundColor: 'red' };
+        palette = { color: 'white', backgroundColor: 'fireBrick' };
         break;
       case 'yellow':
-        palette = { color: 'black', backgroundColor: 'yellow' };
+        palette = { color: 'black', backgroundColor: 'goldenRod' };
         break;
       case 'blue':
-        palette = { color: 'white', backgroundColor: 'blue' };
+        palette = { color: 'white', backgroundColor: '#00c' };
         break;
       case 'black':
-        palette = { color: 'white', backgroundColor: 'black' };
+        palette = { color: 'white', backgroundColor: '#222' };
         break;
       case 'green':
         palette = { color: 'white', backgroundColor: 'green' };
@@ -100,7 +98,7 @@ const CharCard = ({ character }) => {
     <Card className={classes.root} key={id}>
       <p>{name}</p>
       <div className={classes.middle}>
-        <img className={classes.image} src={image} />
+        <img className="char-image" src={image} />
         <div className={classes.powerSelect}>
           <select
             className="power-select"
@@ -137,7 +135,7 @@ const CharCard = ({ character }) => {
         </div>
       </div>
       <label>Character Level</label>
-      <select onChange={nameChange} value={charLevel}>
+      <select onChange={levelChange} value={charLevel}>
         {charLevels.map((level) => {
           return <option key={level}>{level}</option>;
         })}

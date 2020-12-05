@@ -7,6 +7,7 @@ import { useFetchUser } from '../lib/user';
 import Login from '../components/Auth/Login';
 import LogoutBtn from '../components/Auth/Logout';
 import CharCard from '../components/Card';
+import Report from '../components/Report';
 import CharacterGrid from '../components/CharacterGrid';
 import { CHECK_CHAR_LIST, GET_CHARACTERS, AddDB } from '../utils/graphql';
 
@@ -60,7 +61,7 @@ const IndexPage = () => {
               )}
             </TabPanel>
             <TabPanel>
-              <p>Report</p>
+              <Report characters={characterDb.data.characters} />
             </TabPanel>
           </TabPanels>
         </Tabs>

@@ -352,7 +352,7 @@ export const seedDB = [
     power_one_level: 0,
     power_two_level: 0,
     power_three_level: 0,
-    power_one_color: 'black',
+    power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'green',
     feedees: 'Captain Marvel (Carol Danvers),Talos (Skrull Warlord)',
@@ -1458,7 +1458,7 @@ export const seedDB = [
     name: 'Ragnarok (Dark Avengers)',
     image:
       'https://res.cloudinary.com/msccloud-40/image/upload/v1604173009/mpq/raganrok3.png',
-    rarity: 5,
+    rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
     power_three_level: 0,
@@ -1802,7 +1802,7 @@ export const seedDB = [
   {
     name: 'Storm (Mohawk)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/v1604173012/mpq/storm5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/v1604173012/mpq/storm3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,

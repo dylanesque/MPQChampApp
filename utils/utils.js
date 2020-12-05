@@ -1,6 +1,10 @@
 // level generator(s)
 
 function calculateLevelRange(rarity, totalLevel) {
+  // helper function to generate ranged array of possible character levels
+  const range = (start, end) =>
+    new Array(end - start + 1).fill(undefined).map((_, i) => i + start);
+  
   const twoStarLevels = [15, 22, 30, 38, 46, 47, 54, 62, 70, 78, 79, 86, 144];
   const threeStarLevels = [
     40,
@@ -48,10 +52,20 @@ function calculateLevelRange(rarity, totalLevel) {
     550,
   ];
 
-  const range = (start, end) => new Array(end - start + 1).fill(undefined).map((_, i) => i + start);
-  // calculates start and end to feed the rang function from the indexes of a) the first value in
-  // the appropriate rarity level array, and b) totalLevel - 1
+  if (rarity === 2) {
+    return range(twoStarLevels[0], twoStarLevels[totalLevel - 1]);
+  } else if (rarity === 3) {
+    return range(threeStarLevels[0], threeStarLevels[totalLevel - 1]);
+  } else if (rarity === 4) {
+    return range(fourStarLevels[0], fourStarLevels[totalLevel - 1]);
+  } else {
+    return range(fiveStarLevels[0], fiveStarLevels[totalLevel - 1]);
+  }
 }
+
+// Level changing lifecycle:
+// 1) User changes value of power level (They will be blocked from raising the third value if the total power level is 13)
+// 2) This change fires the level changing function, feeding it the character's rarity and totalPowerLevel
 
 // parses an array of feedees/feeders from string value
 function parseFeeds(data) {

@@ -33,6 +33,12 @@ select::-ms-expand {
   padding-top: 3rem;
 }
 
+.char-image {
+  display: inline-block;
+  width: 83.25px;
+  height: 125px;
+}
+
 .navbar {
   background-color: darkcyan;
   display: flex;
@@ -46,7 +52,4 @@ select::-ms-expand {
 .navbar a {
   font-size: 2rem;
   padding: 0 1.4rem;
-}
-
-.power-select {
 }
