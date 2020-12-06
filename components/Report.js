@@ -10,24 +10,42 @@ const Report = ({ characters }) => {
   const fiveStars = activeCharacters
     .filter((character) => character.rarity === 5)
     .sort((a, b) => b.char_level - a.char_level);
+  // flag for how far a character is from shards, covers, or 10 or more CP
   const fourStars = activeCharacters
     .filter((character) => character.rarity === 4)
     .sort((a, b) => b.char_level - a.char_level);
+  // flag for how far a character is from shards, covers, or 10 or more CP
   const threeStars = activeCharacters
     .filter((character) => character.rarity === 3)
     .sort((a, b) => b.char_level - a.char_level);
+  // flag for far a character is from feedee covers and 8 or more CP
   const twoStars = activeCharacters
     .filter((character) => character.rarity === 2)
     .sort((a, b) => b.char_level - a.char_level);
+  // flag how far a character is from feedee covers
   return (
     <>
       <h2>Five Star Characters</h2>
       <div
-        style={{ display: 'flex ', flexDirection: 'row', marginLeft: '1rem' }}
+        style={{
+          display: 'flex ',
+          flexDirection: 'row',
+          marginLeft: '1rem',
+          overflow: 'auto',
+        }}
       >
         {fiveStars.map((char) => {
           return (
-            <Card style={{ display: 'flex ', flexDirection: 'column', alignItems: 'center', marginRight: '1rem', padding: '0.5rem' }}>
+            <Card
+              style={{
+                display: 'flex ',
+                flexDirection: 'column',
+                minWidth: '240px',
+                alignItems: 'center',
+                marginRight: '1rem',
+                padding: '0.5rem',
+              }}
+            >
               <p>{char.name}</p>
               <img className="char-image" src={char.image} />
               <p>Level {char.char_level}</p>
@@ -37,7 +55,12 @@ const Report = ({ characters }) => {
       </div>
       <h2>Four Star Characters</h2>
       <div
-        style={{ display: 'flex ', flexDirection: 'row', marginLeft: '1rem' }}
+        style={{
+          display: 'flex ',
+          flexDirection: 'row',
+          marginLeft: '1rem',
+          overflow: 'auto',
+        }}
       >
         {fourStars.map((char) => {
           return (
@@ -45,6 +68,7 @@ const Report = ({ characters }) => {
               style={{
                 display: 'flex ',
                 flexDirection: 'column',
+                minWidth: '240px',
                 alignItems: 'center',
                 marginRight: '1rem',
                 padding: '0.5rem',
@@ -59,7 +83,12 @@ const Report = ({ characters }) => {
       </div>
       <h2>Three Star Characters</h2>
       <div
-        style={{ display: 'flex ', flexDirection: 'row', marginLeft: '1rem' }}
+        style={{
+          display: 'flex ',
+          flexDirection: 'row',
+          marginLeft: '1rem',
+          overflow: 'auto',
+        }}
       >
         {threeStars.map((char) => {
           return (
@@ -67,6 +96,7 @@ const Report = ({ characters }) => {
               style={{
                 display: 'flex ',
                 flexDirection: 'column',
+                minWidth: '240px',
                 alignItems: 'center',
                 marginRight: '1rem',
                 padding: '0.5rem',
@@ -81,7 +111,12 @@ const Report = ({ characters }) => {
       </div>
       <h2>Two Star Characters</h2>
       <div
-        style={{ display: 'flex ', flexDirection: 'row', marginLeft: '1rem' }}
+        style={{
+          display: 'flex ',
+          flexDirection: 'row',
+          marginLeft: '1rem',
+          overflow: 'auto',
+        }}
       >
         {twoStars.map((char) => {
           return (
@@ -89,6 +124,7 @@ const Report = ({ characters }) => {
               style={{
                 display: 'flex ',
                 flexDirection: 'column',
+                minWidth: '240px',
                 alignItems: 'center',
                 marginRight: '1rem',
                 padding: '0.5rem',
