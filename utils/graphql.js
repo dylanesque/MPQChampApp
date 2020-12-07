@@ -71,6 +71,7 @@ export const UpdateCharacter = ({ id, changes }) => {
     <Mutation mutation={UPDATE_CHARACTER}>
       {(update_characters_by_pk, { data }) => (
         <button
+          className="save-button"
           onClick={() =>
             update_characters_by_pk({ variables: { id, changes } })
           }

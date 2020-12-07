@@ -19,9 +19,8 @@ const useStyles = makeStyles({
   powerSelect: {
     display: 'flex',
     flexDirection: 'column',
-
     paddingBottom: '1.5rem',
-  },
+  }
 });
 
 const CharCard = ({ character }) => {
@@ -135,7 +134,7 @@ const CharCard = ({ character }) => {
         </div>
       </div>
       <label>Character Level</label>
-      <select onChange={levelChange} value={charLevel}>
+      <select className="save-button" onChange={levelChange} value={charLevel}>
         {charLevels.map((level) => {
           return <option key={level}>{level}</option>;
         })}

@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@700&display=swap');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 a {
   color: white;
+}
+
+h1, h3, h4, h5 , h2, h6, a {
+  font-family: 'Roboto Slab', serif;
 }
 
 option {
@@ -52,4 +60,8 @@ select::-ms-expand {
 .navbar a {
   font-size: 2rem;
   padding: 0 1.4rem;
+}
+
+.save-button {
+  margin-bottom: 1rem;
 }
