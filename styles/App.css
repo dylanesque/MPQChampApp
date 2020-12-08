@@ -24,7 +24,7 @@ option {
   text-align: center;
 }
 
-p, li {
+.main-page p, li {
   width: 36em;
 }
 
@@ -71,7 +71,7 @@ select::-ms-expand {
 }
 
 .navbar {
-  background-color: darkcyan;
+  background-color: #00748B;
   display: flex;
   align-items: center;
   flex-direction: row;

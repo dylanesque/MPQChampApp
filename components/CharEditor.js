@@ -12,19 +12,23 @@ const CharEdit = ({ user }) => {
   // Number of characters in user's db  
     let charCount = null;
   // Fetches 
-  let characterDb = (characterDb = useQuery(GET_CHARACTERS, {
-    variables: { user_id: user },
-  }));
-  let dbCheck = (dbCheck = useQuery(CHECK_CHAR_LIST, {
+  let dbCheck = useQuery(CHECK_CHAR_LIST, {
     variables: { id: user },
-  }));
+  });
 
   if (!dbCheck.loading) {
     charCount = dbCheck.data.users[0].characters_aggregate.aggregate.count;
+    console.log(charCount);
   }
+
+   let characterDb = useQuery(GET_CHARACTERS, {
+     variables: { user_id: user },
+   });
 
   if (characterDb.loading) {
     return <div>Loading....</div>;
+  } else if (charCount === 0) {
+    return <AddDB />
   } else {
     return (
       <>
