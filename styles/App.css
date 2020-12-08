@@ -4,12 +4,12 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-a {
-  color: white;
-}
-
 h1, h3, h4, h5 , h2, h6, a {
   font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  text-align: center;
 }
 
 option {
@@ -47,6 +47,13 @@ select::-ms-expand {
   height: 125px;
 }
 
+.contact-main {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  justify-content: center;
+}
+
 .navbar {
   background-color: darkcyan;
   display: flex;
@@ -58,6 +65,7 @@ select::-ms-expand {
 }
 
 .navbar a {
+  color: white;
   font-size: 2rem;
   padding: 0 1.4rem;
 }
