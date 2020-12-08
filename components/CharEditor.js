@@ -29,8 +29,8 @@ const CharEdit = ({ user }) => {
     return (
       <>
         <Tabs>
-          <TabList>
-            <Tab>Edit</Tab>
+          <TabList style={{ display: 'flex', justifyContent: 'center' }}>
+            <Tab style={{ marginRight: '0.75rem' }}>Edit</Tab>
             <Tab>Report</Tab>
           </TabList>
           <TabPanels>

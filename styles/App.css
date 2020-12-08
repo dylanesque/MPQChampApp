@@ -4,6 +4,10 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+a {
+  letter-spacing: 1px;
+}
+
 h1, h3, h4, h5 , h2, h6, a {
   font-family: 'Roboto Slab', serif;
 }
@@ -12,8 +16,16 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  margin-bottom: 2rem;
+}
+
 option {
   text-align: center;
+}
+
+p, li {
+  width: 36em;
 }
 
 select {
@@ -22,6 +34,10 @@ select {
   margin: 0.1rem 0.1rem 0.1rem 1rem;
   padding: 1rem;
   width: 7rem;
+}
+
+select:hover {
+  cursor: pointer;
 }
 
 .power-select {
@@ -47,10 +63,10 @@ select::-ms-expand {
   height: 125px;
 }
 
-.contact-main {
+.page-main {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 60vh;
   justify-content: center;
 }
 
@@ -60,6 +76,7 @@ select::-ms-expand {
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
+  margin: 0 auto;
   top: 0;
   width: 100vw;
 }
@@ -71,5 +88,5 @@ select::-ms-expand {
 }
 
 .save-button {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
