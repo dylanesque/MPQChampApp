@@ -5,9 +5,9 @@ import { Button } from "react-bootstrap";
 const Login = () => {
   return (
     <div className="overlay">
-      <div className="overlay-content">
+      <div className="overlay-content page-main">
         <div className="overlay-heading">
-          Welcome to the MPQ Champion Tracker
+          Welcome to MPQ Champ App!
         </div>
         <div className="overlay-message">Please login to continue</div>
         <div className="overlay-action">

@@ -31,7 +31,7 @@ const CharEdit = ({ user }) => {
         <Tabs>
           <TabList style={{ display: 'flex', justifyContent: 'center' }}>
             <Tab style={{ marginRight: '0.75rem' }}>Edit</Tab>
-            <Tab>Report</Tab>
+            <Tab>Roster</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
