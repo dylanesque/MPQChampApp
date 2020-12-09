@@ -68,7 +68,7 @@ function calculateLevelRange(rarity, totalLevel) {
 // 2) This change fires the level changing function, feeding it the character's rarity and totalPowerLevel
 
 // parses an array of feedees/feeders from string value
-function parseFeeds(data) {
+export default function parseFeeds(data) {
   if (data === 'none') {
     return;
   } else if (!data.includes(',')) {
@@ -78,4 +78,54 @@ function parseFeeds(data) {
   }
 }
 
-export default parseFeeds;
+// Calculates next major reward for two star characters
+ export default function getTwoStatus(level, feedee) {
+
+   if (level === 144) {
+     return 'Champion Maxed';
+   } else if (level < 143 && level >= 139) {
+       return `${143 - level} levels to: Mighty Recruit Token`;
+     } else if (level < 139 && level >= 127) {
+       return `${139 - level} levels to: ${feedee} shards`;
+     } else if (level < 127 && level >= 119) {
+       return `${127 - level} levels to: ${feedee} shards`;
+     } else if (level < 119 && level >= 115) {
+       return `${119 - level} levels to: ${feedee} shards`;
+     } else if (level < 115 && level >= 107) {
+       return `${115 - level} levels to: ${feedee} shards`;
+     } else if (level < 107 && level >= 99) {
+       return `${107 - level} levels to: ${feedee} shards`;
+     } else {
+       return `${99 - level} levels to ${feedee} cover`;
+     }
+   }
+ 
+// Calculates next major reward for three star character
+
+export default function getThreeStatus(level, feedee) {
+  const feedees = parseFeeds(feedee);
+  if (level === 266) {
+    return 'Champion Maxed';
+  } else if (level === 265) {
+    return '1 level to: Latest Legends token'
+  } else if (level < 265 && level >= 261) {
+    return `${265 - level} level(s) to: ${feedees[0]} shards`;
+  } else if (level === 260) {
+    return '1 level to: 15 Command Points';
+  } else if (level === 259) {
+    return `1 level to: ${feedees[1]} shards`;
+  } else if (level < 258 && level >= 256) {
+    return `${258 - level} level(s) to: ${feedees[0]} shards`;
+  } else if (level === 256) {
+    return `1 level to: Latest Legends Token`;
+  } else if (level < 255 && level >= 250) {
+    return `${255 - level} level(s) to: ${feedees[0]} shards`;
+  } else if (level < 250 && level >= 247) {
+    return `${255 - level} level(s) to: ${feedees[1]} shards`;
+  }  else if (level < 247 && level >= 243) {
+    return `${247 - level} level(s) to: 8 Command Points`;
+  } else if (level < 243 && level >= 240) {
+    return `${243 - level} level(s) to: 8 Command Points`;
+  }
+}
+

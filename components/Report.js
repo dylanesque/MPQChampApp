@@ -1,5 +1,7 @@
 import Card from '@material-ui/core/Card';
 
+import { getTwoStatus } from '../utils/utils';
+
 
 const Report = ({ characters }) => {
   const activeCharacters = characters.filter(
@@ -25,27 +27,7 @@ const Report = ({ characters }) => {
     .sort((a, b) => b.char_level - a.char_level);
 
 
-  function getTwoStatus(level, feedee) {
-    if (level === 144) {
-      return 'Maximum Level'
-    } else {
-      if (level < 143 && level >= 139) {
-        return `${143 - level} levels to: Mighty Recruit Token`;
-      } else if (level < 139 && level >= 127) {
-        return `${139 - level} levels to: ${feedee} shards`;
-      } else if (level < 127 && level >= 119) {
-        return `${127 - level} levels to: ${feedee} shards`;
-      } else if (level < 119 && level >= 115) {
-        return `${119 - level} levels to: ${feedee} shards`;
-      } else if (level < 115 && level >= 107) {
-        return `${115 - level} levels to: ${feedee} shards`;
-      } else if (level < 107 && level >= 99) {
-        return `${107 - level} levels to: ${feedee} shards`;
-      } else {
-        return `${99 - level} levels to ${feedee} cover`;
-      }
-    }
-  }
+ 
   return (
     <>
       <h2>Five Star Characters</h2>
