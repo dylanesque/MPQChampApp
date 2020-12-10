@@ -106,26 +106,56 @@ export default function getThreeStatus(level, feedee) {
   const feedees = parseFeeds(feedee);
   if (level === 266) {
     return 'Champion Maxed';
-  } else if (level === 265) {
+  } else if (level === 265 || level === 256) {
     return '1 level to: Latest Legends token'
   } else if (level < 265 && level >= 261) {
     return `${265 - level} level(s) to: ${feedees[0]} shards`;
   } else if (level === 260) {
     return '1 level to: 15 Command Points';
-  } else if (level === 259) {
+  } else if (level === 259 || level === 219) {
     return `1 level to: ${feedees[1]} shards`;
   } else if (level < 258 && level >= 256) {
     return `${258 - level} level(s) to: ${feedees[0]} shards`;
-  } else if (level === 256) {
-    return `1 level to: Latest Legends Token`;
   } else if (level < 255 && level >= 250) {
     return `${255 - level} level(s) to: ${feedees[0]} shards`;
   } else if (level < 250 && level >= 247) {
-    return `${255 - level} level(s) to: ${feedees[1]} shards`;
+    return `${250 - level} level(s) to: ${feedees[1]} shards`;
   }  else if (level < 247 && level >= 243) {
     return `${247 - level} level(s) to: 8 Command Points`;
   } else if (level < 243 && level >= 240) {
-    return `${243 - level} level(s) to: 8 Command Points`;
+    return `${243 - level} level(s) to: Mighty Recruit Token`;
+  } else if (level === 239) {
+    return `1 level to: ${feedees[1]} shards`;
+  } else if (level < 239 && level >= 235) {
+    return `${239 - level} level(s) to: Latest Legends Token`;
+  } else if (level < 235 && level >= 230) {
+    return `${239 - level} level(s) to: 5 Command Points`;
+  } else if (level < 230 && level >= 227) {
+    return `${230 - level} level(s) to: ${feedees[1]} shards`;
+  } else if (level < 227 && level >= 223) {
+    return `${227 - level} level(s) to: Latest Legends Token`;
+  } else if (level < 223 && level >= 220) {
+    return `${223 - level} level(s) to: ${feedees[0]} shards`;
+  } else if (level < 219 && level >= 215) {
+    return `${219 - level} level(s) to: ${feedees[0]} shards`;
+  } else if (level < 215 && level >= 210) {
+    return `${215 - level} level(s) to: ${feedees[0]} shards`;
+  } else if (level < 210 && level >= 207) {
+    return `${210 - level} level(s) to: ${feedees[1]} shards`;
+  } else if (level < 207 && level >= 200) {
+    return `${207 - level} level(s) to: Mighty Recruit Token`;
+  } else if (level < 200 && level >= 190) {
+    return `${200 - level} level(s) to: ${feedees[1]} shards`;
+  } else if (level < 190 && level >= 183) {
+    return `${190 - level} level(s) to: ${feedees[1]} shards`;
+  } else if (level < 183 && level >= 180) {
+    return `${183 - level} level(s) to: ${feedees[0]} shards`;
+  } else if (level < 180 && level >= 170) {
+    return `${180 - level} level(s) to: ${feedees[1]} shards`;
+  } else if (level < 170 && level >= 167) {
+    return `${170 - level} level(s) to: ${feedees[1]} shards`;
+  } else {
+    return `${167 - level} level(s) to: Latest Legends Token`;
   }
 }
 
