@@ -68,7 +68,7 @@ function calculateLevelRange(rarity, totalLevel) {
 // 2) This change fires the level changing function, feeding it the character's rarity and totalPowerLevel
 
 // parses an array of feedees/feeders from string value
-export default function parseFeeds(data) {
+function parseFeeds(data) {
   if (data === 'none') {
     return;
   } else if (!data.includes(',')) {
@@ -79,7 +79,7 @@ export default function parseFeeds(data) {
 }
 
 // Calculates next major reward for two star characters
-export default function getTwoStatus(level, feedee) {
+export function getTwoStatus(level, feedee) {
   if (level === 144) {
     return 'Champion Maxed';
   } else if (level < 143 && level >= 139) {
@@ -101,7 +101,7 @@ export default function getTwoStatus(level, feedee) {
 
 // Calculates next major reward for three star character
 
-export default function getThreeStatus(level, feedee) {
+export function getThreeStatus(level, feedee) {
   const feedees = parseFeeds(feedee);
   if (level === 266) {
     return 'Champion Maxed';
@@ -158,8 +158,10 @@ export default function getThreeStatus(level, feedee) {
   }
 }
 
-export default function getFourStatus(level, feedee) {
-   if (level < 280 && level >= 271) {
+export function getFourStatus(level, feedee) {
+  if (level < 271) {
+    return `${271 - level} level(s) to: Latest Legends Token`;
+  } else if (level < 280 && level >= 271) {
     return `${280 - level} level(s) to: ${feedee} cover`;
   } else if (level < 290 && level >= 280) {
     return `${290 - level} level(s) to: Latest Legends Token`;
@@ -205,7 +207,7 @@ export default function getFourStatus(level, feedee) {
     return `${366 - level} level(s) to: 25 Command Points`;
   } else if (level < 368 && level >= 366) {
     return `${368 - level} level(s) to: 25 Command Points`;
-  } else (level < 271) {
-    return `${271 - level} level(s) to: Latest Legends Token`;
+  }  else {
+    return `${370 - level} level(s) to: Maximum Level`;
   }
 }

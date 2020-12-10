@@ -1,6 +1,6 @@
 import Card from '@material-ui/core/Card';
 
-import { getTwoStatus } from '../utils/utils';
+import { getTwoStatus, getThreeStatus, getFourStatus } from '../utils/utils';
 
 
 const Report = ({ characters }) => {
@@ -82,6 +82,7 @@ const Report = ({ characters }) => {
               <p>{char.name}</p>
               <img className="char-image" src={char.image} />
               <p>Level {char.char_level}</p>
+              <p>{getFourStatus(char.char_level, char.feedees)}</p>
             </Card>
           );
         })}
@@ -110,6 +111,7 @@ const Report = ({ characters }) => {
               <p>{char.name}</p>
               <img className="char-image" src={char.image} />
               <p>Level {char.char_level}</p>
+              <p>{getThreeStatus(char.char_level, char.feedees)}</p>
             </Card>
           );
         })}
@@ -139,7 +141,6 @@ const Report = ({ characters }) => {
               <p>{char.name}</p>
               <img className="char-image" src={char.image} />
               <p>Level {char.char_level}</p>
-              <p>Status</p>
               <p>{getTwoStatus(char.char_level, char.feedees)}</p>
             </Card>
           );
