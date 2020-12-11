@@ -34,8 +34,8 @@ const CharEdit = ({ user }) => {
       <>
         <Tabs>
           <TabList style={{ display: 'flex', justifyContent: 'center' }}>
-            <Tab style={{ marginRight: '0.75rem' }}>Edit</Tab>
-            <Tab>Roster</Tab>
+            <Tab className="white" style={{ marginRight: '0.75rem' }}>Edit</Tab>
+            <Tab className="white">Roster</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>

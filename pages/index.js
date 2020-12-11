@@ -17,7 +17,7 @@ const IndexPage = () => {
     return <Login />;
   } else {
     return (
-      <>
+      <div className="index-background">
         <Head>
           <title>MPQ Champ App</title>
           <meta
@@ -25,11 +25,11 @@ const IndexPage = () => {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-        <h1>Welcome to the Marvel Puzzle Quest Champion Tracker!</h1>
+        <h1 className="white">Welcome to the Marvel Puzzle Quest Champion Tracker!</h1>
         <CharEdit user={user.sub} />
 
         {user && <LogoutBtn />}
-      </>
+      </div>
     );
   }
 };
