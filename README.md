@@ -23,7 +23,8 @@ In mid-November 2019, MPQ made significant changes to its reward structure, repl
 **Technology Used And Application Flow:**
 
 The back-end of the app will utilize:
-  - ~~A seed database of the game characters written in JSON, and served using Express. This is deployed on Heroku (found at https://thawing-tor-15752.herokuapp.com/?pretty), as both an exercise for me in deploying a Node API, and to make the basic character data available for anybody else who wanted build supplemental apps for MPQ.~~ **This feature happened, and remains deployed, but it isn't utilized in the current version of the application.**  
+
+- ~~A seed database of the game characters written in JSON, and served using Express. This is deployed on Heroku (found at https://thawing-tor-15752.herokuapp.com/?pretty), as both an exercise for me in deploying a Node API, and to make the basic character data available for anybody else who wanted build supplemental apps for MPQ.~~ **This feature happened, and remains deployed, but it isn't utilized in the current version of the application.**  
 
 - [Hasura](https://hasura.io/) as the database/GraphQL ORM. I've used Hasura previously in professional projects, and I chose it here for its ease of use, flexibility, and easy integration with Auth0 and Apollo Client. 
 
@@ -55,7 +56,7 @@ Application flow will work like this:
 
 **Phase Three:** I will begin to introduce basic styling at this point, flesh out individual pages, etc. When this phase is complete, the MVP of the application will be complete, and I'll deploy the app for basic user testing. **This phase is nearing completion.**
 
-**Phase Four:** This phase will consist of more advanced styling, cross-browser testing. Automated testing will begin, and I will be focusing my energy on getting the finer details of the character report page filtering and other features on that page complete. Changes based on user feedback will begin, and a data caching solution will be implemented at this point.
+**Phase Four:** This phase will consist of more advanced styling and comprehensive cross-browser testing. Automated testing will begin, and I will be focusing my energy on getting the finer details of the character report page filtering and other features on that page complete. Changes based on user feedback will begin, and a data caching solution will be implemented at this point.
 
 **Phase Five:** This phase will consist of more checks for advanced styling (such as animation), accessibility, performance, and redundant/non-performant code. 
 
