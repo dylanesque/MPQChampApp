@@ -24,6 +24,7 @@ const FAQS = () => {
             <li>More realistic behavior in the character editor that maps more closely to the game. For example,
             you'll only be allowed to select the levels for a character that would be available per the number of covers they possess.</li>
             <li>More detailed information in roster reports</li>
+            <li>Reward Status for Five Star Characters</li>
           </ul>
         </main>
       </div>

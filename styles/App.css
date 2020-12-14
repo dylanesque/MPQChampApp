@@ -76,7 +76,7 @@ select::-ms-expand {
   background-image: url('../public/images/background.png');
   background-size: 100vw 100vh; /* <------ */
   background-repeat: repeat-y;
-
+  width: 100vw;
 }
 
 .login-page {
