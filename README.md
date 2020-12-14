@@ -54,7 +54,7 @@ Application flow will work like this:
 
 **Phase Two:** This phase will consist of getting the seed database updated, plus writing, testing, and implementing all Hasura GraphQL queries and mutations. When this phase is complete, the back-end of the app will be essentially finished. While I won't be writing automated tests at this point, I will be earmarking portions of code that need to have tests written for at a later date. **This phase is completed.**
 
-**Phase Three:** I will begin to introduce basic styling at this point, flesh out individual pages, etc. When this phase is complete, the MVP of the application will be complete, and I'll deploy the app for basic user testing. **This phase is nearing completion.**
+**Phase Three:** I will begin to introduce basic styling at this point, flesh out individual pages, etc. When this phase is complete, the MVP of the application will be complete, and I'll deploy the app for basic user testing. **This phase is completed.**
 
 **Phase Four:** This phase will consist of more advanced styling and comprehensive cross-browser testing. Automated testing will begin, and I will be focusing my energy on getting the finer details of the character report page filtering and other features on that page complete. Changes based on user feedback will begin, and a data caching solution will be implemented at this point.
 
