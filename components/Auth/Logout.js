@@ -7,7 +7,8 @@ const useStyles = makeStyles({
   button: {
     bottom: '0',
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginTop: '1rem'
   },
 });
 

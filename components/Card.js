@@ -16,6 +16,9 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     justifyContent: 'center',
   },
+  name: {
+    marginTop: '1rem'
+  },
   powerSelect: {
     display: 'flex',
     flexDirection: 'column',
@@ -95,7 +98,7 @@ const CharCard = ({ character }) => {
   }
   return (
     <Card className={classes.root} key={id}>
-      <p>{name}</p>
+      <p className={classes.name}>{name}</p>
       <div className={classes.middle}>
         <img className="char-image" src={image} />
         <div className={classes.powerSelect}>

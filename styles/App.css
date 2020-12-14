@@ -18,6 +18,11 @@ a {
   font-family: 'Roboto Slab', serif;
 }
 
+footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 h1 {
   margin-block-start: 0;
   padding-top: 1rem;

@@ -29,6 +29,7 @@ const IndexPage = () => {
         <CharEdit user={user.sub} />
 
         {user && <LogoutBtn />}
+        <footer className="white">All code on this site (except where noted otherwise) is ©{new Date().getFullYear()} Michael S. Caveney. Marvel Puzzle Quest is developed by Demiurge Studios.</footer>
       </div>
     );
   }
