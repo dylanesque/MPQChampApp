@@ -14,10 +14,10 @@ export const ADD_CHAR_DB = gql`
   }
 `;
 
-export const AddDB = () => {
+export const AddDB = (user) => {
   seedDB.forEach((char) => {
     char.id = uuidv4();
-    char.user_id = 'auth0|5f9b45577305a20076914879';
+    char.user_id = user.user;
   });
   const db = seedDB;
 

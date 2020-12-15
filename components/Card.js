@@ -100,7 +100,7 @@ const CharCard = ({ character }) => {
     <Card className={classes.root} key={id}>
       <p className={classes.name}>{name}</p>
       <div className={classes.middle}>
-        <img className="char-image" src={image} />
+        <img className="char-image" src={image} alt='Cover picture for ${name}'/>
         <div className={classes.powerSelect}>
           <select
             className="power-select"

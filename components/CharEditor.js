@@ -28,7 +28,7 @@ const CharEdit = ({ user }) => {
   if (characterDb.loading) {
     return <div>Loading....</div>;
   } else if (charCount === 0) {
-    return <AddDB />
+    return <AddDB user={user} />
   } else {
     return (
       <>
