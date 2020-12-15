@@ -407,7 +407,7 @@ export const seedDB = [
   {
     name: 'Cyclops (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604172996/mpq/cyclops4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608074390/mpq/cyclops4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
