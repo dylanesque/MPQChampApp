@@ -2,7 +2,7 @@ export const seedDB = [
   {
     name: 'America Chavez (Young Avengers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604172993/mpq/america4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608151370/mpq/america4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -17,7 +17,7 @@ export const seedDB = [
   {
     name: 'Angel (All New X-Men)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604172993/mpq/angel3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608151683/mpq/angel3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -692,7 +692,7 @@ export const seedDB = [
   {
     name: 'Ghost Rider (Robbie Reyes)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604173000/mpq/ghostrider5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608085325/mpq/ghostrider5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -707,7 +707,7 @@ export const seedDB = [
   {
     name: 'Ghost Rider (Johnny Blaze)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604173000/mpq/ghostrider4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608085139/mpq/ghostrider4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
