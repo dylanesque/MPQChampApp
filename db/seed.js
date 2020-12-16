@@ -1202,7 +1202,7 @@ export const seedDB = [
   {
     name: 'Medusa (Inhuman Queen)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604173006/mpq/medusa4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608082512/medusa4_mjepk5.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1382,7 +1382,7 @@ export const seedDB = [
   {
     name: 'Psylocke (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604173009/mpq/psylocke3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608076301/mpq/psylocke3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1682,7 +1682,7 @@ export const seedDB = [
   {
     name: 'Spider-Man (Infinity War)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604173006/mpq/mcuspiderman4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608082675/mpq/mcuspiderman4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1697,7 +1697,7 @@ export const seedDB = [
   {
     name: 'Spider-Man (Peter Parker)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604173012/mpq/spiderman5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608083221/mpq/spiderman5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2087,7 +2087,7 @@ export const seedDB = [
   {
     name: 'Wolverine (X-Force)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604173016/mpq/wolverine4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608082960/mpq/wolverine4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2447,7 +2447,7 @@ export const seedDB = [
   {
     name: 'Juggernaut (Fear Itself)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604173004/mpq/juggernaut5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1608083430/mpq/juggernaut5.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2492,7 +2492,7 @@ export const seedDB = [
   {
     name: 'Kraven The Hunter (Sergei Kravinoff)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:eco/v1604173005/mpq/kraven4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:ecov1608076505/mpq/kraven4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
