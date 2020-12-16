@@ -1,6 +1,7 @@
 import gql from 'graphql-tag';
 import { Mutation } from 'react-apollo';
 import { v4 as uuidv4 } from 'uuid';
+import { Router } from 'next/router';
 
 import { seedDB } from '../db/seed';
 
@@ -15,6 +16,9 @@ export const ADD_CHAR_DB = gql`
 `;
 
 export const AddDB = (user) => {
+  function reloadWindow() {
+    return Router.reload(window.location.pathname);
+  }
   seedDB.forEach((char) => {
     char.id = uuidv4();
     char.user_id = user.user;
@@ -22,7 +26,7 @@ export const AddDB = (user) => {
   const db = seedDB;
 
   return (
-    <Mutation mutation={ADD_CHAR_DB}>
+    <Mutation mutation={ADD_CHAR_DB} onCompleted={reloadWindow}>
       {(insert_characters, { data }) => (
         <button
           onClick={() => insert_characters({ variables: { objects: db } })}
