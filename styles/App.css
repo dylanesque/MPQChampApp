@@ -78,7 +78,7 @@ select::-ms-expand {
 }
 
 .index-background {
-  background-image: url('../public/images/background.png');
+  background-image: url('../public/images/background.webp');
   background-size: 100vw 100vh; /* <------ */
   background-repeat: repeat-y;
   width: 100vw;
