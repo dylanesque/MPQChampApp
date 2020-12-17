@@ -104,6 +104,7 @@ const CharCard = ({ character }) => {
         <div className={classes.powerSelect}>
           <select
             className="power-select"
+            aria-label="Power One Color"
             style={generateColors(`${power_one_color}`)}
             onChange={powerOneChange}
             value={powerOneLevel}
@@ -115,6 +116,7 @@ const CharCard = ({ character }) => {
 
           <select
             className="power-select"
+            aria-label="Power Two Color"
             style={generateColors(`${power_two_color}`)}
             onChange={powerTwoChange}
             value={powerTwoLevel}
@@ -126,6 +128,7 @@ const CharCard = ({ character }) => {
 
           <select
             className="power-select"
+            aria-label="Power Three Color"
             style={generateColors(`${power_three_color}`)}
             onChange={powerThreeChange}
             value={powerThreeLevel}
