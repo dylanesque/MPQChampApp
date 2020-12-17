@@ -139,8 +139,8 @@ const CharCard = ({ character }) => {
           </select>
         </div>
       </div>
-      <label>Character Level</label>
-      <select className="save-button" onChange={levelChange} value={charLevel}>
+      <label htmlFor={name}>Character Level</label>
+      <select id={name} className="save-button" onChange={levelChange} value={charLevel}>
         {charLevels.map((level) => {
           return <option key={level}>{level}</option>;
         })}
