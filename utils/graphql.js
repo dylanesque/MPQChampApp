@@ -1,7 +1,7 @@
 import gql from 'graphql-tag';
 import { Mutation } from 'react-apollo';
 import { v4 as uuidv4 } from 'uuid';
-import { Router } from 'next/router';
+import  Router  from 'next/router';
 
 import { seedDB } from '../db/seed';
 

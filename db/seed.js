@@ -1607,7 +1607,7 @@ export const seedDB = [
   {
     name: 'Shuri (Master Engineer)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/uploadq_auto:low//v1608228012/mpq/shuri4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608228012/mpq/shuri4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2432,7 +2432,7 @@ export const seedDB = [
   {
     name: 'Storm (Ororo Munroe)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_aut0:ecov1608158759/mpq/storm5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_aut0:eco/v1608158759/mpq/storm5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
