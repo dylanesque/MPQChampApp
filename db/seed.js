@@ -227,7 +227,7 @@ export const seedDB = [
   {
     name: 'Bullseye (Dark Avengers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172995/mpq/bullseye2.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608321973/mpq/bullseye2.webp',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -302,7 +302,7 @@ export const seedDB = [
   {
     name: 'Captain America (Steve Rogers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172995/mpq/captainamerica2.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608321973/mpq/captainamerica2.webp',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -1727,7 +1727,7 @@ export const seedDB = [
   {
     name: 'Squirrel-Girl (Unbeatable)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173012/mpq/squirrelgirl3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608229179/mpq/squirrelgirl3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1735,14 +1735,14 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedees: 'Ant-Man (Scott Lang), KravenThe Hunter (Sergei Kravinoff)',
+    feedees: 'Ant-Man (Scott Lang), Kraven The Hunter (Sergei Kravinoff)',
     feeders: 'none',
     char_level: 40,
   },
   {
     name: 'Star-Lord (Awesome Mix Volume 2)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173012/mpq/starlord5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608229179/mpq/starlord5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1757,7 +1757,7 @@ export const seedDB = [
   {
     name: 'Star-Lord (Legendary Outlaw)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173012/mpq/starlord4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608229179/mpq/starlord4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1772,7 +1772,7 @@ export const seedDB = [
   {
     name: 'Star-Lord (Peter Quill)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173012/mpq/starlord3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608229179/mpq/starlord3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
