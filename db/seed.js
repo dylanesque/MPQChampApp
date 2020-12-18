@@ -2,7 +2,7 @@ export const seedDB = [
   {
     name: 'America Chavez (Young Avengers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608151370/mpq/america4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608151370/mpq/america4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -17,7 +17,7 @@ export const seedDB = [
   {
     name: 'Angel (All New X-Men)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608151683/mpq/angel3.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608151683/mpq/angel3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -32,7 +32,7 @@ export const seedDB = [
   {
     name: 'Ant-Man (Scott Lang)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608157385/mpq/antman4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608157385/mpq/antman4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -47,7 +47,7 @@ export const seedDB = [
   {
     name: 'Ares (Dark Avengers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608158759/mpq/ares2.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608158759/mpq/ares2.webp',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -62,7 +62,7 @@ export const seedDB = [
   {
     name: 'Beast (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608160766/mpq/beast3.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608160766/mpq/beast3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -77,7 +77,7 @@ export const seedDB = [
   {
     name: 'Black Bolt (Inhuman King)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172994/mpq/blockbolt5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172994/mpq/blockbolt5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -92,7 +92,7 @@ export const seedDB = [
   {
     name: 'Black Panther (Civil War)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608158759/mpq/blackpanther5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608158759/mpq/blackpanther5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -107,7 +107,7 @@ export const seedDB = [
   {
     name: 'Black Panther (King of Wakanda)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload//q_auto:low/v1608158759/mpq/blackpanther4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload//q_40/v1608158759/mpq/blackpanther4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -122,7 +122,7 @@ export const seedDB = [
   {
     name: "Black Panther (T'Challa)",
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608158759/mpq/blackpanther3.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608158759/mpq/blackpanther3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -137,7 +137,7 @@ export const seedDB = [
   {
     name: 'Black Widow (Natasha Romanoff)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172995/mpq/blackwidow5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172995/mpq/blackwidow5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -152,7 +152,7 @@ export const seedDB = [
   {
     name: 'Black Widow (Infinity War)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172995/mpq/blackwidow4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172995/mpq/blackwidow4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -167,7 +167,7 @@ export const seedDB = [
   {
     name: 'Black Widow (Grey Suit)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608160165/mpq/blackwidow3.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608160165/mpq/blackwidow3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -182,7 +182,7 @@ export const seedDB = [
   {
     name: 'Black Widow (Original)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608160165/mpq/blackwidow2.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608160165/mpq/blackwidow2.webp',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -197,7 +197,7 @@ export const seedDB = [
   {
     name: 'Blade (Modern)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172994/mpq/blade4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172994/mpq/blade4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -212,7 +212,7 @@ export const seedDB = [
   {
     name: 'Blade (Daywalker)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172993/mpq/blade3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172993/mpq/blade3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -227,7 +227,7 @@ export const seedDB = [
   {
     name: 'Bullseye (Dark Avengers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608321973/mpq/bullseye2.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608321973/mpq/bullseye2.webp',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -242,7 +242,7 @@ export const seedDB = [
   {
     name: 'Bullseye (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172995/mpq/bullseye3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172995/mpq/bullseye3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -257,7 +257,7 @@ export const seedDB = [
   {
     name: 'Captain America (The First Avenger)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172995/mpq/captainamerica5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172995/mpq/captainamerica5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -272,7 +272,7 @@ export const seedDB = [
   {
     name: 'Captain America (Infinity War)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173002/mpq/infinitycap5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173002/mpq/infinitycap5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -287,7 +287,7 @@ export const seedDB = [
   {
     name: 'Captain America (Super Soldier)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172995/mpq/captainamerica3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172995/mpq/captainamerica3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -302,7 +302,7 @@ export const seedDB = [
   {
     name: 'Captain America (Steve Rogers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608321973/mpq/captainamerica2.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608321973/mpq/captainamerica2.webp',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -317,7 +317,7 @@ export const seedDB = [
   {
     name: 'Captain Marvel (Galactic Warrior)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604181720/mpq/captainmarvel5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604181720/mpq/captainmarvel5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -332,7 +332,7 @@ export const seedDB = [
   {
     name: 'Captain Marvel (Carol Danvers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172995/mpq/captainmarvel4.jpg',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172995/mpq/captainmarvel4.jpg',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -347,7 +347,7 @@ export const seedDB = [
   {
     name: 'Captain Marvel (Modern)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172995/mpq/captainmarvel3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172995/mpq/captainmarvel3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -362,7 +362,7 @@ export const seedDB = [
   {
     name: 'Captain Marvel (Ms. Marvel)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172995/mpq/captainmarvel2.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172995/mpq/captainmarvel2.png',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -377,7 +377,7 @@ export const seedDB = [
   {
     name: 'Carnage (Cletus Kassady)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608156921/mpq/carnage4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608156921/mpq/carnage4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -392,7 +392,7 @@ export const seedDB = [
   {
     name: 'Colossus (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172996/mpq/colossus3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172996/mpq/colossus3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -407,7 +407,7 @@ export const seedDB = [
   {
     name: 'Cyclops (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608074390/mpq/cyclops4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608074390/mpq/cyclops4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -422,7 +422,7 @@ export const seedDB = [
   {
     name: 'Cyclops (Uncanny X-Men)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172996/mpq/cyclops3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172996/mpq/cyclops3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -437,7 +437,7 @@ export const seedDB = [
   {
     name: 'Daken (Dark Avengers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172996/mpq/daken2.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172996/mpq/daken2.png',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -452,7 +452,7 @@ export const seedDB = [
   {
     name: 'Daken (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172997/mpq/daken3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172997/mpq/daken3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -467,7 +467,7 @@ export const seedDB = [
   {
     name: 'Daredevil (Man Without Fear)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172997/mpq/daredevil3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172997/mpq/daredevil3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -482,7 +482,7 @@ export const seedDB = [
   {
     name: 'Daredevil (Matt Murdock)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172997/mpq/daredevil5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172997/mpq/daredevil5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -497,7 +497,7 @@ export const seedDB = [
   {
     name: "Deadpool (It's Me, Deadpool!)",
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172997/mpq/deadpool3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172997/mpq/deadpool3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -512,7 +512,7 @@ export const seedDB = [
   {
     name: 'Deadpool (Uncanny X-Force)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172997/mpq/deadpool4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172997/mpq/deadpool4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -527,7 +527,7 @@ export const seedDB = [
   {
     name: 'Doctor Doom (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608160165/mpq/docdoom3.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608160165/mpq/docdoom3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -542,7 +542,7 @@ export const seedDB = [
   {
     name: 'Doctor Octopus (Otto Octavius)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172998/mpq/dococtopus3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172998/mpq/dococtopus3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -557,7 +557,7 @@ export const seedDB = [
   {
     name: 'Doctor Octopus (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172998/mpq/droctopus5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172998/mpq/droctopus5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -572,7 +572,7 @@ export const seedDB = [
   {
     name: 'Doctor Strange (Stephen Strange)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608228012/mpq/drstrnage3.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608228012/mpq/drstrnage3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -587,7 +587,7 @@ export const seedDB = [
   {
     name: 'Doctor Strange (Sorcerer Supreme)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608228012/mpq/drstrange5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608228012/mpq/drstrange5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -602,7 +602,7 @@ export const seedDB = [
   {
     name: 'Drax (The Destroyer)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172998/mpq/drax4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172998/mpq/drax4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -617,7 +617,7 @@ export const seedDB = [
   {
     name: 'Elektra (Assassin)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172999/mpq/elektra3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172999/mpq/elektra3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -632,7 +632,7 @@ export const seedDB = [
   {
     name: 'Elektra (Unkillable)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172999/mpq/elektra4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172999/mpq/elektra4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -647,7 +647,7 @@ export const seedDB = [
   {
     name: 'Gambit (Modern)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604182471/mpq/gambit3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604182471/mpq/gambit3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -662,7 +662,7 @@ export const seedDB = [
   {
     name: 'Gamora (Guardians of the Galaxy)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172999/mpq/gamora3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172999/mpq/gamora3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -677,7 +677,7 @@ export const seedDB = [
   {
     name: 'Gamora (Awesome Mix Volume 2)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608228012/mpq/gamora4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608228012/mpq/gamora4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -692,7 +692,7 @@ export const seedDB = [
   {
     name: 'Ghost Rider (Robbie Reyes)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608085325/mpq/ghostrider5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608085325/mpq/ghostrider5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -707,7 +707,7 @@ export const seedDB = [
   {
     name: 'Ghost Rider (Johnny Blaze)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608085139/mpq/ghostrider4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608085139/mpq/ghostrider4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -722,7 +722,7 @@ export const seedDB = [
   {
     name: 'Green Goblin (Norman Osborn)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173000/mpq/greengoblin5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173000/mpq/greengoblin5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -737,7 +737,7 @@ export const seedDB = [
   {
     name: 'Gwenpool (Gwen Poole)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608158759/mpq/gwenpool4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608158759/mpq/gwenpool4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -752,7 +752,7 @@ export const seedDB = [
   {
     name: 'Hawkeye (Clint Barton)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173001/mpq/hawkeye5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173001/mpq/hawkeye5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -767,7 +767,7 @@ export const seedDB = [
   {
     name: 'Hawkeye (Hawkguy)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173001/mpq/hawkeye3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173001/mpq/hawkeye3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -782,7 +782,7 @@ export const seedDB = [
   {
     name: 'Hawkeye (Modern)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173000/mpq/hawkeye2.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173000/mpq/hawkeye2.png',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -797,7 +797,7 @@ export const seedDB = [
   {
     name: 'Human Torch (Johnny Storm)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173002/mpq/humantorch2.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173002/mpq/humantorch2.png',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -812,7 +812,7 @@ export const seedDB = [
   {
     name: 'Human Torch (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173002/mpq/humantorch3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173002/mpq/humantorch3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -827,7 +827,7 @@ export const seedDB = [
   {
     name: 'The Hood (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173001/mpq/hood3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173001/mpq/hood3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -842,7 +842,7 @@ export const seedDB = [
   {
     name: 'The Hulk (Indestructible)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173001/mpq/hulk3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173001/mpq/hulk3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -857,7 +857,7 @@ export const seedDB = [
   {
     name: 'The Hulk (Totally Awesome)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608158335/mpq/chohulk4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608158335/mpq/chohulk4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -872,7 +872,7 @@ export const seedDB = [
   {
     name: 'The Hulk (Main Event)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608228012/mpq/hulk4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608228012/mpq/hulk4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -887,7 +887,7 @@ export const seedDB = [
   {
     name: 'Iceman (All New X-Men)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173002/mpq/iceman4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173002/mpq/iceman4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -902,7 +902,7 @@ export const seedDB = [
   {
     name: 'Invisible Woman (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173003/mpq/iw4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173003/mpq/iw4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -917,7 +917,7 @@ export const seedDB = [
   {
     name: 'Iron Fist (Immortal Weapon)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173002/mpq/ironfist3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173002/mpq/ironfist3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -932,7 +932,7 @@ export const seedDB = [
   {
     name: 'Iron Fist (Danny Rand)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173002/mpq/ironfist4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173002/mpq/ironfist4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -947,7 +947,7 @@ export const seedDB = [
   {
     name: 'Iron Man (Mark XLVI)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608160766/mpq/ironman5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608160766/mpq/ironman5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -962,7 +962,7 @@ export const seedDB = [
   {
     name: 'Iron Man (Model 40)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173003/mpq/ironman3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173003/mpq/ironman3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -977,7 +977,7 @@ export const seedDB = [
   {
     name: 'Iron Man (Hulkbuster)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173001/mpq/hulkbuster4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173001/mpq/hulkbuster4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -992,7 +992,7 @@ export const seedDB = [
   {
     name: 'Jean Grey (Phoenix)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173008/mpq/phoenix5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173008/mpq/phoenix5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1007,7 +1007,7 @@ export const seedDB = [
   {
     name: 'Jean Grey (All New X-Men)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173003/mpq/jeangrey4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173003/mpq/jeangrey4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1022,7 +1022,7 @@ export const seedDB = [
   {
     name: 'Jessica Jones (Alias Investigations)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173003/mpq/jessicajones5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173003/mpq/jessicajones5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1037,7 +1037,7 @@ export const seedDB = [
   {
     name: 'Jubilee (Uncanny X-Men)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload//q_auto:low/v1608158759/mpq/jubilee4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload//q_40/v1608158759/mpq/jubilee4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1052,7 +1052,7 @@ export const seedDB = [
   {
     name: 'Kamala Khan (Ms. Marvel)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173007/mpq/msmarvel3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173007/mpq/msmarvel3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1067,7 +1067,7 @@ export const seedDB = [
   {
     name: 'Kate Bishop (Hawkeye)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173004/mpq/katebishop4.jpg',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173004/mpq/katebishop4.jpg',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1082,7 +1082,7 @@ export const seedDB = [
   {
     name: 'Kingpin (Spider-Verse)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173004/mpq/kingpin5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173004/mpq/kingpin5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1097,7 +1097,7 @@ export const seedDB = [
   {
     name: 'Kingpin (Wilson Fisk)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173004/mpq/kingpin4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173004/mpq/kingpin4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1112,7 +1112,7 @@ export const seedDB = [
   {
     name: 'Loki (God of Mischief)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173005/mpq/loki5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173005/mpq/loki5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1127,7 +1127,7 @@ export const seedDB = [
   {
     name: 'Loki (Dark Reign)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173005/mpq/loki3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173005/mpq/loki3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1142,7 +1142,7 @@ export const seedDB = [
   {
     name: 'Luke Cage (Hero For Hire)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173005/mpq/lukecage3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173005/mpq/lukecage3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1157,7 +1157,7 @@ export const seedDB = [
   {
     name: 'Luke Cage (Power Man)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173005/mpq/lukecage4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173005/mpq/lukecage4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1172,7 +1172,7 @@ export const seedDB = [
   {
     name: 'Magneto (Marvel NOW!)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173006/mpq/magneto2.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173006/mpq/magneto2.png',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -1187,7 +1187,7 @@ export const seedDB = [
   {
     name: 'Magneto (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173006/mpq/magneto3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173006/mpq/magneto3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1202,7 +1202,7 @@ export const seedDB = [
   {
     name: 'Medusa (Inhuman Queen)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608082512/medusa4_mjepk5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608082512/medusa4_mjepk5.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1217,7 +1217,7 @@ export const seedDB = [
   {
     name: 'Miles Morales (Spider-Man)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173006/mpq/miles4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173006/mpq/miles4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1232,7 +1232,7 @@ export const seedDB = [
   {
     name: 'Moon Knight (Marc Spector)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173006/mpq/moonknight4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173006/mpq/moonknight4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1247,7 +1247,7 @@ export const seedDB = [
   {
     name: 'Moonstone (Dark Avengers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608157652/mpq/moonstone2.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608157652/mpq/moonstone2.webp',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -1262,7 +1262,7 @@ export const seedDB = [
   {
     name: 'Mordo (Master of the Mystic Arts)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173007/mpq/mordo4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173007/mpq/mordo4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1277,7 +1277,7 @@ export const seedDB = [
   {
     name: 'Mr. Fantastic (Reed Richards)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173007/mpq/mrfantastic4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173007/mpq/mrfantastic4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1292,7 +1292,7 @@ export const seedDB = [
   {
     name: 'Mystique (Raven Darkholme)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173007/mpq/mystique3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173007/mpq/mystique3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1307,7 +1307,7 @@ export const seedDB = [
   {
     name: 'Nick Fury (Director of S.H.I.E.L.D.)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608160766/mpq/nickfury4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608160766/mpq/nickfury4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1322,7 +1322,7 @@ export const seedDB = [
   {
     name: 'Nova (Sam Alexander)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173007/mpq/nova4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173007/mpq/nova4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1337,7 +1337,7 @@ export const seedDB = [
   {
     name: 'Okoye (Warrior General)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173008/mpq/okoye4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173008/mpq/okoye4.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1352,7 +1352,7 @@ export const seedDB = [
   {
     name: 'Peggy Carter (Captain America)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173008/mpq/peggycarter4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173008/mpq/peggycarter4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1367,7 +1367,7 @@ export const seedDB = [
   {
     name: 'Professor X (Charles Xavier)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173008/mpq/profx4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173008/mpq/profx4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1382,7 +1382,7 @@ export const seedDB = [
   {
     name: 'Psylocke (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608076301/mpq/psylocke3.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608076301/mpq/psylocke3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1397,7 +1397,7 @@ export const seedDB = [
   {
     name: 'The Punisher (Dark Reign)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173008/mpq/punisher3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173008/mpq/punisher3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1412,7 +1412,7 @@ export const seedDB = [
   {
     name: 'The Punisher (MAX)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608228012/mpq/punisher4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608228012/mpq/punisher4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1427,7 +1427,7 @@ export const seedDB = [
   {
     name: 'Quake (Daisy Johnson)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173009/mpq/quake4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173009/mpq/quake4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1442,7 +1442,7 @@ export const seedDB = [
   {
     name: 'Quicksilver (Pietro Maximoff)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173009/mpq/quicksilver3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173009/mpq/quicksilver3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1457,7 +1457,7 @@ export const seedDB = [
   {
     name: 'Ragnarok (Dark Avengers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173009/mpq/raganrok3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173009/mpq/raganrok3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1472,7 +1472,7 @@ export const seedDB = [
   {
     name: 'Red Hulk (Thunderbolt Ross)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173009/mpq/redhulk4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173009/mpq/redhulk4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1487,7 +1487,7 @@ export const seedDB = [
   {
     name: 'Rocket & Groot (Most Wanted)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173000/mpq/grocket3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173000/mpq/grocket3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1502,7 +1502,7 @@ export const seedDB = [
   {
     name: 'Rogue (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173010/mpq/rogue4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173010/mpq/rogue4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1517,7 +1517,7 @@ export const seedDB = [
   {
     name: 'Sam Wilson (Falcon)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172999/mpq/falcon3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172999/mpq/falcon3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1532,7 +1532,7 @@ export const seedDB = [
   {
     name: 'Sam Wilson (Captain America)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173010/mpq/samwilson4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173010/mpq/samwilson4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1547,7 +1547,7 @@ export const seedDB = [
   {
     name: 'Sandman (Flint Marko)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173010/mpq/sandman4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173010/mpq/sandman4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1562,7 +1562,7 @@ export const seedDB = [
   {
     name: 'Scarlet Witch (Wanda Maximoff)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173010/mpq/scarletwitch3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173010/mpq/scarletwitch3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1577,7 +1577,7 @@ export const seedDB = [
   {
     name: 'Sentry (Dark Avengers)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173010/mpq/sentry3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173010/mpq/sentry3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1592,7 +1592,7 @@ export const seedDB = [
   {
     name: 'She-Hulk (Modern)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173011/mpq/shehulk3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173011/mpq/shehulk3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1607,7 +1607,7 @@ export const seedDB = [
   {
     name: 'Shuri (Master Engineer)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608228012/mpq/shuri4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608228012/mpq/shuri4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1622,7 +1622,7 @@ export const seedDB = [
   {
     name: 'Silver Surfer (Skyrider)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173011/mpq/silversurfer5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173011/mpq/silversurfer5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1637,7 +1637,7 @@ export const seedDB = [
   {
     name: 'Spider-Man (Bag-Man)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173011/mpq/spiderman2.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173011/mpq/spiderman2.png',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -1652,7 +1652,7 @@ export const seedDB = [
   {
     name: 'Spider-Man (Back In Black)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172994/mpq/bibsm5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172994/mpq/bibsm5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1667,7 +1667,7 @@ export const seedDB = [
   {
     name: 'Spider-Man (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173011/mpq/spiderman3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173011/mpq/spiderman3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1682,7 +1682,7 @@ export const seedDB = [
   {
     name: 'Spider-Man (Infinity War)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608082675/mpq/mcuspiderman4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608082675/mpq/mcuspiderman4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1697,7 +1697,7 @@ export const seedDB = [
   {
     name: 'Spider-Man (Peter Parker)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608083221/mpq/spiderman5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608083221/mpq/spiderman5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1712,7 +1712,7 @@ export const seedDB = [
   {
     name: 'Spider-Woman (Jessica Drew)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173012/mpq/spiderwoman4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173012/mpq/spiderwoman4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1727,7 +1727,7 @@ export const seedDB = [
   {
     name: 'Squirrel-Girl (Unbeatable)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608229179/mpq/squirrelgirl3.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608229179/mpq/squirrelgirl3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1742,7 +1742,7 @@ export const seedDB = [
   {
     name: 'Star-Lord (Awesome Mix Volume 2)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608229179/mpq/starlord5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608229179/mpq/starlord5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1757,7 +1757,7 @@ export const seedDB = [
   {
     name: 'Star-Lord (Legendary Outlaw)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608229179/mpq/starlord4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608229179/mpq/starlord4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1772,7 +1772,7 @@ export const seedDB = [
   {
     name: 'Star-Lord (Peter Quill)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608229179/mpq/starlord3.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608229179/mpq/starlord3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1787,7 +1787,7 @@ export const seedDB = [
   {
     name: 'Storm (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604031220/mpq/Storm__28Classic_29.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604031220/mpq/Storm__28Classic_29.png',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -1802,7 +1802,7 @@ export const seedDB = [
   {
     name: 'Storm (Mohawk)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608158759/mpq/storm3.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608158759/mpq/storm3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1817,7 +1817,7 @@ export const seedDB = [
   {
     name: 'Thanos (The Mad Titan)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173013/mpq/thanos5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173013/mpq/thanos5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1832,7 +1832,7 @@ export const seedDB = [
   {
     name: 'Thanos (Modern)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173013/mpq/thanos3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173013/mpq/thanos3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1847,7 +1847,7 @@ export const seedDB = [
   {
     name: 'The Thing (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173013/mpq/thing4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173013/mpq/thing4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1862,7 +1862,7 @@ export const seedDB = [
   {
     name: 'Thor (Goddess of Thunder)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173013/mpq/thor4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173013/mpq/thor4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1877,7 +1877,7 @@ export const seedDB = [
   {
     name: 'Thor (Marvel NOW!)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173013/mpq/thor2.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173013/mpq/thor2.png',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -1892,7 +1892,7 @@ export const seedDB = [
   {
     name: 'Thor (Modern)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173014/mpq/thor3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173014/mpq/thor3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1907,7 +1907,7 @@ export const seedDB = [
   {
     name: 'Thor (Gladiator)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173014/mpq/thor5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173014/mpq/thor5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1922,7 +1922,7 @@ export const seedDB = [
   {
     name: 'Valkyrie (Asgardian Warrior)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173014/mpq/valkyrie4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173014/mpq/valkyrie4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1937,7 +1937,7 @@ export const seedDB = [
   {
     name: 'Venom (Eddie Brock)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173014/mpq/venom4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173014/mpq/venom4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1952,7 +1952,7 @@ export const seedDB = [
   {
     name: 'Vision (Android Avenger)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173014/mpq/vision3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173014/mpq/vision3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1967,7 +1967,7 @@ export const seedDB = [
   {
     name: 'Vulture (Adrian Toomes)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173014/mpq/vulture4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173014/mpq/vulture4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1982,7 +1982,7 @@ export const seedDB = [
   {
     name: 'War Machine (James Rhodes)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload//q_auto:low/v1608160766/mpq/warmachine4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload//q_40/v1608160766/mpq/warmachine4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1997,7 +1997,7 @@ export const seedDB = [
   {
     name: 'Wasp (Hope Van Dyne)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608157790/mpq/wasp5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608157790/mpq/wasp5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2012,7 +2012,7 @@ export const seedDB = [
   {
     name: 'Wasp (Janet Van Dyne)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608157790/mpq/wasp4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608157790/mpq/wasp4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2027,7 +2027,7 @@ export const seedDB = [
   {
     name: 'Winter Soldier (Bucky Barnes)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173015/mpq/wintersoldier4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173015/mpq/wintersoldier4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2042,7 +2042,7 @@ export const seedDB = [
   {
     name: 'Wolverine (Astonishing X-Men)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173016/mpq/wolverine2.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173016/mpq/wolverine2.png',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -2057,7 +2057,7 @@ export const seedDB = [
   {
     name: 'Wolverine (Patch)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173016/mpq/wolverine3.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173016/mpq/wolverine3.png',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -2072,7 +2072,7 @@ export const seedDB = [
   {
     name: 'Wolverine (Old Man Logan)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173008/mpq/oldmanlogan5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173008/mpq/oldmanlogan5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2087,7 +2087,7 @@ export const seedDB = [
   {
     name: 'Wolverine (X-Force)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608082960/mpq/wolverine4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608082960/mpq/wolverine4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2102,7 +2102,7 @@ export const seedDB = [
   {
     name: 'X-23 (All-New Wolverine)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173017/mpq/x234.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173017/mpq/x234.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2117,7 +2117,7 @@ export const seedDB = [
   {
     name: 'Nightcrawler (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173007/mpq/nightcrawler4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173007/mpq/nightcrawler4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2132,7 +2132,7 @@ export const seedDB = [
   {
     name: 'Archangel (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608158760/mpq/archangel5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608158760/mpq/archangel5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2147,7 +2147,7 @@ export const seedDB = [
   {
     name: 'Captain America (Worthy)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173016/mpq/worthycap4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173016/mpq/worthycap4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2162,7 +2162,7 @@ export const seedDB = [
   {
     name: 'Talos (Skrull Warlord)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173013/mpq/talos4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173013/mpq/talos4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2177,7 +2177,7 @@ export const seedDB = [
   {
     name: 'Magik (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173005/mpq/magik4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173005/mpq/magik4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2192,7 +2192,7 @@ export const seedDB = [
   {
     name: 'Hela (Goddess of Death)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173001/mpq/hela5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173001/mpq/hela5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2207,7 +2207,7 @@ export const seedDB = [
   {
     name: 'Emma Frost (Astonishing X-Men)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172999/mpq/emmafrost4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172999/mpq/emmafrost4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2222,7 +2222,7 @@ export const seedDB = [
   {
     name: 'Kitty Pryde (Uncanny X-Men)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173004/mpq/kittypryde5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173004/mpq/kittypryde5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2237,7 +2237,7 @@ export const seedDB = [
   {
     name: 'Domino (X-Force)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172998/mpq/domino4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172998/mpq/domino4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2252,7 +2252,7 @@ export const seedDB = [
   {
     name: 'Dazzler (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608228013/mpq/dazzler4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608228013/mpq/dazzler4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2267,7 +2267,7 @@ export const seedDB = [
   {
     name: 'The Hulk (Bruce Banner)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604172994/mpq/brucebanner5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604172994/mpq/brucebanner5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2282,7 +2282,7 @@ export const seedDB = [
   {
     name: 'Hawkeye (Ronin)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173010/mpq/ronin4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173010/mpq/ronin4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2297,7 +2297,7 @@ export const seedDB = [
   {
     name: 'Human Torch (Jim Hammond)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173003/mpq/jimhammond4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173003/mpq/jimhammond4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2312,7 +2312,7 @@ export const seedDB = [
   {
     name: 'Riri Williams (Ironheart)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173003/mpq/ironheart4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173003/mpq/ironheart4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2327,7 +2327,7 @@ export const seedDB = [
   {
     name: 'Lockjaw (Royal Bulldog)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173005/mpq/lockjaw4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173005/mpq/lockjaw4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2342,7 +2342,7 @@ export const seedDB = [
   {
     name: 'Mysterio (Quentin Beck)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173007/mpq/mysterio4.jpg',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173007/mpq/mysterio4.jpg',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2357,7 +2357,7 @@ export const seedDB = [
   {
     name: 'Iceman (Bobby Drake)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173002/mpq/iceman5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173002/mpq/iceman5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2372,7 +2372,7 @@ export const seedDB = [
   {
     name: 'Doctor Doom (God Emperor)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608160165/mpq/docdoom5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608160165/mpq/docdoom5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2387,7 +2387,7 @@ export const seedDB = [
   {
     name: 'Rescue (Pepper Potts)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173009/mpq/rescue5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173009/mpq/rescue5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2402,7 +2402,7 @@ export const seedDB = [
   {
     name: 'Professor X (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173008/mpq/profx5.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173008/mpq/profx5.png',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -2447,7 +2447,7 @@ export const seedDB = [
   {
     name: 'Juggernaut (Fear Itself)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608083430/mpq/juggernaut5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608083430/mpq/juggernaut5.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2462,7 +2462,7 @@ export const seedDB = [
   {
     name: 'Rocket & Groot (Awesome Mix Volume 2)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173000/mpq/grocket4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173000/mpq/grocket4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2477,7 +2477,7 @@ export const seedDB = [
   {
     name: 'Wiccan (Billy Kaplan)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608157480/mpq/wiccan4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608157480/mpq/wiccan4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2492,7 +2492,7 @@ export const seedDB = [
   {
     name: 'Kraven The Hunter (Sergei Kravinoff)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608076505/mpq/kraven4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608076505/mpq/kraven4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2507,7 +2507,7 @@ export const seedDB = [
   {
     name: 'Yondu (Awesome Mix Volume 2)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173016/mpq/yondu4.jpg',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173016/mpq/yondu4.jpg',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2522,7 +2522,7 @@ export const seedDB = [
   {
     name: 'Thanos (Endgame)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1604173013/mpq/thanos4.png',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1604173013/mpq/thanos4.png',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -2537,7 +2537,7 @@ export const seedDB = [
   {
     name: 'Sabretooth (Victor Creed)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_auto:low/v1608157790/mpq/sabretooth4.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/q_40/v1608157790/mpq/sabretooth4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
