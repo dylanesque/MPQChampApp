@@ -1,4 +1,4 @@
-const CharacterGrid = ({ children }) => {
+const CharacterGrid = ({ children, parentRef, virtualRows, totalLength }) => {
     return (<main className="character-grid">{children}</main> );
 }
  
