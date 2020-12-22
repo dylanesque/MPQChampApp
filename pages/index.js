@@ -1,10 +1,10 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 import { withApollo } from '../lib/withApollo';
 import { useFetchUser } from '../lib/user';
 import Login from '../components/Auth/Login';
 import LogoutBtn from '../components/Auth/Logout';
-import CharEdit from '../components/CharEditor'
+import CharEdit from '../components/CharEditor';
 
 const IndexPage = () => {
   // Variables
@@ -25,11 +25,17 @@ const IndexPage = () => {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-        <h1 className="white">Welcome to the Marvel Puzzle Quest Champion Tracker!</h1>
+        <h1 className="white">
+          Welcome to the Marvel Puzzle Quest Champion Tracker!
+        </h1>
         <CharEdit user={user.sub} />
 
         {user && <LogoutBtn />}
-        <footer className="white">All code on this site (except where noted otherwise) is ©{new Date().getFullYear()} Michael S. Caveney. Marvel Puzzle Quest is developed by Demiurge Studios.</footer>
+        <footer className="white">
+          All code on this site (except where noted otherwise) is ©
+          {new Date().getFullYear()} Michael S. Caveney. Marvel Puzzle Quest is
+          developed by Demiurge Studios.
+        </footer>
       </div>
     );
   }

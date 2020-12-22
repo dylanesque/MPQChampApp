@@ -1,6 +1,7 @@
 import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@reach/tabs';
 import { useQuery } from '@apollo/react-hooks';
 import { withApollo } from '../lib/withApollo';
+import { Card, CardHeader, CircularProgress } from '@material-ui/core';
 import { useEffect } from 'react';
 
 import CharCard from '../components/Card';
@@ -9,9 +10,9 @@ import CharacterGrid from '../components/CharacterGrid';
 import { CHECK_CHAR_LIST, GET_CHARACTERS, AddDB } from '../utils/graphql';
 
 const CharEdit = ({ user }) => {
-  // Number of characters in user's db  
-    let charCount = null;
-  // Fetches 
+  // Number of characters in user's db
+  let charCount = null;
+  // Fetches
   let dbCheck = useQuery(CHECK_CHAR_LIST, {
     variables: { id: user },
   });
@@ -21,20 +22,29 @@ const CharEdit = ({ user }) => {
     console.log(charCount);
   }
 
-   let characterDb = useQuery(GET_CHARACTERS, {
-     variables: { user_id: user },
-   });
+  let characterDb = useQuery(GET_CHARACTERS, {
+    variables: { user_id: user },
+  });
 
   if (characterDb.loading) {
-    return <div>Loading....</div>;
+    return (
+      <div className="loading-page">
+        <Card style={{ padding: '4rem 6rem' }}>
+          <CircularProgress />
+          <p style={{ marginTop: '1rem' }}>Loading</p>
+        </Card>
+      </div>
+    );
   } else if (charCount === 0) {
-    return <AddDB user={user} />
+    return <AddDB user={user} />;
   } else {
     return (
       <>
         <Tabs>
           <TabList style={{ display: 'flex', justifyContent: 'center' }}>
-            <Tab className="white" style={{ marginRight: '0.75rem' }}>Edit</Tab>
+            <Tab className="white" style={{ marginRight: '0.75rem' }}>
+              Edit
+            </Tab>
             <Tab className="white">Roster</Tab>
           </TabList>
           <TabPanels>

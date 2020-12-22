@@ -84,6 +84,14 @@ select::-ms-expand {
   width: 100vw;
 }
 
+.loading-page {
+  height: 73vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .login-page {
   display: flex;
   flex-direction: column;
