@@ -19,7 +19,6 @@ const CharEdit = ({ user }) => {
 
   if (!dbCheck.loading) {
     charCount = dbCheck.data.users[0].characters_aggregate.aggregate.count;
-    console.log(charCount);
   }
 
   let characterDb = useQuery(GET_CHARACTERS, {

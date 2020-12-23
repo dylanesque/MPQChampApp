@@ -207,7 +207,19 @@ export function getFourStatus(level, feedee) {
     return `${366 - level} level(s) to: 25 Command Points`;
   } else if (level < 368 && level >= 366) {
     return `${368 - level} level(s) to: 25 Command Points`;
-  }  else {
+  } else {
     return `${370 - level} level(s) to: Maximum Level`;
   }
 }
+
+// If both row and column index are zero, return zero
+// If row index is zero, return column index
+// If column index is zero, return row index times (column index  + 1)
+// else, return  row index times column index
+
+function calculateCharIndex(rowIndex, columnIndex) {
+  if (rowIndex === 0) {
+    return columnIndex;
+  } 
+    return rowIndex * columnIndex;
+  }

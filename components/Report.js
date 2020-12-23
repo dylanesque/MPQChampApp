@@ -126,7 +126,6 @@ const Report = ({ characters }) => {
         }}
       >
         {twoStars.map((char) => {
-          console.log(char);
           return (
             <Card
               style={{
