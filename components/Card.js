@@ -49,9 +49,27 @@ const CharCard = ({ character }) => {
   const [powerThreeLevel, setPowerThreeLevel] = React.useState(
     power_three_level
   );
-  const [totalLevel, setTotalLevel] = React.useState(
-    powerOneLevel + powerTwoLevel + powerThreeLevel
-  );
+
+  const [powerLevelState, setPowerLevelState] = React.useState(powerOneLevel + powerTwoLevel + powerThreeLevel);
+
+  
+
+  // totalLevel is the 'initialState' for the useReducer
+
+  // Reducer logic
+
+  // 1) power level is adjusted
+  // 2) the function that adjusts that value also calls the dispatch function
+  // 3) the dispatch function calculates a) maximum allowed values for individual power dropdowns, 
+  // and b) calculates 
+
+
+  /* 
+  function calculateDerivedState(powerOneLevel, powerTwoLevel, powerThreeLevel) {
+
+  }
+  
+  */
 
   const powerLevels = [0, 1, 2, 3, 4, 5];
   // selectable power levels should be limited to 13 minus the total of the other two power levels, up to 5
@@ -60,16 +78,19 @@ const CharCard = ({ character }) => {
   const charLevels = [...Array(501).keys()];
 
   function levelChange(e) {
-    setCharLevel(e.target.value);
+    setCharLevel(parseInt(e.target.value));
   }
   function powerOneChange(e) {
-    setPowerOneLevel(e.target.value);
+    setPowerOneLevel(parseInt(e.target.value));
+    setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
   }
   function powerTwoChange(e) {
-    setPowerTwoLevel(e.target.value);
+    setPowerTwoLevel(parseInt(e.target.value));
+    setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
   }
   function powerThreeChange(e) {
-    setPowerThreeLevel(e.target.value);
+    setPowerThreeLevel(parseInt(e.target.value));
+    setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
   }
 
   function generateColors(color) {
@@ -149,10 +170,10 @@ const CharCard = ({ character }) => {
       <UpdateCharacter
         id={id}
         changes={{
-          char_level: parseInt(charLevel),
-          power_one_level: parseInt(powerOneLevel),
-          power_two_level: parseInt(powerTwoLevel),
-          power_three_level: parseInt(powerThreeLevel),
+          char_level: charLevel,
+          power_one_level: powerOneLevel,
+          power_two_level: powerTwoLevel,
+          power_three_level: powerThreeLevel,
         }}
       />
     </Card>

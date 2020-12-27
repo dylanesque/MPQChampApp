@@ -1202,7 +1202,7 @@ export const seedDB = [
   {
     name: 'Medusa (Inhuman Queen)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/f_auto,q_auto:low/v1608082512/medusa4_mjepk5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/f_auto,q_auto:low/v1608320215/mpq/medusa4_1.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1787,7 +1787,7 @@ export const seedDB = [
   {
     name: 'Storm (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/f_auto,q_auto:low/v1604031220/mpq/Storm__28Classic_29.png',
+      'https://res.cloudinary.com/msccloud-40/image/uploadf_auto,q_auto:low/v1608320665/mpq/storm2.webp',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -2432,7 +2432,7 @@ export const seedDB = [
   {
     name: 'Storm (Ororo Munroe)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/upload/q_aut0:eco/v1608158759/mpq/storm5.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/f_auto,q_auto:low/v1608158759/mpq/storm5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
