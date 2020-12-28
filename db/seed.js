@@ -1787,7 +1787,7 @@ export const seedDB = [
   {
     name: 'Storm (Classic)',
     image:
-      'https://res.cloudinary.com/msccloud-40/image/uploadf_auto,q_auto:low/v1608320665/mpq/storm2.webp',
+      'https://res.cloudinary.com/msccloud-40/image/upload/f_auto,q_auto:low/v1608320665/mpq/storm2.webp',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,

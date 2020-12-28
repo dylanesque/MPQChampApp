@@ -31,7 +31,7 @@ export const AddDB = (user) => {
         <button
           onClick={() => insert_characters({ variables: { objects: db } })}
         >
-          Create Database
+            Create Database
         </button>
       )}
     </Mutation>

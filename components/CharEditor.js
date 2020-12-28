@@ -1,7 +1,7 @@
 import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@reach/tabs';
 import { useQuery } from '@apollo/react-hooks';
 import { withApollo } from '../lib/withApollo';
-import { Card, CardHeader, CircularProgress } from '@material-ui/core';
+import { Card, CircularProgress } from '@material-ui/core';
 import { useEffect } from 'react';
 
 import CharCard from '../components/Card';
@@ -35,7 +35,12 @@ const CharEdit = ({ user }) => {
       </div>
     );
   } else if (charCount === 0) {
-    return <AddDB user={user} />;
+    return (
+      <div className="login-page">
+        <p style={{ backgroundColor: 'white', padding: '1rem'}}>We're detecting that you haven't set up a seed database yet. Please click the button below to get started!</p>
+        <AddDB user={user} />
+      </div>
+    );
   } else {
     return (
       <>
