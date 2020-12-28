@@ -1,7 +1,8 @@
-import { UpdateCharacter } from '../utils/graphql';
-
 import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
+
+import { UpdateCharacter } from '../utils/graphql';
+import { calculateLevels } from '../utils/utils';
 
 const useStyles = makeStyles({
   root: {
@@ -17,13 +18,13 @@ const useStyles = makeStyles({
     justifyContent: 'center',
   },
   name: {
-    marginTop: '1rem'
+    marginTop: '1rem',
   },
   powerSelect: {
     display: 'flex',
     flexDirection: 'column',
     paddingBottom: '1.5rem',
-  }
+  },
 });
 
 const CharCard = ({ character }) => {
@@ -39,7 +40,7 @@ const CharCard = ({ character }) => {
     power_one_color,
     power_two_color,
     power_three_color,
-    rarity
+    rarity,
   } = character;
 
   // TODO: Refactor to remove duplication
@@ -50,49 +51,29 @@ const CharCard = ({ character }) => {
     power_three_level
   );
 
-  const [powerLevelState, setPowerLevelState] = React.useState(powerOneLevel + powerTwoLevel + powerThreeLevel);
+  const [powerLevelState, setPowerLevelState] = React.useState(
+    powerOneLevel + powerTwoLevel + powerThreeLevel
+  );
 
-  
-
-  // totalLevel is the 'initialState' for the useReducer
-
-  // Reducer logic
-
-  // 1) power level is adjusted
-  // 2) the function that adjusts that value also calls the dispatch function
-  // 3) the dispatch function calculates a) maximum allowed values for individual power dropdowns, 
-  // and b) calculates 
-
-
-  /* 
-  function calculateDerivedState(powerOneLevel, powerTwoLevel, powerThreeLevel) {
-
-  }
-  
-  */
-
+  // TODO: selectable power levels should be limited to 13 minus the total of the other two power levels, up to 5
   const powerLevels = [0, 1, 2, 3, 4, 5];
-  // selectable power levels should be limited to 13 minus the total of the other two power levels, up to 5
 
   // TODO: Refactor this value to be a derived value based on rarity and number of covers
-  const charLevels = [...Array(501).keys()];
+  const charLevels = calculateLevels(rarity);
 
   function levelChange(e) {
     setCharLevel(parseInt(e.target.value));
   }
   function powerOneChange(e) {
     setPowerOneLevel(parseInt(e.target.value));
-    console.log(powerOneLevel)
     setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
   }
   function powerTwoChange(e) {
     setPowerTwoLevel(parseInt(e.target.value));
-    console.log(powerTwoLevel)
     setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
   }
   function powerThreeChange(e) {
     setPowerThreeLevel(parseInt(e.target.value));
-    console.log(powerThreeLevel)
     setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
   }
 
@@ -124,7 +105,11 @@ const CharCard = ({ character }) => {
     <Card className={classes.root} key={id}>
       <p className={classes.name}>{name}</p>
       <div className={classes.middle}>
-        <img className="char-image" src={image} alt='Cover picture for ${name}'/>
+        <img
+          className="char-image"
+          src={image}
+          alt="Cover picture for ${name}"
+        />
         <div className={classes.powerSelect}>
           <select
             className="power-select"
@@ -164,7 +149,12 @@ const CharCard = ({ character }) => {
         </div>
       </div>
       <label htmlFor={name}>Character Level</label>
-      <select id={name} className="save-button" onChange={levelChange} value={charLevel}>
+      <select
+        id={name}
+        className="save-button"
+        onChange={levelChange}
+        value={charLevel}
+      >
         {charLevels.map((level) => {
           return <option key={level}>{level}</option>;
         })}

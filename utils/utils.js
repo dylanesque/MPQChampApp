@@ -1,9 +1,30 @@
 // level generator(s)
 
-function calculateLevelRange(rarity, totalLevel) {
-  // helper function to generate ranged array of possible character levels
+export function calculateLevels(rarity) {
   const range = (start, end) =>
     new Array(end - start + 1).fill(undefined).map((_, i) => i + start);
+
+  switch (rarity) {
+    case 2:
+      return range(15, 144);
+      break;
+    case 3:
+      return range(40, 266);
+      break;
+    case 4:
+      return range(70, 370);
+      break;
+    case 5:
+      return range(270, 550);
+      break;
+
+    default:
+      break;
+  }
+}
+
+function calculateDynamicLevelRange(rarity, totalLevel) {
+  // helper function to generate ranged array of possible character levels
 
   const twoStarLevels = [15, 22, 30, 38, 46, 47, 54, 62, 70, 78, 79, 86, 144];
   const threeStarLevels = [
@@ -220,6 +241,6 @@ export function getFourStatus(level, feedee) {
 function calculateCharIndex(rowIndex, columnIndex) {
   if (rowIndex === 0) {
     return columnIndex;
-  } 
-    return rowIndex * columnIndex;
   }
+  return rowIndex * columnIndex;
+}
