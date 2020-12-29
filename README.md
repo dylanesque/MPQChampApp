@@ -67,3 +67,16 @@ Some things for me to consider in the future after the MVP is finished:
 - Adding [progressive web app](https://web.dev/what-are-pwas/) functionality.
 - Creating a mobile version of the app in [React Native](https://reactnative.dev/)
 - Deeper logic in the application that accounts for some cover rewards being more useful than others, some characters being more useful than others, and other (somewhat subjective) metrics.
+
+** What I learned from this project **
+
+**Don't Finalize the Data Models Without Writing Specs For Front-End Data Flow, Or Considering Back-End Quirks**: There was a small amount of wasted effort in the character models in the form of:
+- a feeder attribute which played no part in the application flow
+- a convention of linking feeders/feedees via a system of character ids which turned out to be (a) unnecessary, (b) hard to reason about, and (c) formatted as the wrong type for Hasura, namely an array of integers. A minor quirk of Hasura is that it doesn't currently support arrays as a data type, only as many-to-one relationship, making them unwieldly if you don't need them to be indexed, etc.
+- On that note, I still needed to store feedees as an array sometimes. The solution turned out to simply to store it as a string, and have a function that splits the string into an array if necessary. 
+
+All of the above could have been caught sooner had I taken a more careful approach to planning, including drafting UI components using a solution like Storybook. 
+
+**Use TypeScript for any full-fledged web applications, such as this one**
+
+Had I taken a 
