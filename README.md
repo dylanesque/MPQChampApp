@@ -79,4 +79,6 @@ All of the above could have been caught sooner had I taken a more careful approa
 
 **Use TypeScript for any full-fledged web applications, such as this one**
 
+- This was a minor concern for this particular project
+
 Had I taken a 

@@ -5,8 +5,8 @@ import { Button } from 'react-bootstrap';
 const Login = () => {
   return (
     <div className="login-page index-background">
-      <h1 className="white">Welcome to MPQ Champ App!</h1>
-      <h2 className="white">Please login to continue</h2>
+      <h1>Welcome to MPQ Champ App!</h1>
+      <h2>Please login to continue</h2>
       <div>
         <Button
           id="qsLoginBtn"

@@ -1,9 +1,9 @@
 const About = () => {
   return (
     <>
-      <h1>About MPQ Champ App</h1>
+      <h2 className="page-heading">About MPQ Champ App</h2>
       <main className="page-main">
-        <h2>Why Did I Create This?</h2>
+        <h3 className="page-heading">Why Did I Create This?</h3>
         <p>
           I've been playing Marvel Puzzle Quest for a few years now (Day 2148 as
           of this writing...), and I love building and utilizing a roster of my
@@ -12,7 +12,7 @@ const About = () => {
           to flag as bonus heroes for the most efficient application of shards.
           That's why I created MPQ Champ App to automate this task!
         </p>
-        <h2>How It Works</h2>
+        <h3 className="page-heading">How It Works</h3>
         <p>
           Users of the time-honored{' '}
           <a href="https://mpq.gamependium.com/">MPQ Gamependium</a> utility will notice a similar feel to this application.

@@ -12,18 +12,21 @@ const useStyles = makeStyles({
     alignItems: 'center',
     textAlign: 'center',
   },
+  levelSelect: {
+    backGroundColor: 'gray'
+  },
   middle: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
   },
   name: {
-    marginTop: '1rem',
+    marginTop: '0.5rem',
   },
   powerSelect: {
     display: 'flex',
     flexDirection: 'column',
-    paddingBottom: '1.5rem',
+    paddingBottom: '1.25rem',
   },
 });
 
@@ -151,7 +154,6 @@ const CharCard = ({ character }) => {
       <label htmlFor={name}>Character Level</label>
       <select
         id={name}
-        className="save-button"
         onChange={levelChange}
         value={charLevel}
       >

@@ -1,15 +1,15 @@
 const FAQS = () => {
   return (
     <>
-      <h1>FAQS</h1>
+      <h2 className="page-heading">FAQS</h2>
       <div className="center-div">
         <main className="page-main">
-          <h2>Q: How will my data be used?</h2>
+          <h3 className="page-heading">Q: How will my data be used?</h3>
           <p>
             A: This app only requires login information, and that's all I ask. I
             will NEVER, EVER sell your data.
           </p>
-          <h2>Q: Hey, where are shards?</h2>
+          <h3 className="page-heading">Q: Hey, where are shards?</h3>
           <p>
             For now, I don't have plans to add shards, especially since I see
             "where should I put my shards?" as the main question that this
@@ -17,7 +17,7 @@ const FAQS = () => {
             adding counts further down the road I hear a lot of requests for
             this.
           </p>
-          <h2>Q: What's next for the app?</h2>
+          <h3 className="page-heading">Q: What's next for the app?</h3>
           <ul>
             <li>Style & User Experience improvements</li>
             <li>Improved loading times, and other performance improvements</li>
