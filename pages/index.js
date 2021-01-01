@@ -19,13 +19,13 @@ const IndexPage = () => {
     return (
       <div className="index-background">
         <Head>
-          <title>MPQ Champ App</title>
+          <title>MPQ Hall Of Champions</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-        <h1>
+        <h1 style={{ textAlign: 'center' }}>
           Welcome to the Marvel Puzzle Quest Champion Tracker!
         </h1>
         <CharEdit user={user.sub} />

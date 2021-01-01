@@ -68,14 +68,17 @@ const CharCard = ({ character }) => {
     setCharLevel(parseInt(e.target.value));
   }
   function powerOneChange(e) {
+    console.log(powerLevelState);
     setPowerOneLevel(parseInt(e.target.value));
     setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
   }
   function powerTwoChange(e) {
+    console.log(powerLevelState);
     setPowerTwoLevel(parseInt(e.target.value));
     setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
   }
   function powerThreeChange(e) {
+    console.log(powerLevelState);
     setPowerThreeLevel(parseInt(e.target.value));
     setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
   }

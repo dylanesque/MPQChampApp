@@ -42,6 +42,7 @@ const Report = ({ characters }) => {
         {fiveStars.map((char) => {
           return (
             <Card
+              key={char.name}
               style={{
                 display: 'flex ',
                 flexDirection: 'column',

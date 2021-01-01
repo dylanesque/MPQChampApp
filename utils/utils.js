@@ -93,9 +93,9 @@ function parseFeeds(data) {
   if (data === 'none') {
     return;
   } else if (!data.includes(',')) {
-    return [parseInt(data)];
+    return data;
   } else {
-    return [data.split(',')];
+    return data.split(',');
   }
 }
 
