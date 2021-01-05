@@ -1,6 +1,14 @@
+import Head from 'next/head'
+
 const About = () => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="The About page for the Hall of Champions application, explaining the how and why of the site"
+        ></meta>
+      </Head>
       <h2 className="page-heading">About MPQ Hall Of Champions</h2>
       <main className="page-main">
         <h3 className="page-heading">Why Did I Create This?</h3>
@@ -21,7 +29,7 @@ const About = () => {
           consists of all characters that give or receive covers from other
           characters as champion rewards. You simply edit that database to match
           your in-game lineup, and you can view an instant report showing you
-          who's closest to major rewards (read: covers, shards, or significant
+          who's closest to major rewards like covers, shards, or significant
           amounts of Command Points!
         </p>
       </main>

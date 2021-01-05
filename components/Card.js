@@ -30,7 +30,7 @@ const useStyles = makeStyles({
   },
 });
 
-const CharCard = ({ character }) => {
+const CharCard = ({ character, characters }) => {
   const classes = useStyles();
   const {
     id,
@@ -166,6 +166,7 @@ const CharCard = ({ character }) => {
       </select>
 
       <UpdateCharacter
+        characters={characters}
         id={id}
         changes={{
           char_level: charLevel,

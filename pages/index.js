@@ -24,9 +24,13 @@ const IndexPage = () => {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
+          <meta
+            name="description"
+            content="The main page for the MPQ Hall of Champions application, where users can edit and view their roster of characters"
+          ></meta>
         </Head>
         <h1 style={{ textAlign: 'center' }}>
-          Welcome to the Marvel Puzzle Quest Champion Tracker!
+          Welcome to MPQ Hall of Champions!
         </h1>
         <CharEdit user={user.sub} />
 

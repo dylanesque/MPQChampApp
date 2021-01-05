@@ -221,7 +221,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'green',
     feedees: 'Blade (Modern)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 40,
   },
   {
@@ -236,7 +236,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'green',
     feedees: 'Bullseye (Classic)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 15,
   },
   {
@@ -311,7 +311,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'blue',
     feedees: 'Captain America (Super Soldier)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 15,
   },
   {
@@ -371,7 +371,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'yellow',
     feedees: 'Captain Marvel (Modern)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 15,
   },
   {
@@ -401,7 +401,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'black',
     feedees: 'Wolverine (X-Force), Magik (Classic)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 40,
   },
   {
@@ -430,8 +430,8 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'black',
-    feeders: 'none',
-    feedees: 'Cyclops (Classic)',
+    feedees: 'none',
+    feeders: 'Cyclops (Classic)',
     char_level: 40,
   },
   {
@@ -446,7 +446,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'blue',
     feedees: 'Daken (Classic)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 15,
   },
   {
@@ -475,8 +475,8 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'blue',
     power_three_color: 'red',
-    feeders: 'Elektra (Unkillable)',
-    feedees: 'none',
+    feedees: 'Elektra (Unkillable)',
+    feeders: 'none',
     char_level: 40,
   },
   {
@@ -506,7 +506,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'black',
     feeders: 'Deadpool (Uncanny X-Force),Domino (X-Force)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 40,
   },
   {
@@ -536,7 +536,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'purple',
     feedees: 'Invisible Woman (Classic)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 40,
   },
   {
@@ -626,7 +626,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'red',
     feedees: 'Elektra (Unkillable)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 40,
   },
   {
@@ -671,7 +671,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'black',
     feedees: 'Star-Lord (Legendary Outlaw),Gamora (Awesome Mix Volume 2)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 40,
   },
   {
@@ -686,7 +686,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'blue',
     feedees: 'Thanos (The Mad Titan)',
-    feedees: 'none',
+    feeders: 'none',
     char_level: 70,
   },
   {

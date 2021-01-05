@@ -26,7 +26,8 @@ export const AddDB = (user) => {
   const db = seedDB;
 
   return (
-    <Mutation mutation={ADD_CHAR_DB} onCompleted={reloadWindow}>
+    <Mutation mutation={ADD_CHAR_DB}
+      onCompleted={reloadWindow}>
       {(insert_characters, { data }) => (
         <button
           onClick={() => insert_characters({ variables: { objects: db } })}
@@ -70,9 +71,24 @@ export const GET_CHARACTERS = gql`
   }
 `;
 
+export const UPDATE_CHARACTER = gql`
+  mutation UpdateCharacter($id: String!, $changes: characters_set_input!) {
+    update_characters_by_pk(pk_columns: { id: $id }, _set: $changes) {
+      id
+      char_level
+      power_one_level
+      power_two_level
+      power_three_level
+    }
+  }
+`;
+
+
 export const UpdateCharacter = ({ id, changes }) => {
   return (
-    <Mutation mutation={UPDATE_CHARACTER}>
+    <Mutation
+      mutation={UPDATE_CHARACTER}
+    >
       {(update_characters_by_pk, { data }) => (
         <button
           className="save-button"
@@ -87,14 +103,3 @@ export const UpdateCharacter = ({ id, changes }) => {
   );
 };
 
-export const UPDATE_CHARACTER = gql`
-  mutation UpdateCharacter($id: String!, $changes: characters_set_input!) {
-    update_characters_by_pk(pk_columns: { id: $id }, _set: $changes) {
-      name
-      char_level
-      power_one_level
-      power_two_level
-      power_three_level
-    }
-  }
-`;

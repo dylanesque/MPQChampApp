@@ -93,7 +93,7 @@ function parseFeeds(data) {
   if (data === 'none') {
     return;
   } else if (!data.includes(',')) {
-    return data;
+    return [data, data];
   } else {
     return data.split(',');
   }

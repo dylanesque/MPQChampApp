@@ -71,6 +71,7 @@ const Report = ({ characters }) => {
         {fourStars.map((char) => {
           return (
             <Card
+              key={char.name}
               style={{
                 display: 'flex ',
                 flexDirection: 'column',
@@ -100,6 +101,7 @@ const Report = ({ characters }) => {
         {threeStars.map((char) => {
           return (
             <Card
+              key={char.name}
               style={{
                 display: 'flex ',
                 flexDirection: 'column',
@@ -129,6 +131,7 @@ const Report = ({ characters }) => {
         {twoStars.map((char) => {
           return (
             <Card
+              key={char.name}
               style={{
                 display: 'flex ',
                 flexDirection: 'column',
