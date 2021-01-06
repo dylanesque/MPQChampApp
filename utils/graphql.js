@@ -85,7 +85,7 @@ export const UPDATE_CHARACTER = gql`
 `;
 
 
-export const UpdateCharacter = ({ id, changes }) => {
+export const UpdateCharacter = ({ id, changes, user }) => {
    const [open, setOpen] = React.useState(false);
 
    const handleClick = () => {
@@ -101,9 +101,11 @@ export const UpdateCharacter = ({ id, changes }) => {
    };
   return (
     <>
-    <Mutation
+      <Mutation
+        user={user}
       mutation={UPDATE_CHARACTER}
-      onCompleted={(data) => handleClick()}
+        onCompleted={(data) => handleClick()}
+        refetchQueries={() => [{query: GET_CHARACTERS, variables: { user_id: user }}]}
     >
       {(update_characters_by_pk, { data }) => (
         <button

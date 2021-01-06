@@ -30,7 +30,7 @@ const useStyles = makeStyles({
   },
 });
 
-const CharCard = ({ character, characters }) => {
+const CharCard = ({ character, characters, user }) => {
   const classes = useStyles();
   const {
     id,
@@ -167,6 +167,7 @@ const CharCard = ({ character, characters }) => {
 
       <UpdateCharacter
         characters={characters}
+        user={user}
         id={id}
         changes={{
           char_level: charLevel,

@@ -1,9 +1,8 @@
 import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@reach/tabs';
-import { makeVar } from '@apollo/client';
 import { useQuery } from '@apollo/react-hooks';
 import { withApollo } from '../lib/withApollo';
 import { Card, CircularProgress } from '@material-ui/core';
-import { useEffect } from 'react';
+
 
 import CharCard from '../components/Card';
 import Report from '../components/Report';
@@ -12,7 +11,6 @@ import { CHECK_CHAR_LIST, GET_CHARACTERS, AddDB } from '../utils/graphql';
 
 const CharEdit = ({ user }) => {
   let charCount = null;
-  const charactersVar = makeVar([]);
   // Fetches
   let dbCheck = useQuery(CHECK_CHAR_LIST, {
     variables: { id: user },
@@ -25,8 +23,6 @@ const CharEdit = ({ user }) => {
   let characterDb = useQuery(GET_CHARACTERS, {
     variables: { user_id: user },
   });
-  charactersVar([characterDb]);
-  console.log(charactersVar());
 
   if (characterDb.loading) {
     return (
@@ -61,14 +57,14 @@ const CharEdit = ({ user }) => {
                 <CharacterGrid>
                   {characterDb.data.characters.map((character) => {
                     return (
-                      <CharCard key={character.id} character={character} characters={characterDb} />
+                      <CharCard user={user} key={character.id} character={character} characters={characterDb} />
                     );
                   })}
                 </CharacterGrid>
               )}
             </TabPanel>
             <TabPanel>
-              <Report characters={characterDb.data.characters} />
+              <Report characters={characterDb.data.characters} user={user} />
             </TabPanel>
           </TabPanels>
         </Tabs>

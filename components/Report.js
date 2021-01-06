@@ -1,9 +1,10 @@
 import Card from '@material-ui/core/Card';
 
+
 import { getTwoStatus, getThreeStatus, getFourStatus } from '../utils/utils';
 
-
 const Report = ({ characters }) => {
+
   const activeCharacters = characters.filter(
     (character) =>
       character.power_one_level >= 1 ||
@@ -26,8 +27,6 @@ const Report = ({ characters }) => {
     .filter((character) => character.rarity === 2)
     .sort((a, b) => b.char_level - a.char_level);
 
-
- 
   return (
     <>
       <h2>Five Star Characters</h2>
