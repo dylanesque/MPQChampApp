@@ -1,4 +1,5 @@
 import gql from 'graphql-tag';
+import { Button, Snackbar, IconButton } from '@material-ui/core';
 import { Mutation } from 'react-apollo';
 import { v4 as uuidv4 } from 'uuid';
 import  Router  from 'next/router';
@@ -85,9 +86,24 @@ export const UPDATE_CHARACTER = gql`
 
 
 export const UpdateCharacter = ({ id, changes }) => {
+   const [open, setOpen] = React.useState(false);
+
+   const handleClick = () => {
+     setOpen(true);
+   };
+
+   const handleClose = (event, reason) => {
+     if (reason === 'clickaway') {
+       return;
+     }
+
+     setOpen(false);
+   };
   return (
+    <>
     <Mutation
       mutation={UPDATE_CHARACTER}
+      onCompleted={(data) => handleClick()}
     >
       {(update_characters_by_pk, { data }) => (
         <button
@@ -100,6 +116,27 @@ export const UpdateCharacter = ({ id, changes }) => {
         </button>
       )}
     </Mutation>
+     <Snackbar
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="Character updated!"
+        action={
+          <React.Fragment>
+            <Button color="secondary" size="small" onClick={handleClose}>
+              UNDO
+            </Button>
+            <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+              X
+            </IconButton>
+          </React.Fragment>
+        }
+      />
+      </>
   );
 };
 
