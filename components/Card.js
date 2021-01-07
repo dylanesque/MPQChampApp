@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     textAlign: 'center',
   },
   levelSelect: {
-    backGroundColor: 'gray'
+    backGroundColor: 'gray',
   },
   middle: {
     display: 'flex',
@@ -113,7 +113,7 @@ const CharCard = ({ character, characters, user }) => {
       <div className={classes.middle}>
         <img
           className="char-image"
-          src={image}
+          src={`/images/${image}`}
           alt="Cover picture for ${name}"
         />
         <div className={classes.powerSelect}>
@@ -155,11 +155,7 @@ const CharCard = ({ character, characters, user }) => {
         </div>
       </div>
       <label htmlFor={name}>Character Level</label>
-      <select
-        id={name}
-        onChange={levelChange}
-        value={charLevel}
-      >
+      <select id={name} onChange={levelChange} value={charLevel}>
         {charLevels.map((level) => {
           return <option key={level}>{level}</option>;
         })}
