@@ -113,8 +113,8 @@ const CharCard = ({ character, characters, user }) => {
       <div className={classes.middle}>
         <img
           className="char-image"
-          src={`/images/${image}`}
-          alt="Cover picture for ${name}"
+          src={`/${image}`}
+          alt={`Cover picture for ${name}`}
         />
         <div className={classes.powerSelect}>
           <select
