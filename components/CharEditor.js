@@ -22,6 +22,7 @@ const CharEdit = ({ user }) => {
 
   let characterDb = useQuery(GET_CHARACTERS, {
     variables: { user_id: user },
+    
   });
 
   if (characterDb.loading) {

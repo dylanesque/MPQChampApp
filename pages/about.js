@@ -1,6 +1,9 @@
 import Head from 'next/head'
+import { withApollo } from '../lib/withApollo';
+import { useApolloClient } from '@apollo/react-hooks';
 
 const About = () => {
+  const client = useApolloClient();
   return (
     <>
       <Head>
@@ -37,4 +40,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default withApollo()(About);

@@ -180,46 +180,92 @@ export function getThreeStatus(level, feedee) {
 }
 
 export function getFourStatus(level, feedee) {
+  const noFeedee = feedee === 'none';
   if (level < 271) {
     return `${271 - level} level(s) to: Latest Legends Token`;
   } else if (level < 280 && level >= 271) {
-    return `${280 - level} level(s) to: ${feedee} cover`;
+    return (
+      `${280 - level} level(s) to: ` +
+      (noFeedee ? 'Latest Legends Token' : `${feedee} cover`)
+    );
   } else if (level < 290 && level >= 280) {
     return `${290 - level} level(s) to: Latest Legends Token`;
   } else if (level < 295 && level >= 290) {
-    return `${295 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${295 - level} level(s) to: ` +
+      (noFeedee ? '100 Hero points' : `${feedee} shards`)
+    );
   } else if (level < 298 && level >= 295) {
-    return `${298 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${298 - level} level(s) to: ` +
+      (noFeedee ? '4 Command Points' : `${feedee} shards`)
+    );
   } else if (level < 300 && level >= 298) {
     return `${300 - level} level(s) to: ${feedee} shards`;
   } else if (level < 310 && level >= 300) {
-    return `${310 - level} level(s) to: Latest Legends Token`;
+    return (
+      `${310 - level} level(s) to: ` +
+      (noFeedee ? 'Latest Legends Token' : `${feedee} cover`)
+    );
   } else if (level < 315 && level >= 310) {
-    return `${315 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${315 - level} level(s) to: ` +
+      (noFeedee ? '100 Hero points' : `${feedee} shards`)
+    );
   } else if (level < 318 && level >= 315) {
-    return `${318 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${318 - level} level(s) to: ` +
+      (noFeedee ? '5 Command Points' : `${feedee} shards`)
+    );
   } else if (level < 320 && level >= 318) {
     return `${320 - level} level(s) to: ${feedee} shards`;
   } else if (level < 330 && level >= 320) {
     return `${330 - level} level(s) to: Latest Legends Token`;
   } else if (level < 335 && level >= 330) {
-    return `${335 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${335 - level} level(s) to: ` +
+      (noFeedee ? '100 Hero points' : `${feedee} shards`)
+    );
   } else if (level < 338 && level >= 335) {
-    return `${338 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${338 - level} level(s) to: ` +
+      (noFeedee ? '7 Command Points' : `${feedee} shards`)
+    );
   } else if (level < 340 && level >= 338) {
-    return `${340 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${340 - level} level(s) to: ` +
+      (noFeedee ? 'Latest Legends Token' : `${feedee} shards`)
+    );
   } else if (level < 344 && level >= 338) {
-    return `${344 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${344 - level} level(s) to: ` +
+      (noFeedee ? '7 Command Points' : `${feedee} shards`)
+    );
   } else if (level < 347 && level >= 344) {
-    return `${347 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${347 - level} level(s) to: ` +
+      (noFeedee ? '100 Hero points' : `${feedee} shards`)
+    );
   } else if (level < 350 && level >= 347) {
-    return `${350 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${350 - level} level(s) to: ` +
+      (noFeedee ? 'Latest Legends Token' : `${feedee} shards`)
+    );
   } else if (level < 355 && level >= 350) {
-    return `${355 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${355 - level} level(s) to: ` +
+      (noFeedee ? '250 Hero points' : `${feedee} shards`)
+    );
   } else if (level < 358 && level >= 355) {
-    return `${358 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${358 - level} level(s) to: ` +
+      (noFeedee ? '8 Command Points' : `${feedee} shards`)
+    );
   } else if (level < 360 && level >= 358) {
-    return `${360 - level} level(s) to: ${feedee} shards`;
+    return (
+      `${360 - level} level(s) to: ` +
+      (noFeedee ? 'Latest Legends Token' : `${feedee} shards`)
+    );
   } else if (level < 362 && level >= 360) {
     return `${362 - level} level(s) to: 10 Command Points`;
   } else if (level < 364 && level >= 362) {
