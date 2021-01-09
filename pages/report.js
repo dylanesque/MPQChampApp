@@ -1,11 +1,20 @@
 import Card from '@material-ui/core/Card';
+import { useQuery } from '@apollo/react-hooks';
 
-
+import { withApollo } from '../lib/withApollo';
 import { getTwoStatus, getThreeStatus, getFourStatus } from '../utils/utils';
+import { GET_CHARACTERS } from '../utils/graphql';
 
-const Report = ({ characters }) => {
+const Report = () => {
+  let user;
+  if (typeof window !== 'undefined') {
+    user = localStorage.getItem('userKey');
+  }
 
-  const activeCharacters = characters.filter(
+  let characters = useQuery(GET_CHARACTERS, {
+    variables: { user_id: user },
+  });
+  const activeCharacters = characters.data.characters.filter(
     (character) =>
       character.power_one_level >= 1 ||
       character.power_two_level >= 1 ||
@@ -28,7 +37,8 @@ const Report = ({ characters }) => {
     .sort((a, b) => b.char_level - a.char_level);
 
   return (
-    <>
+    <div className="index-background">
+      <h1 style={{ textAlign: 'center' }}>Roster Report</h1>
       <h2>Five Star Characters</h2>
       <div
         style={{
@@ -148,8 +158,8 @@ const Report = ({ characters }) => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 
-export default Report;
+export default withApollo()(Report);

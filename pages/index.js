@@ -1,6 +1,7 @@
 import Head from 'next/head';
-
+import { useApolloClient } from '@apollo/react-hooks';
 import { withApollo } from '../lib/withApollo';
+
 import { useFetchUser } from '../lib/user';
 import Login from '../components/Auth/Login';
 import LogoutBtn from '../components/Auth/Logout';
@@ -9,6 +10,9 @@ import CharEdit from '../components/CharEditor';
 const IndexPage = () => {
   // Variables
   const { user, loading } = useFetchUser();
+  if (user && typeof window !== 'undefined') {
+    localStorage.setItem('userKey', user.sub);
+  }
 
   if (loading) {
     return <div>Loading...</div>;

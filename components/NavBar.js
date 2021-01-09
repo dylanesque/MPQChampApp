@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useFetchUser } from '../lib/user';
 
 const NavBar = () => {
+  const { user } = useFetchUser();
   return (
     <nav className="navbar">
       <>
@@ -11,6 +12,12 @@ const NavBar = () => {
         </Link>
       </>
       <div>
+        {user && (
+          <Link href="/report">
+            <a>REPORT</a>
+          </Link>
+        )}
+
         <Link href="/about">
           <a>ABOUT</a>
         </Link>

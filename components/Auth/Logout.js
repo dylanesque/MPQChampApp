@@ -7,6 +7,7 @@ const useStyles = makeStyles({
   button: {
     bottom: '0',
     display: 'flex',
+    fontFamily: 'Roboto Condensed',
     justifyContent: 'center',
     marginTop: '1rem'
   },
