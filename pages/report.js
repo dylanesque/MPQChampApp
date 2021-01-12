@@ -159,6 +159,7 @@ const Report = () => {
               >
                 <p>{char.name}</p>
                 <img className="char-image" src={char.image} />
+                <p>{ char.feedees}</p>
                 <p>Level {char.char_level}</p>
                 <p>{getTwoStatus(char.char_level, char.feedees)}</p>
               </Card>
