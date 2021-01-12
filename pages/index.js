@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { useApolloClient } from '@apollo/react-hooks';
 import { withApollo } from '../lib/withApollo';
 
 import { useFetchUser } from '../lib/user';
