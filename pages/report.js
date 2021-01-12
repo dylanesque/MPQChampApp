@@ -8,9 +8,11 @@ import { GET_CHARACTERS } from '../utils/graphql';
 
 const Report = () => {
    // const { user, loading } = useFetchUser();
+  let user;
   if (typeof window !== 'undefined') {
     user = localStorage.getItem('userKey');
   }
+
 
   let characters = useQuery(GET_CHARACTERS, {
     variables: { user_id: user },

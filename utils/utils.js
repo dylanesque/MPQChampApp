@@ -89,7 +89,7 @@ function calculateDynamicLevelRange(rarity, totalLevel) {
 // 2) This change fires the level changing function, feeding it the character's rarity and totalPowerLevel
 
 // parses an array of feedees/feeders from string value
-function parseFeeds(data) {
+export function parseFeeds(data) {
   if (data === 'none') {
     return;
   } else if (!data.includes(',')) {

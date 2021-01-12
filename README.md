@@ -56,9 +56,9 @@ Application flow will work like this:
 
 **Phase Three:** I will begin to introduce basic styling at this point, flesh out individual pages, etc. When this phase is complete, the MVP of the application will be complete, and I'll deploy the app for basic user testing. **This phase is completed.**
 
-**Phase Four:** This phase will consist of more advanced styling and comprehensive cross-browser testing. Automated testing will begin, and I will be focusing my energy on getting the finer details of the character report page filtering and other features on that page complete. Changes based on user feedback will begin, and a data caching solution will be implemented at this point.
+**Phase Four:** This phase will consist of more advanced styling and comprehensive cross-browser testing. Automated testing will begin, and I will be focusing my energy on getting the finer details of the character report page filtering and other features on that page complete. Changes based on user feedback will begin, and a data caching solution will be implemented at this point. **This phase is underway**
 
-**Phase Five:** This phase will consist of more checks for advanced styling (such as animation), accessibility, performance, and redundant/non-performant code. 
+**Phase Five:** This phase will consist of more checks for advanced styling (such as animation), accessibility, performance, and redundant/inefficient code. 
 
 **Future Enhancements:**
 
@@ -70,18 +70,18 @@ Some things for me to consider in the future after the MVP is finished:
 
 ** What I learned from this project **
 
-**Don't Finalize the Data Models Without Writing Specs For Front-End Data Flow, Or Considering Back-End Quirks**: There was a small amount of wasted effort in the character models in the form of:
+**Don't Finalize the Data Models Without Writing Specs For Front-End Data Flow, Or Considering Back-End Quirks:**: There was a small amount of wasted effort in the character models in the form of:
 - a feeder attribute which played no part in the application flow
-- a convention of linking feeders/feedees via a system of character ids which turned out to be (a) unnecessary, (b) hard to reason about, and (c) formatted as the wrong type for Hasura, namely an array of integers. A minor quirk of Hasura is that it doesn't currently support arrays as a data type, only as many-to-one relationship, making them unwieldly if you don't need them to be indexed, etc.
-- On that note, I still needed to store feedees as an array sometimes. The solution turned out to simply to store it as a string, and have a function that splits the string into an array if necessary. 
+- a convention of linking feeders/feedees via a system of character ids which turned out to be (a) unnecessary, (b) hard to reason about, and (c) formatted as the wrong type for Hasura, namely an array of integers. A minor quirk of Hasura is that it doesn't currently support arrays as a data type, only as many-to-one relationship, making them very awkward if you don't need them to be indexed, etc.
+- On that note, I still needed to store feedees as an array sometimes. The solution turned out to simply to store it as a string, and have a function that splits the string into an array if necessary. This is a minor annoyance in an app like there where there's a capped number of entities in the table that need this treatment, but something to keep in mind for future work where this could result in a lot of unnecessary processing.
 
 All of the above could have been caught sooner had I taken a more careful approach to planning, including drafting UI components using a solution like Storybook. 
 
-**Use TypeScript for any full-fledged web applications, such as this one**
+**Use TypeScript for any full-fledged web applications, such as this one:**
 
 - This was a minor concern for this particular project, but I've gradually come around to the time that TS saves
   via static analysis of code and catching errors faster.
 
-  
+**Vetting the authentication solution more carefully:**
 
-Had I taken a 
+- 
