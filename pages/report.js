@@ -14,7 +14,7 @@ const Report = () => {
   }
 
 
-  let characters = useQuery(GET_CHARACTERS, {
+  const { characters, loading } = useQuery(GET_CHARACTERS, {
     variables: { user_id: user },
   });
   const activeCharacters = characters.data.characters.filter(

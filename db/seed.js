@@ -10,7 +10,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'green',
     feedees: 'Jessica Jones (Alias Investigations)',
-    feeders: 'none',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -23,8 +23,8 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedees: 'Nightcrawler (Classic), Jean Grey (All New X-Men)',
-    feeders: 'none',
+    feedees: 'Nightcrawler (Classic),Jean Grey (All New X-Men)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -38,7 +38,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'yellow',
     feedees: 'Wasp (Hope Van Dyne)',
-    feeders: 'Squirrel-Girl (Unbeatable)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -52,7 +52,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'yellow',
     feedees: 'Ragnarok (Dark Avengers)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -65,8 +65,8 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'yellow',
-    feedees: 'Jean Grey (All New X-Men), Jubilee (Uncanny X-Men)',
-    feeders: 'none',
+    feedees: 'Jean Grey (All New X-Men),Jubilee (Uncanny X-Men)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -80,7 +80,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Medusa (Inhuman Queen)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -94,7 +94,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'red',
     feedees: 'Black Panther (King of Wakanda)',
-    feeders: 'none',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -108,7 +108,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'red',
     feedees: 'Black Panther (Civil War)',
-    feeders: "Black Panther (T'Challa)",
+    shards: 0,
     char_level: 70,
   },
   {
@@ -122,7 +122,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'black',
     feedees: 'Black Panther (King of Wakanda)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -136,7 +136,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Black Widow (Infinity War)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -150,7 +150,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'yellow',
     feedees: 'Black Widow (Natasha Romanoff)',
-    feeders: 'none',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -164,7 +164,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'red',
     feedees: 'Nick Fury (Director of S.H.I.E.L.D.),Black Widow (Infinity War)',
-    feeders: 'Black Widow (Original)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -178,7 +178,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'black',
     feedees: 'Black Widow (Grey Suit)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -192,7 +192,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Blade (Daywalker)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -206,7 +206,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'green',
     feedees: 'Blade (Modern)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -220,7 +220,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'green',
     feedees: 'Bullseye (Classic)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -234,7 +234,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'green',
     feedees: 'Kingpin (Wilson Fisk)',
-    feeders: 'Bullseye (Dark Avengers)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -248,7 +248,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'Peggy Carter (Captain America)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -262,7 +262,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Captain America (Worthy)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -275,8 +275,8 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'red',
     power_three_color: 'blue',
-    feedees: 'Captain America (Worthy), Winter Soldier (Bucky Barnes)',
-    feeders: 'Captain America (Steve Rogers)',
+    feedees: 'Captain America (Worthy),Winter Soldier (Bucky Barnes)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -290,7 +290,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'blue',
     feedees: 'Captain America (Super Soldier)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -304,7 +304,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Captain Marvel (Carol Danvers)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -318,7 +318,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'green',
     feedees: 'Captain Marvel (Galactic Warrior)',
-    feeders: 'Captain Marvel (Modern)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -332,7 +332,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'green',
     feedees: 'Captain Marvel (Carol Danvers),Talos (Skrull Warlord)',
-    feeders: 'Captain Marvel (Ms. Marvel)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -346,7 +346,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'yellow',
     feedees: 'Captain Marvel (Modern)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -360,7 +360,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'green',
     feedees: 'Doctor Octopus (Classic)',
-    feeders: 'Doctor Octopus (Otto Octavius)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -373,8 +373,8 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedees: 'Wolverine (X-Force), Magik (Classic)',
-    feeders: 'none',
+    feedees: 'Wolverine (X-Force),Magik (Classic)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -388,7 +388,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'blue',
     feedees: 'Cable (Nathan Summers)',
-    feeders: 'Cyclops (Uncanny X-Men),Emma Frost (Astonishing X-Men)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -401,8 +401,8 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'yellow',
     power_three_color: 'black',
-    feedees: 'none',
-    feeders: 'Cyclops (Classic)',
+    feedees: 'Cyclops (Classic),Emma Frost (Astonishing X-Men)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -416,7 +416,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'blue',
     feedees: 'Daken (Classic)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -430,7 +430,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'black',
     feedees: 'X-23 (All-New Wolverine)',
-    feeders: 'Daken (Dark Avengers)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -444,7 +444,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'red',
     feedees: 'Elektra (Unkillable)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -458,7 +458,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Kingpin (Wilson Fisk)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -471,8 +471,8 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'purple',
     power_three_color: 'black',
-    feeders: 'Deadpool (Uncanny X-Force),Domino (X-Force)',
-    feeders: 'none',
+    feedees: 'Deadpool (Uncanny X-Force),Domino (X-Force)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -486,7 +486,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'purple',
     feedees: 'none',
-    feeders: "Deadpool (It's Me, Deadpool!)",
+    shards: 0,
     char_level: 70,
   },
   {
@@ -500,7 +500,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'purple',
     feedees: 'Invisible Woman (Classic)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -513,8 +513,8 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedees: 'Carnage (Cletus Kassady), Sandman (Flint Marko)',
-    feeders: 'none',
+    feedees: 'Carnage (Cletus Kassady),Sandman (Flint Marko)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -528,7 +528,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Carnage (Cletus Kassady)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -541,8 +541,8 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'purple',
     power_three_color: 'yellow',
-    feedees: 'Nova (Sam Alexander), Mordo (Master of the Mystic Arts)',
-    feeders: 'none',
+    feedees: 'Nova (Sam Alexander),Mordo (Master of the Mystic Arts)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -556,7 +556,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Mordo (Master of the Mystic Arts)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -570,7 +570,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'red',
     feedees: 'Star Lord (Awesome Mix Volume 2)',
-    feeders: 'Rocket & Groot (Most Wanted)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -584,7 +584,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'red',
     feedees: 'Elektra (Unkillable)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -598,7 +598,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Daredevil (Man Without Fear)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -611,8 +611,8 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'red',
     power_three_color: 'black',
-    feedees: 'Rogue (Classic), Dazzler (Classic)',
-    feeders: 'none',
+    feedees: 'Rogue (Classic),Dazzler (Classic)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -626,7 +626,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'black',
     feedees: 'Star-Lord (Legendary Outlaw),Gamora (Awesome Mix Volume 2)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -640,7 +640,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'blue',
     feedees: 'Thanos (The Mad Titan)',
-    feeders: 'none',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -654,7 +654,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Ghost Rider (Johnny Blaze)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -668,7 +668,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'black',
     feedees: 'Ghost Rider (Robbie Reyes)',
-    feeders: 'The Hood (Classic)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -682,7 +682,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Sandman (Flint Marko)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -696,7 +696,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'She-Hulk (Modern)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -710,7 +710,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Kate Bishop (Hawkeye)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -724,7 +724,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'black',
     feedees: 'Kate Bishop (Hawkeye)',
-    feeders: 'Hawkeye (Modern)',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -738,7 +738,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'purple',
     feedees: 'Hawkeye (Hawkguy)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -752,7 +752,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'green',
     feedees: 'Human Torch (Classic)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -765,8 +765,8 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedees: 'The Thing (Classic), Human Torch (Jim Hammond)',
-    feeders: '54',
+    feedees: 'The Thing (Classic),Human Torch (Jim Hammond)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -780,7 +780,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'black',
     feedees: 'Ghost Rider (Johnny Blaze)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -793,8 +793,8 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'black',
     power_three_color: 'green',
-    feedees: 'The Hulk (Totally Awesome), The Hulk (Main Event)',
-    feeders: 'Moonstone (Dark Avengers)',
+    feedees: 'The Hulk (Totally Awesome),The Hulk (Main Event)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -808,7 +808,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'black',
     feedees: 'The Hulk (Bruce Banner)',
-    feeders: 'The Hulk (Indestructible)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -822,7 +822,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'yellow',
     feedees: 'Loki (God of Mischief)',
-    feeders: 'The Hulk (Indestructible)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -836,7 +836,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'purple',
     feedees: 'Iceman (Bobby Drake)',
-    feeders: 'Mystique (Raven Darkholme)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -850,7 +850,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Doctor Doom (Classic)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -864,7 +864,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'black',
     feedees: 'Iron Fist (Danny Rand)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -878,7 +878,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Iron Fist (Immortal Weapon)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -892,7 +892,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: '133',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -905,8 +905,8 @@ export const seedDB = [
     power_one_color: 'red',
     power_two_color: 'blue',
     power_three_color: 'yellow',
-    feedees: 'Iron Man (Hulkbuster), Riri Williams (Ironheart)',
-    feeders: 'none',
+    feedees: 'Iron Man (Hulkbuster),Riri Williams (Ironheart)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -920,7 +920,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'blue',
     feedees: 'Rescue (Pepper Potts)',
-    feeders: 'Iron Man (Model 40)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -934,7 +934,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Jubilee (Uncanny X-Men)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -948,7 +948,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'Angel (All New X-Men), Beast (Classic)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -962,7 +962,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'America Chavez (Young Avengers)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -976,7 +976,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'green',
     feedees: 'Jean Grey (Phoenix)',
-    feeders: 'none',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -989,8 +989,8 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedees: 'Medusa (Inhuman Queen), Lockjaw (Royal Bulldog)',
-    feeders: 'none',
+    feedees: 'Medusa (Inhuman Queen),Lockjaw (Royal Bulldog)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1004,7 +1004,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'purple',
     feedees: 'Hawkeye (Clint Barton)',
-    feeders: 'Hawkeye (Hawkguy)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1018,7 +1018,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'purple',
     feedees: 'none',
-    feeders: 'Miles Morales (Spider-Man)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -1032,7 +1032,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'yellow',
     feedees: 'Daredevil (Matt Murdock)',
-    feeders: 'Bullseye (Classic)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1046,7 +1046,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'The Hulk (Main Event)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -1059,8 +1059,8 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedees: 'Venom (Eddie Brock), Mysterio (Quentin Beck)',
-    feeders: 'none',
+    feedees: 'Venom (Eddie Brock),Mysterio (Quentin Beck)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1074,7 +1074,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'black',
     feedees: 'Luke Cage (Power Man)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1088,7 +1088,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Luke Cage (Hero For Hire)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1102,7 +1102,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'red',
     feedees: 'Magneto (Classic)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -1116,7 +1116,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'yellow',
     feedees: 'Professor X (Charles Xavier),Juggernaut (Fear Itself)',
-    feeders: 'Magneto (Marvel NOW!)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1130,7 +1130,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'green',
     feedees: 'Black Bolt (Inhuman King)',
-    feeders: 'Medusa (Inhuman Queen)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1144,7 +1144,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'red',
     feedees: 'Kingpin (Spiderverse)',
-    feeders: 'Spider-Man (Classic)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1158,7 +1158,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Sentry (Dark Avengers)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1172,7 +1172,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'red',
     feedees: 'The Hulk (Indestructible)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -1186,7 +1186,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'purple',
     feedees: 'Doctor Strange (Sorcerer Supreme)',
-    feeders: 'none',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1200,7 +1200,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'black',
     feedees: 'Silver Surfer (Skyrider)',
-    feeders: "Black Panther (T'Challa)",
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1214,7 +1214,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'black',
     feedees: 'Iceman (All New X-Men)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1228,7 +1228,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'purple',
     feedees: 'none',
-    feeders: 'Black Widow (Grey Suit)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1242,7 +1242,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Doctor Strange (Stephen Strange)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1256,7 +1256,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Shuri (Master Engineer)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -1270,7 +1270,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'blue',
     feedees: 'Captain America (Super Soldier)',
-    feeders: 'Psylocke (Classic)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1284,7 +1284,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'yellow',
     feedees: 'Professor X (Classic)',
-    feeders: 'Magneto (Classic)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1298,7 +1298,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'black',
     feedees: 'Peggy Carter (Captain America)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1312,7 +1312,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'red',
     feedees: 'The Punisher (MAX)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1326,7 +1326,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'The Punisher (Dark Reign)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1340,7 +1340,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'Scarlet Witch (Wanda Maximoff)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1354,7 +1354,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'green',
     feedees: 'War Machine (James Rhodes)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1367,8 +1367,8 @@ export const seedDB = [
     power_one_color: 'blue',
     power_two_color: 'green',
     power_three_color: 'red',
-    feedees: 'Valkyrie (Asgardian Warrior), X-23 (All-New Wolverine)',
-    feeders: 'Ares (Dark Avengers)',
+    feedees: 'Valkyrie (Asgardian Warrior),X-23 (All-New Wolverine)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1382,7 +1382,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'purple',
     feedees: 'none',
-    feeders: 'Thor (Modern)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1396,7 +1396,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'blue',
     feedees: 'Drax (The Destroyer), Rocket & Groot (Awesome Mix Volume 2)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1410,7 +1410,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'yellow',
     feedees: 'Gambit (Classic)',
-    feeders: 'Gambit (Modern)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1424,7 +1424,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'purple',
     feedees: 'Sam Wilson (Captain America)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1438,7 +1438,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Sam Wilson (Falcon)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1452,7 +1452,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'yellow',
     feedees: 'Green Goblin (Norman Osborn)',
-    feeders: 'Doctor Octopus (Otto Octavius)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1465,8 +1465,8 @@ export const seedDB = [
     power_one_color: 'purple',
     power_two_color: 'green',
     power_three_color: 'blue',
-    feedees: 'Quake (Daisy Johnson), Wiccan (Billy Kaplan)',
-    feeders: 'none',
+    feedees: 'Quake (Daisy Johnson),Wiccan (Billy Kaplan)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1480,7 +1480,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'yellow',
     feedees: 'Moon Knight (Marc Spector)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1494,7 +1494,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'red',
     feedees: 'Gwenpool (Gwen Poole)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1508,7 +1508,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'red',
     feedees: 'Okoye (Warrior General)',
-    feeders: 'none',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1522,7 +1522,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Mr. Fantastic (Reed Richards)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -1536,7 +1536,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'yellow',
     feedees: 'Spider-Man (Classic)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -1550,7 +1550,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'purple',
     feedees: 'none',
-    feeders: 'Spider-Man (Classic)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -1564,7 +1564,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'blue',
     feedees: 'Miles Morales (Spider-Man)',
-    feeders: 'Spider-Man (Bag-Man)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1578,13 +1578,12 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'red',
     feedees: 'Spider-Man (Back In Black)',
-    feeders: 'none',
+    shards: 0,
     char_level: 70,
   },
   {
     name: 'Spider-Man (Peter Parker)',
-    image:
-      'spiderman5.webp',
+    image: 'spiderman5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1593,13 +1592,12 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Vulture (Adrian Toomes)',
+    shards: 0,
     char_level: 255,
   },
   {
     name: 'Spider-Woman (Jessica Drew)',
-    image:
-      'spiderwoman4.webp',
+    image: 'spiderwoman4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1608,13 +1606,12 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Thanos (Modern)',
+    shards: 0,
     char_level: 70,
   },
   {
     name: 'Squirrel-Girl (Unbeatable)',
-    image:
-      'squirrelgirl3.webp',
+    image: 'squirrelgirl3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1622,14 +1619,13 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedees: 'Ant-Man (Scott Lang), Kraven The Hunter (Sergei Kravinoff)',
-    feeders: 'none',
+    feedees: 'Ant-Man (Scott Lang),Kraven The Hunter (Sergei Kravinoff)',
+    shards: 0,
     char_level: 40,
   },
   {
     name: 'Star-Lord (Awesome Mix Volume 2)',
-    image:
-      'starlord5.webp',
+    image: 'starlord5.webp',
     rarity: 5,
     power_one_level: 0,
     power_two_level: 0,
@@ -1638,13 +1634,12 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Drax (The Destroyer)',
+    shards: 0,
     char_level: 255,
   },
   {
     name: 'Star-Lord (Legendary Outlaw)',
-    image:
-      'starlord4.webp',
+    image: 'starlord4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,
@@ -1653,13 +1648,12 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Star-Lord (Peter Quill), Gamora (Guardians of the Galaxy)',
+    shards: 0,
     char_level: 70,
   },
   {
     name: 'Star-Lord (Peter Quill)',
-    image:
-      'starlord3.webp',
+    image: 'starlord3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1668,7 +1662,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'red',
     feedees: 'Star-Lord (Legendary Outlaw)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1682,7 +1676,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'yellow',
     feedees: 'Storm (Mohawk)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -1696,7 +1690,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'black',
     feedees: 'Thor (Goddess of Thunder)',
-    feeders: 'Storm (Classic)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1710,7 +1704,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Gamora (Awesome Mix Volume 2)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -1723,8 +1717,8 @@ export const seedDB = [
     power_one_color: 'black',
     power_two_color: 'purple',
     power_three_color: 'green',
-    feedees: 'Spider-Woman (Jessica Drew), Thanos (Endgame)',
-    feeders: 'none',
+    feedees: 'Spider-Woman (Jessica Drew),Thanos (Endgame)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1738,7 +1732,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: '55',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1752,7 +1746,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'blue',
     feedees: 'Storm (Ororo Munroe)',
-    feeders: 'Storm (Mohawk)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1766,7 +1760,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'green',
     feedees: 'Thor (Modern)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -1780,7 +1774,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'green',
     feedees: 'Red Hulk (Thunderbolt Ross)',
-    feeders: 'Thor (Marvel NOW!)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1794,7 +1788,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Valkyrie (Asgardian Warrior)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -1808,7 +1802,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'yellow',
     feedees: 'Thor (Gladiator)',
-    feeders: 'Ragnarok (Dark Avengers)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1822,7 +1816,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Loki (Dark Reign)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1836,7 +1830,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'yellow',
     feedees: 'Wasp (Janet Vna Dyne)',
-    feeders: 'none',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1850,7 +1844,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'blue',
     feedees: 'Spider-Man (Peter Parker)',
-    feeders: 'none',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1864,7 +1858,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'green',
     feedees: 'Iron Man (Mark XLVI)',
-    feeders: 'Quicksilver (Pietro Maximoff)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1878,7 +1872,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Ant Man (Scott Lang)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -1892,7 +1886,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Vision (Android Avenger)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1906,7 +1900,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'red',
     feedees: 'Captain America (Infinity War)',
-    feeders: 'Captain America (Super-Soldier)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1920,7 +1914,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'yellow',
     feedees: 'Wolverine (Patch)',
-    feeders: 'none',
+    shards: 0,
     char_level: 15,
   },
   {
@@ -1933,8 +1927,8 @@ export const seedDB = [
     power_one_color: 'green',
     power_two_color: 'red',
     power_three_color: 'yellow',
-    feedees: 'Wolverine (X-Force), Sabretooth (Victor Creed)',
-    feeders: 'Wolverine (Astonishing X-Men)',
+    feedees: 'Wolverine (X-Force),Sabretooth (Victor Creed)',
+    shards: 0,
     char_level: 40,
   },
   {
@@ -1948,7 +1942,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Wolverine (X-Force)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -1962,7 +1956,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'yellow',
     feedees: 'Wolverine (Old Man Logan)',
-    feeders: 'Colossus (Classic), Wolverine (Patch)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1976,7 +1970,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'purple',
     feedees: 'none',
-    feeders: 'Daken (Classic), X-23 (All-New Wolverine)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -1990,7 +1984,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'blue',
     feedees: 'Archangel (Classic)',
-    feeders: 'Angel (All-New X-Men)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2004,7 +1998,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Nightcrawler (Classic)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -2018,7 +2012,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Captain America (Super Soldier)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2032,7 +2026,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Captain Marvel (Modern)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2046,7 +2040,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'blue',
     feedees: 'Hela (Goddess of Death)',
-    feeders: 'Colossus (Classic)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2060,7 +2054,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Magik (Classic)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -2074,7 +2068,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'yellow',
     feedees: 'Kitty Pryde (Uncanny X-Men)',
-    feeders: 'Cyclops (Uncanny X-Men)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2088,7 +2082,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Emma Frost (Astonishing X-Men)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -2102,7 +2096,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: "Deadpool (It's Me, Deadpool!)",
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2116,7 +2110,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Gambit (Modern)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2130,7 +2124,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'purple',
     feedees: 'none',
-    feeders: 'The Hulk (Totally Awesome)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -2144,7 +2138,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'purple',
     feedees: 'none',
-    feeders: 'Hawkeye (Hawkguy)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2158,7 +2152,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Human Torch (Classic)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2172,7 +2166,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Iron Man (Model 40)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2186,7 +2180,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Kamala Khan (Ms. Marvel)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2200,7 +2194,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Loki (Dark Reign)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2214,7 +2208,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'Iceman (All-New X-Men)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -2228,7 +2222,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'Invisible Woman (Classic)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -2242,7 +2236,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Iron Man (Hulkbuster)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -2256,7 +2250,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Professor X (Charles Xavier)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -2270,7 +2264,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'black',
     feedees: 'none',
-    feeders: 'Rogue (Classic)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -2284,7 +2278,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'yellow',
     feedees: 'none',
-    feeders: 'Thor (Goddess of Thunder)',
+    shards: 0,
     char_level: 255,
   },
   {
@@ -2298,7 +2292,7 @@ export const seedDB = [
     power_two_color: 'red',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'Magneto (Classic)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2312,7 +2306,7 @@ export const seedDB = [
     power_two_color: 'green',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'Rocket & Groot (Most Wanted)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2326,7 +2320,7 @@ export const seedDB = [
     power_two_color: 'yellow',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Scarlet Witch (Wanda Maximoff)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2340,7 +2334,7 @@ export const seedDB = [
     power_two_color: 'purple',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'Squirrel-Girl (Unbeatable)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2354,7 +2348,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'blue',
     feedees: 'none',
-    feeders: 'Star Lord (Peter Quill)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2368,7 +2362,7 @@ export const seedDB = [
     power_two_color: 'blue',
     power_three_color: 'green',
     feedees: 'none',
-    feeders: 'Thanos (Modern)',
+    shards: 0,
     char_level: 70,
   },
   {
@@ -2382,7 +2376,7 @@ export const seedDB = [
     power_two_color: 'black',
     power_three_color: 'red',
     feedees: 'none',
-    feeders: 'Wolverine (Patch)',
+    shards: 0,
     char_level: 70,
   },
 ];

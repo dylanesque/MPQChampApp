@@ -43,6 +43,7 @@ export const AddDB = (user) => {
 export const CHECK_CHAR_LIST = gql`
   query checkCharacters($id: String!) {
     users(where: { id: { _eq: $id } }) {
+      id
       characters_aggregate {
         aggregate {
           count
@@ -57,7 +58,6 @@ export const GET_CHARACTERS = gql`
     characters(where: { user_id: { _eq: $user_id } }, order_by: { name: asc }) {
       char_level
       feedees
-      feeders
       id
       image
       name
@@ -68,6 +68,7 @@ export const GET_CHARACTERS = gql`
       power_two_level
       power_two_color
       power_three_level
+      shards
     }
   }
 `;
