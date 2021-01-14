@@ -11,7 +11,9 @@ describe('feedees are corrctly parsed from', () => {
 
 describe('next reward is calculated for', () => {
   test('two star characters', () => {
-    expect(getTwoStatus(108, 'Bullseye (Classic)')).toEqual('7 levels to: Bullseye (Classic) shards');
+    expect(getTwoStatus(143, 'Ares (Dark Avengers)')).toEqual(
+      '1 levels to: Mighty Recruit Token'
+    );
   });
 })
 

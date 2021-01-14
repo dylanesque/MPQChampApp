@@ -103,8 +103,8 @@ export function parseFeeds(data) {
 export function getTwoStatus(level, feedee) {
   if (level === 144) {
     return 'Champion Maxed';
-  } else if (level < 143 && level >= 139) {
-    return `${143 - level} levels to: Mighty Recruit Token`;
+  } else if (level < 144 && level >= 139) {
+    return `${144 - level} levels to: Mighty Recruit Token`;
   } else if (level < 139 && level >= 127) {
     return `${139 - level} levels to: ${feedee} shards`;
   } else if (level < 127 && level >= 119) {
@@ -284,9 +284,11 @@ export function getFourStatus(level, feedee) {
 // If column index is zero, return row index times (column index  + 1)
 // else, return  row index times column index
 
+/*
 function calculateCharIndex(rowIndex, columnIndex) {
   if (rowIndex === 0) {
     return columnIndex;
   }
   return rowIndex * columnIndex;
 }
+*/

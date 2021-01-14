@@ -603,7 +603,7 @@ export const seedDB = [
   },
   {
     name: 'Gambit (Modern)',
-    image: 'bambit3.webp',
+    image: 'gambit3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -1093,7 +1093,7 @@ export const seedDB = [
   },
   {
     name: 'Magneto (Marvel NOW!)',
-    image: 'magneto.webp',
+    image: 'magneto2.webp',
     rarity: 2,
     power_one_level: 0,
     power_two_level: 0,
@@ -1471,7 +1471,7 @@ export const seedDB = [
   },
   {
     name: 'Sentry (Dark Avengers)',
-    image: 'sentry4.webp',
+    image: 'sentry3.webp',
     rarity: 3,
     power_one_level: 0,
     power_two_level: 0,
@@ -2311,7 +2311,7 @@ export const seedDB = [
   },
   {
     name: 'Wiccan (Billy Kaplan)',
-    image: 'wican4.webp',
+    image: 'wiccan4.webp',
     rarity: 4,
     power_one_level: 0,
     power_two_level: 0,

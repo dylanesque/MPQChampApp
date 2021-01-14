@@ -6,23 +6,27 @@ import { useFetchUser } from '../lib/user';
 import { getTwoStatus, getThreeStatus, getFourStatus } from '../utils/utils';
 import { GET_CHARACTERS } from '../utils/graphql';
 
+
 const Report = () => {
-   // const { user, loading } = useFetchUser();
+  // const { user, loading } = useFetchUser();
   let user;
+
   if (typeof window !== 'undefined') {
     user = localStorage.getItem('userKey');
   }
-
-
-  const { characters, loading } = useQuery(GET_CHARACTERS, {
+  const { data, loading} = useQuery(GET_CHARACTERS, {
     variables: { user_id: user },
   });
-  const activeCharacters = characters.data.characters.filter(
+
+  if (loading) return 'Loading...';
+
+  const activeCharacters = data.characters.filter(
     (character) =>
       character.power_one_level >= 1 ||
       character.power_two_level >= 1 ||
       character.power_three_level >= 1
   );
+
   const fiveStars = activeCharacters
     .filter((character) => character.rarity === 5)
     .sort((a, b) => b.char_level - a.char_level);
@@ -38,10 +42,6 @@ const Report = () => {
   const twoStars = activeCharacters
     .filter((character) => character.rarity === 2)
     .sort((a, b) => b.char_level - a.char_level);
-  
-  if (loading) {
-    return <div>Loading...</div>;
-  } else {
 
     return (
       <div className="index-background">
@@ -65,7 +65,7 @@ const Report = () => {
                   minWidth: '240px',
                   alignItems: 'center',
                   marginRight: '1rem',
-                  padding: '0.5rem',
+                  padding: '0.25rem',
                 }}
               >
                 <p>{char.name}</p>
@@ -159,7 +159,7 @@ const Report = () => {
               >
                 <p>{char.name}</p>
                 <img className="char-image" src={char.image} />
-                <p>{ char.feedees}</p>
+                <p>{char.feedees}</p>
                 <p>Level {char.char_level}</p>
                 <p>{getTwoStatus(char.char_level, char.feedees)}</p>
               </Card>
@@ -168,7 +168,6 @@ const Report = () => {
         </div>
       </div>
     );
-  }
 };
 
 export default withApollo()(Report);
