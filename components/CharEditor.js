@@ -8,7 +8,6 @@ import { CHECK_CHAR_LIST, GET_CHARACTERS, AddDB } from '../utils/graphql';
 
 const CharEdit = ({ user }) => {
   let charCount = null;
-  // Fetches
   let dbCheck = useQuery(CHECK_CHAR_LIST, {
     variables: { id: user },
   });

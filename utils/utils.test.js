@@ -16,4 +16,3 @@ describe('next reward is calculated for', () => {
     );
   });
 })
-

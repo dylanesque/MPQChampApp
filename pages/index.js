@@ -37,7 +37,7 @@ const IndexPage = () => {
         </h1>
         {/* 
         <CharEdit user={user.sub} />
-         */}
+          */}
         <main className="loading-page">
           <h2 style={{ textAlign: 'center', padding: '1rem' }}>
             The site is currently down for back-end maintenance. We'll be back

@@ -81,6 +81,7 @@ export const UPDATE_CHARACTER = gql`
       power_one_level
       power_two_level
       power_three_level
+      shards
     }
   }
 `;

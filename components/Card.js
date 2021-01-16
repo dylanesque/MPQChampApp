@@ -44,6 +44,7 @@ const CharCard = ({ character, characters, user }) => {
     power_two_color,
     power_three_color,
     rarity,
+    shards
   } = character;
 
   // TODO: Refactor to remove duplication
@@ -53,6 +54,7 @@ const CharCard = ({ character, characters, user }) => {
   const [powerThreeLevel, setPowerThreeLevel] = React.useState(
     power_three_level
   );
+  const [shardCount, setShardCount] = React.useState(shards);
 
   const [powerLevelState, setPowerLevelState] = React.useState(
     powerOneLevel + powerTwoLevel + powerThreeLevel
@@ -78,6 +80,11 @@ const CharCard = ({ character, characters, user }) => {
   function powerThreeChange(e) {
     setPowerThreeLevel(parseInt(e.target.value));
     setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
+  }
+
+  function shardChange(e) {
+    e.preventDefault();
+    setShardCount(e.target.value);
   }
 
   function generateColors(color) {
@@ -157,7 +164,20 @@ const CharCard = ({ character, characters, user }) => {
           return <option key={level}>{level}</option>;
         })}
       </select>
-
+      { rarity > 2 && <>
+        <label htmlFor={shards}>Shards</label>
+        <input
+          onChange={shardChange}
+          autoFocus
+          style={{ marginBottom: '1rem' }}
+          type="number"
+          id="shards"
+          name="shards"
+          value={shardCount}
+          min="0"
+          max={rarity * 100}
+        />
+      </>}
       <UpdateCharacter
         characters={characters}
         user={user}
@@ -167,6 +187,7 @@ const CharCard = ({ character, characters, user }) => {
           power_one_level: powerOneLevel,
           power_two_level: powerTwoLevel,
           power_three_level: powerThreeLevel,
+          shards: shardCount
         }}
       />
     </Card>
