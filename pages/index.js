@@ -35,9 +35,9 @@ const IndexPage = () => {
         <h1 style={{ textAlign: 'center' }}>
           Welcome to MPQ Hall of Champions!
         </h1>
-        {/* 
+
         <CharEdit user={user.sub} />
-          */}
+
         <main className="loading-page">
           <h2 style={{ textAlign: 'center', padding: '1rem' }}>
             The site is currently down for back-end maintenance. We'll be back
@@ -45,7 +45,9 @@ const IndexPage = () => {
           </h2>
         </main>
 
+        {/* 
         {user && <LogoutBtn />}
+         */}
         <footer>
           All code on this site (except where noted otherwise) is ©
           {new Date().getFullYear()} Michael S. Caveney. Marvel Puzzle Quest is
