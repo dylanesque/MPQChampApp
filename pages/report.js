@@ -4,7 +4,7 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 
 import { withApollo } from '../lib/withApollo';
 import { useFetchUser } from '../lib/user';
-import { getTwoStatus, getThreeStatus, getFourStatus } from '../utils/utils';
+import { getTwoStatus, getThreeStatus, getFourStatus, getFiveStatus } from '../utils/utils';
 import { GET_CHARACTERS } from '../utils/graphql';
 
 
@@ -72,6 +72,7 @@ const Report = () => {
                 <p>{char.name}</p>
                 <img className="char-image" src={char.image} />
                 <p>Level {char.char_level}</p>
+                <p>{getFiveStatus(char.char_level)}</p>
                 <div style={{ width: '55%' }}>
                   <LinearProgress
                     variant="determinate"

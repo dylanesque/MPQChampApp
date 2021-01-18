@@ -1,5 +1,4 @@
-// level generator(s)
-
+// generates levels for level select menus
 export function calculateLevels(rarity) {
   const range = (start, end) =>
     new Array(end - start + 1).fill(undefined).map((_, i) => i + start);
@@ -277,6 +276,25 @@ export function getFourStatus(level, feedee) {
   } else {
     return `${370 - level} level(s) to: Maximum Level`;
   }
+}
+
+export function getFiveStatus(level) {
+  if (level < 451) {
+    return `${451 - level} level(s) to Latest Legends Token`;
+  } else if (level < 453 && level >= 451) {
+    return `${453 - level} level(s) to 25 Command Points`;
+  } else if (level < 455 && level >= 453) {
+    return `${455 - level} level(s) to Latest Legends Token`;
+  } else if (level < 457 && level >= 455) {
+    return `${457 - level} level(s) to 25 Command Points`;
+  } else if (level < 459 && level >= 457) {
+    return `${459 - level} level(s) to Latest Legends Token`;
+  } else if (level < 461 && level >= 459) {
+    return `${461 - level} level(s) to 25 Command Points`;
+  } else {
+    return 'Further 5* rewards forthcoming';
+  }
+
 }
 
 // If both row and column index are zero, return zero
