@@ -1,5 +1,6 @@
 import Card from '@material-ui/core/Card';
 import { useQuery } from '@apollo/react-hooks';
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 import { withApollo } from '../lib/withApollo';
 import { useFetchUser } from '../lib/user';
@@ -60,7 +61,7 @@ const Report = () => {
               <Card
                 key={char.name}
                 style={{
-                  display: 'flex ',
+                  display: 'flex',
                   flexDirection: 'column',
                   minWidth: '240px',
                   alignItems: 'center',
@@ -71,6 +72,12 @@ const Report = () => {
                 <p>{char.name}</p>
                 <img className="char-image" src={char.image} />
                 <p>Level {char.char_level}</p>
+                <div style={{ width: '55%' }}>
+                  <LinearProgress
+                    variant="determinate"
+                    value={char.shards / char.rarity}
+                  />
+                </div>
               </Card>
             );
           })}
@@ -94,13 +101,19 @@ const Report = () => {
                   minWidth: '240px',
                   alignItems: 'center',
                   marginRight: '1rem',
-                  padding: '0.5rem',
+                  padding: '0.25rem',
                 }}
               >
                 <p>{char.name}</p>
                 <img className="char-image" src={char.image} />
                 <p>Level {char.char_level}</p>
                 <p>{getFourStatus(char.char_level, char.feedees)}</p>
+                <div style={{ width: '55%' }}>
+                  <LinearProgress
+                    variant="determinate"
+                    value={char.shards / char.rarity}
+                  />
+                </div>
               </Card>
             );
           })}
@@ -124,13 +137,20 @@ const Report = () => {
                   minWidth: '240px',
                   alignItems: 'center',
                   marginRight: '1rem',
-                  padding: '0.5rem',
+                  padding: '0.25rem',
                 }}
               >
                 <p>{char.name}</p>
                 <img className="char-image" src={char.image} />
                 <p>Level {char.char_level}</p>
                 <p>{getThreeStatus(char.char_level, char.feedees)}</p>
+                <p>Shards: {char.shards} / {char.rarity * 100}</p>
+                <div style={{ width: '55%'}}>
+                  <LinearProgress
+                    variant="determinate"
+                    value={char.shards / char.rarity}
+                  />
+                </div>
               </Card>
             );
           })}
@@ -154,7 +174,7 @@ const Report = () => {
                   minWidth: '240px',
                   alignItems: 'center',
                   marginRight: '1rem',
-                  padding: '0.5rem',
+                  padding: '0.25rem',
                 }}
               >
                 <p>{char.name}</p>
