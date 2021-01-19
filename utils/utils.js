@@ -133,7 +133,7 @@ export function getThreeStatus(level, feedee) {
     return '1 level to: 15 Command Points';
   } else if (level === 259 || level === 219) {
     return `1 level to: ${feedees[1]} shards`;
-  } else if (level < 258 && level >= 256) {
+  } else if (level < 258 && level >= 255) {
     return `${258 - level} level(s) to: ${feedees[0]} shards`;
   } else if (level < 255 && level >= 250) {
     return `${255 - level} level(s) to: ${feedees[0]} shards`;
