@@ -73,6 +73,9 @@ const Report = () => {
                 <img className="char-image" src={char.image} />
                 <p>Level {char.char_level}</p>
                 <p>{getFiveStatus(char.char_level)}</p>
+                <p>
+                  Shards: {char.shards} / {char.rarity * 100}
+                </p>
                 <div style={{ width: '55%' }}>
                   <LinearProgress
                     variant="determinate"
@@ -109,6 +112,9 @@ const Report = () => {
                 <img className="char-image" src={char.image} />
                 <p>Level {char.char_level}</p>
                 <p>{getFourStatus(char.char_level, char.feedees)}</p>
+                <p>
+                  Shards: {char.shards} / {char.rarity * 100}
+                </p>
                 <div style={{ width: '55%' }}>
                   <LinearProgress
                     variant="determinate"
