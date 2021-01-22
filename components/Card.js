@@ -171,7 +171,7 @@ const CharCard = ({ character, characters, user }) => {
           autoFocus
           style={{ marginBottom: '1rem' }}
           type="number"
-          id="shards"
+          id={name + "shards"}
           name="shards"
           value={shardCount}
           min="0"
