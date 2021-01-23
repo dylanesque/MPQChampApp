@@ -47,7 +47,7 @@ const CharCard = ({ character, characters, user }) => {
     shards
   } = character;
 
-  // TODO: Refactor to remove duplication
+  // TODO: Refactor to reducer to remove duplication
   const [charLevel, setCharLevel] = React.useState(char_level);
   const [powerOneLevel, setPowerOneLevel] = React.useState(power_one_level);
   const [powerTwoLevel, setPowerTwoLevel] = React.useState(power_two_level);
