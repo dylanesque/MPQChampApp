@@ -94,7 +94,7 @@ const CharCard = ({ character, characters, user }) => {
         palette = { color: 'white', backgroundColor: 'fireBrick' };
         break;
       case 'yellow':
-        palette = { color: 'white', backgroundColor: 'goldenRod' };
+        palette = { color: 'white', backgroundColor: '#bb9125' };
         break;
       case 'blue':
         palette = { color: 'white', backgroundColor: '#00c' };
@@ -165,7 +165,7 @@ const CharCard = ({ character, characters, user }) => {
         })}
       </select>
       { rarity > 2 && <>
-        <label htmlFor={shards}>Shards</label>
+        <label htmlFor={name + "shards"}>Shards</label>
         <input
           onChange={shardChange}
           autoFocus

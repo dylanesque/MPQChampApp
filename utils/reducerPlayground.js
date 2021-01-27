@@ -4,7 +4,7 @@ const initialState = {
   powerTwoLevel: power_two_level,
   powerThreeLevel: power_three_level,
   totalLevels: powerOneLevel + powerTwoLevel + powerThreeLevel,
-  maxLevel: totalLevels
+  maxLevel: totalLevels,
 };
 
 function reducer(state, action) {
@@ -20,6 +20,7 @@ function reducer(state, action) {
 
 function Counter() {
   const [state, dispatch] = useReducer(reducer, initialState);
+  // Destructure state object fields here
   return (
     <>
       Total Levels: {state.count}
