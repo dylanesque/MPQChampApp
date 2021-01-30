@@ -44,7 +44,7 @@ const CharCard = ({ character, characters, user }) => {
     power_two_color,
     power_three_color,
     rarity,
-    shards
+    shards,
   } = character;
 
   // TODO: Refactor to reducer to remove duplication
@@ -164,20 +164,22 @@ const CharCard = ({ character, characters, user }) => {
           return <option key={level}>{level}</option>;
         })}
       </select>
-      { rarity > 2 && <>
-        <label htmlFor={name + "shards"}>Shards</label>
-        <input
-          onChange={shardChange}
-          autoFocus
-          style={{ marginBottom: '1rem' }}
-          type="number"
-          id={name + "shards"}
-          name="shards"
-          value={shardCount}
-          min="0"
-          max={rarity * 100}
-        />
-      </>}
+      {rarity > 2 && (
+        <>
+          <label htmlFor={name + 'shards'}>Shards</label>
+          <input
+            onChange={shardChange}
+            autoFocus
+            style={{ marginBottom: '1rem' }}
+            type="number"
+            id={name + 'shards'}
+            name="shards"
+            value={shardCount}
+            min="0"
+            max={rarity * 100}
+          />
+        </>
+      )}
       <UpdateCharacter
         characters={characters}
         user={user}
@@ -187,7 +189,7 @@ const CharCard = ({ character, characters, user }) => {
           power_one_level: powerOneLevel,
           power_two_level: powerTwoLevel,
           power_three_level: powerThreeLevel,
-          shards: shardCount
+          shards: shardCount,
         }}
       />
     </Card>
