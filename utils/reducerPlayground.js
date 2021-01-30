@@ -1,9 +1,9 @@
 // initialState will be populated by the requisite values from the API call
 const initialState = {
-  powerOneLevel: power_one_level,
-  powerTwoLevel: power_two_level,
-  powerThreeLevel: power_three_level,
-  totalLevels: powerOneLevel + powerTwoLevel + powerThreeLevel,
+  powerOneLevelLevel: power_one_level,
+  powerTwoLevelLevel: power_two_level,
+  powerThreeLevelLevel: power_three_level,
+  totalLevels: powerOneLevelLevel + powerTwoLevelLevel + powerThreeLevelLevel,
   maxLevel: totalLevels,
 };
 
