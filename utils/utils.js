@@ -1,4 +1,5 @@
 // generates levels for level select menus
+// Refactor this to take in the rarity and number of covers, so that it calculates the true limit of possible levels
 export function calculateLevels(rarity) {
   const range = (start, end) =>
     new Array(end - start + 1).fill(undefined).map((_, i) => i + start);

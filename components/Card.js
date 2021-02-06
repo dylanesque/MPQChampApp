@@ -47,40 +47,54 @@ const CharCard = ({ character, characters, user }) => {
     shards,
   } = character;
 
-  // TODO: Refactor to reducer to remove duplication
-  const [charLevel, setCharLevel] = React.useState(char_level);
-  const [powerOneLevel, setPowerOneLevel] = React.useState(power_one_level);
-  const [powerTwoLevel, setPowerTwoLevel] = React.useState(power_two_level);
-  const [powerThreeLevel, setPowerThreeLevel] = React.useState(
-    power_three_level
-  );
-  const [shardCount, setShardCount] = React.useState(shards);
+  const [state, dispatch] = React.useReducer(reducer, {
+    powerOneLevel: power_one_level,
+    powerTwoLevel: power_two_level,
+    powerThreeLevel: power_three_level,
+    totalPowers: power_one_level + power_two_level + power_three_level,
+    charLevel: char_level,
+  });
 
-  const [powerLevelState, setPowerLevelState] = React.useState(
-    powerOneLevel + powerTwoLevel + powerThreeLevel
-  );
+  function reducer(state, action) {
+    switch (action.type) {
+      case 'one':
+        return {
+          ...state,
+          powerOneLevel: +action.payload,
+          totalPowers:
+            +action.payload + state.powerTwoLevel + state.powerThreeLevel,
+        };
+      case 'two':
+        return {
+          ...state,
+          powerTwoLevel: +action.payload,
+          totalPowers:
+            +action.payload + state.powerOneLevel + state.powerThreeLevel,
+        };
+      case 'three':
+        return {
+          ...state,
+          powerThreeLevel: +action.payload,
+          totalPowers:
+            +action.payload + state.powerTwoLevel + state.powerOneLevel,
+        };
+      case 'level':
+        return {
+          ...state,
+          charLevel: +action.payload
+        };
+      default:
+        throw new Error();
+    }
+  }
+
+  const [shardCount, setShardCount] = React.useState(shards);
 
   // TODO: selectable power levels should be limited to 13 minus the total of the other two power levels, up to 5
   const powerLevels = [0, 1, 2, 3, 4, 5];
 
   // TODO: Refactor this value to be a derived value based on rarity and number of covers
   const charLevels = calculateLevels(rarity);
-
-  function levelChange(e) {
-    setCharLevel(parseInt(e.target.value));
-  }
-  function powerOneChange(e) {
-    setPowerOneLevel(parseInt(e.target.value));
-    setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
-  }
-  function powerTwoChange(e) {
-    setPowerTwoLevel(parseInt(e.target.value));
-    setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
-  }
-  function powerThreeChange(e) {
-    setPowerThreeLevel(parseInt(e.target.value));
-    setPowerLevelState(powerOneLevel + powerTwoLevel + powerThreeLevel);
-  }
 
   function shardChange(e) {
     e.preventDefault();
@@ -125,8 +139,10 @@ const CharCard = ({ character, characters, user }) => {
             className="power-select"
             aria-label="Power One Color"
             style={generateColors(`${power_one_color}`)}
-            onChange={powerOneChange}
-            value={powerOneLevel}
+            onChange={(event) =>
+              dispatch({ type: 'one', payload: event.target.value })
+            }
+            value={state.powerOneLevel}
           >
             {powerLevels.map((level) => {
               return <option key={level}>{level}</option>;
@@ -137,8 +153,10 @@ const CharCard = ({ character, characters, user }) => {
             className="power-select"
             aria-label="Power Two Color"
             style={generateColors(`${power_two_color}`)}
-            onChange={powerTwoChange}
-            value={powerTwoLevel}
+            onChange={(event) =>
+              dispatch({ type: 'two', payload: event.target.value })
+            }
+            value={state.powerTwoLevel}
           >
             {powerLevels.map((level) => {
               return <option key={level}>{level}</option>;
@@ -149,8 +167,10 @@ const CharCard = ({ character, characters, user }) => {
             className="power-select"
             aria-label="Power Three Color"
             style={generateColors(`${power_three_color}`)}
-            onChange={powerThreeChange}
-            value={powerThreeLevel}
+            onChange={(event) =>
+              dispatch({ type: 'three', payload: event.target.value })
+            }
+            value={state.powerThreeLevel}
           >
             {powerLevels.map((level) => {
               return <option key={level}>{level}</option>;
@@ -159,7 +179,13 @@ const CharCard = ({ character, characters, user }) => {
         </div>
       </div>
       <label htmlFor={name}>Character Level</label>
-      <select id={name} onChange={levelChange} value={charLevel}>
+      <select
+        id={name}
+        onChange={(event) =>
+          dispatch({ type: 'level', payload: event.target.value })
+        }
+        value={state.charLevel}
+      >
         {charLevels.map((level) => {
           return <option key={level}>{level}</option>;
         })}
@@ -185,10 +211,10 @@ const CharCard = ({ character, characters, user }) => {
         user={user}
         id={id}
         changes={{
-          char_level: charLevel,
-          power_one_level: powerOneLevel,
-          power_two_level: powerTwoLevel,
-          power_three_level: powerThreeLevel,
+          char_level: state.charLevel,
+          power_one_level: state.powerOneLevel,
+          power_two_level: state.powerTwoLevel,
+          power_three_level: state.powerThreeLevel,
           shards: shardCount,
         }}
       />
