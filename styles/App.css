@@ -152,6 +152,11 @@ ul, li {
   width: 100vw;
 }
 
+.MuiButton-root, .MuiSnackbar-root {
+  font-family: var(--bodyFont) !important;
+}
+
+
 .navbar a, .navbar a:visited {
   color: white;
   font-size: 1rem;
