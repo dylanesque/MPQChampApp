@@ -2450,7 +2450,7 @@ export const seedDB = [
     char_level: 255,
   },
   {
-    name: 'Beta Ray Bill (Korbinite Cybord)',
+    name: 'Beta Ray Bill (Korbinite Cyborg)',
     image: 'bill5.webp',
     rarity: 5,
     power_one_level: 0,
