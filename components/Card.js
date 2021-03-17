@@ -51,9 +51,25 @@ const CharCard = ({ character, characters, user }) => {
     powerOneLevel: power_one_level,
     powerTwoLevel: power_two_level,
     powerThreeLevel: power_three_level,
+    powerOneLimit: 13 - (power_two_level + power_three_level),
+    powerTwoLimit: 13 - (power_one_level + power_three_level),
+    powerThreeLimit: 13 - (power_two_level + power_one_level),
     totalPowers: power_one_level + power_two_level + power_three_level,
     charLevel: char_level,
   });
+
+  const [shardCount, setShardCount] = React.useState(shards);
+
+  // Changing Char Levels
+
+  // 1) When a power level is incremented or decremented, that change is reflected in state in the
+  // form of state variables that track the value of 13 minus the sum of the other two power levels. (DONE)
+
+  // 2) For each power, this function compares the current power level against the difference
+  // of 13 and the sum of the other two power levels.
+
+  // 3) If that difference changes between 5 or greater/less than 5, then the function will recalculate
+  // the maximum possible selectable level for that power as appropriate in that particular instance.
 
   function reducer(state, action) {
     switch (action.type) {
@@ -61,6 +77,8 @@ const CharCard = ({ character, characters, user }) => {
         return {
           ...state,
           powerOneLevel: +action.payload,
+          powerTwoLimit: 13 - (+action.payload + state.powerThreeLevel),
+          powerThreeLimit: 13 - (+action.payload + state.powerTwoLevel),
           totalPowers:
             +action.payload + state.powerTwoLevel + state.powerThreeLevel,
         };
@@ -68,6 +86,8 @@ const CharCard = ({ character, characters, user }) => {
         return {
           ...state,
           powerTwoLevel: +action.payload,
+          powerOneLimit: 13 - (+action.payload + state.powerThreeLevel),
+          powerThreeLimit: 13 - (+action.payload + state.powerOneLevel),
           totalPowers:
             +action.payload + state.powerOneLevel + state.powerThreeLevel,
         };
@@ -75,26 +95,36 @@ const CharCard = ({ character, characters, user }) => {
         return {
           ...state,
           powerThreeLevel: +action.payload,
+          powerOneLimit: 13 - (+action.payload + state.powerTwoLevel),
+          powerTwoLimit: 13 - (+action.payload + state.powerOneLevel),
           totalPowers:
             +action.payload + state.powerTwoLevel + state.powerOneLevel,
         };
       case 'level':
         return {
           ...state,
-          charLevel: +action.payload
+          charLevel: +action.payload,
         };
       default:
         throw new Error();
     }
   }
 
-  const [shardCount, setShardCount] = React.useState(shards);
-
   // TODO: selectable power levels should be limited to 13 minus the total of the other two power levels, up to 5
   const powerLevels = [0, 1, 2, 3, 4, 5];
 
   // TODO: Refactor this value to be a derived value based on rarity and number of covers
   const charLevels = calculateLevels(rarity);
+
+  function calculatedLevels(limit) {
+    if (limit >= 5) {
+      return powerLevels;
+    } else if (limit == 4) {
+      return powerLevels.slice(0, 5);
+    } else {
+      return powerLevels.slice(0, 4);
+    }
+  }
 
   function shardChange(e) {
     e.preventDefault();
@@ -132,6 +162,8 @@ const CharCard = ({ character, characters, user }) => {
         <img
           className="char-image"
           src={`/${image}`}
+          loading="lazy"
+          decoding="async"
           alt={`Cover picture for ${name}`}
         />
         <div className={classes.powerSelect}>
@@ -144,7 +176,7 @@ const CharCard = ({ character, characters, user }) => {
             }
             value={state.powerOneLevel}
           >
-            {powerLevels.map((level) => {
+            {calculatedLevels(state.powerOneLimit).map((level) => {
               return <option key={level}>{level}</option>;
             })}
           </select>
@@ -158,7 +190,7 @@ const CharCard = ({ character, characters, user }) => {
             }
             value={state.powerTwoLevel}
           >
-            {powerLevels.map((level) => {
+            {calculatedLevels(state.powerTwoLimit).map((level) => {
               return <option key={level}>{level}</option>;
             })}
           </select>
@@ -172,7 +204,7 @@ const CharCard = ({ character, characters, user }) => {
             }
             value={state.powerThreeLevel}
           >
-            {powerLevels.map((level) => {
+            {calculatedLevels(state.powerThreeLimit).map((level) => {
               return <option key={level}>{level}</option>;
             })}
           </select>
