@@ -62,14 +62,9 @@ const CharCard = ({ character, characters, user }) => {
 
   // Changing Char Levels
 
-  // 1) When a power level is incremented or decremented, that change is reflected in state in the
-  // form of state variables that track the value of 13 minus the sum of the other two power levels. (DONE)
-
-  // 2) For each power, this function compares the current power level against the difference
-  // of 13 and the sum of the other two power levels.
-
-  // 3) If that difference changes between 5 or greater/less than 5, then the function will recalculate
-  // the maximum possible selectable level for that power as appropriate in that particular instance.
+  // Logic has been added that calculates and derives power level state in a manner that models MPQ. The last 
+  // remaining step is to fully wire up logic that will calculate a maximum level range for each character based
+  // on their current power level
 
   function reducer(state, action) {
     switch (action.type) {
@@ -110,7 +105,6 @@ const CharCard = ({ character, characters, user }) => {
     }
   }
 
-  // TODO: selectable power levels should be limited to 13 minus the total of the other two power levels, up to 5
   const powerLevels = [0, 1, 2, 3, 4, 5];
 
   // TODO: Refactor this value to be a derived value based on rarity and number of covers

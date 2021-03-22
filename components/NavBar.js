@@ -14,7 +14,7 @@ const NavBar = () => {
       <div>
         {user && (
           <Link href="/report">
-            <a>REPORT</a>
+            <a>ROSTER REPORT</a>
           </Link>
         )}
 

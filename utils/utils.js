@@ -1,6 +1,6 @@
 // generates levels for level select menus
 // Refactor this to take in the rarity and number of covers, so that it calculates the true limit of possible levels
-export function calculateLevels(rarity) {
+export function calculateLevels(rarity, totalPowerLevel) {
   const range = (start, end) =>
     new Array(end - start + 1).fill(undefined).map((_, i) => i + start);
 
@@ -25,6 +25,7 @@ export function calculateLevels(rarity) {
 
 function calculateDynamicLevelRange(rarity, totalLevel) {
   // helper function to generate ranged array of possible character levels
+  // return
 
   const twoStarLevels = [15, 22, 30, 38, 46, 47, 54, 62, 70, 78, 79, 86, 144];
   const threeStarLevels = [
