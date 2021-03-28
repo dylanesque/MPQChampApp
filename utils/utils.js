@@ -1,9 +1,9 @@
 // generates levels for level select menus
 // Refactor this to take in the rarity and number of covers, so that it calculates the true limit of possible levels
-export function calculateLevels(rarity, totalPowerLevel) {
+export function calculateLevels(rarity, totalLevel) {
   const range = (start, end) =>
-    new Array(end - start + 1).fill(undefined).map((_, i) => i + start);
-
+     new Array(end - start + 1).fill(undefined).map((_, i) => i + start);
+  
   switch (rarity) {
     case 2:
       return range(15, 144);
@@ -23,9 +23,20 @@ export function calculateLevels(rarity, totalPowerLevel) {
   }
 }
 
-function calculateDynamicLevelRange(rarity, totalLevel) {
-  // helper function to generate ranged array of possible character levels
-  // return
+
+
+// helper function to generate ranged array of possible character levels
+export function calculateDynamicLevelRange(rarity, totalLevel) {
+
+  function range(start, end) {
+    if (end < 1) {
+      return start;
+    } else {
+      return new Array(end - start + 1)
+        .fill(undefined)
+        .map((_, i) => i + start);
+    }
+  }
 
   const twoStarLevels = [15, 22, 30, 38, 46, 47, 54, 62, 70, 78, 79, 86, 144];
   const threeStarLevels = [
@@ -75,13 +86,13 @@ function calculateDynamicLevelRange(rarity, totalLevel) {
   ];
 
   if (rarity === 2) {
-    return range(twoStarLevels[0], twoStarLevels[totalLevel - 1]);
+    return range(twoStarLevels[0], twoStarLevels[totalLevel]);
   } else if (rarity === 3) {
-    return range(threeStarLevels[0], threeStarLevels[totalLevel - 1]);
+    return range(threeStarLevels[0], threeStarLevels[totalLevel]);
   } else if (rarity === 4) {
-    return range(fourStarLevels[0], fourStarLevels[totalLevel - 1]);
+    return range(fourStarLevels[0], fourStarLevels[totalLevel]);
   } else {
-    return range(fiveStarLevels[0], fiveStarLevels[totalLevel - 1]);
+    return range(fiveStarLevels[0], fiveStarLevels[totalLevel]);
   }
 }
 

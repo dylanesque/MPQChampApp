@@ -2,7 +2,7 @@ import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { UpdateCharacter } from '../utils/graphql';
-import { calculateLevels } from '../utils/utils';
+import { range, calculateDynamicLevelRange } from '../utils/utils';
 
 const useStyles = makeStyles({
   root: {
@@ -108,7 +108,7 @@ const CharCard = ({ character, characters, user }) => {
   const powerLevels = [0, 1, 2, 3, 4, 5];
 
   // TODO: Refactor this value to be a derived value based on rarity and number of covers
-  const charLevels = calculateLevels(rarity);
+  const charLevels = calculateDynamicLevelRange(rarity, state.totalPowers);
 
   function calculatedLevels(limit) {
     if (limit >= 5) {
