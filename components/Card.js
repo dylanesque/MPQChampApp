@@ -2,7 +2,7 @@ import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { UpdateCharacter } from '../utils/graphql';
-import { range, calculateDynamicLevelRange } from '../utils/utils';
+import { calculateDynamicLevelRange } from '../utils/utils';
 
 const useStyles = makeStyles({
   root: {
@@ -59,12 +59,8 @@ const CharCard = ({ character, characters, user }) => {
   });
 
   const [shardCount, setShardCount] = React.useState(shards);
-
-  // Changing Char Levels
-
-  // Logic has been added that calculates and derives power level state in a manner that models MPQ. The last 
-  // remaining step is to fully wire up logic that will calculate a maximum level range for each character based
-  // on their current power level
+  const powerLevels = [0, 1, 2, 3, 4, 5];
+  const charLevels = calculateDynamicLevelRange(rarity, state.totalPowers);
 
   function reducer(state, action) {
     switch (action.type) {
@@ -104,11 +100,6 @@ const CharCard = ({ character, characters, user }) => {
         throw new Error();
     }
   }
-
-  const powerLevels = [0, 1, 2, 3, 4, 5];
-
-  // TODO: Refactor this value to be a derived value based on rarity and number of covers
-  const charLevels = calculateDynamicLevelRange(rarity, state.totalPowers);
 
   function calculatedLevels(limit) {
     if (limit >= 5) {

@@ -1,43 +1,5 @@
-// generates levels for level select menus
-// Refactor this to take in the rarity and number of covers, so that it calculates the true limit of possible levels
-export function calculateLevels(rarity, totalLevel) {
-  const range = (start, end) =>
-     new Array(end - start + 1).fill(undefined).map((_, i) => i + start);
-  
-  switch (rarity) {
-    case 2:
-      return range(15, 144);
-      break;
-    case 3:
-      return range(40, 266);
-      break;
-    case 4:
-      return range(70, 370);
-      break;
-    case 5:
-      return range(270, 550);
-      break;
-
-    default:
-      break;
-  }
-}
-
-
-
 // helper function to generate ranged array of possible character levels
 export function calculateDynamicLevelRange(rarity, totalLevel) {
-
-  function range(start, end) {
-    if (end < 1) {
-      return start;
-    } else {
-      return new Array(end - start + 1)
-        .fill(undefined)
-        .map((_, i) => i + start);
-    }
-  }
-
   const twoStarLevels = [15, 22, 30, 38, 46, 47, 54, 62, 70, 78, 79, 86, 144];
   const threeStarLevels = [
     40,
@@ -85,20 +47,38 @@ export function calculateDynamicLevelRange(rarity, totalLevel) {
     550,
   ];
 
+  if (totalLevel < 2) {
+    if (rarity === 2) {
+      return [twoStarLevels[0]];
+    } else if (rarity === 3) {
+      return [threeStarLevels[0]];
+    } else if (rarity === 4) {
+      return [fourStarLevels[0]];
+    } else {
+      return [fiveStarLevels[0]];
+    }
+  }
+
+  function range(start, end) {
+    if (end <= 0) {
+      return [start];
+    } else {
+      return new Array(end - start + 1)
+        .fill(undefined)
+        .map((_, i) => i + start);
+    }
+  }
+
   if (rarity === 2) {
-    return range(twoStarLevels[0], twoStarLevels[totalLevel]);
+    return range(twoStarLevels[0], twoStarLevels[totalLevel - 1]);
   } else if (rarity === 3) {
-    return range(threeStarLevels[0], threeStarLevels[totalLevel]);
+    return range(threeStarLevels[0], threeStarLevels[totalLevel - 1]);
   } else if (rarity === 4) {
-    return range(fourStarLevels[0], fourStarLevels[totalLevel]);
+    return range(fourStarLevels[0], fourStarLevels[totalLevel - 1]);
   } else {
-    return range(fiveStarLevels[0], fiveStarLevels[totalLevel]);
+    return range(fiveStarLevels[0], fiveStarLevels[totalLevel - 1]);
   }
 }
-
-// Level changing lifecycle:
-// 1) User changes value of power level (They will be blocked from raising the third value if the total power level is 13)
-// 2) This change fires the level changing function, feeding it the character's rarity and totalPowerLevel
 
 // parses an array of feedees/feeders from string value
 export function parseFeeds(data) {
