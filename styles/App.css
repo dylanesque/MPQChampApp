@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@700&display=swap');
 
 :root {
---textColor: white;
---black: #222;
---darkBlue:#094b83;
---lightBlue: #88b4db;
+  --textColor: white;
+  --black: #222;
+  --darkBlue: #094b83;
+  --lightBlue: #88b4db;
 
---headingFont: 'Roboto Slab', serif;
---bodyFont: 'Roboto Condensed', sans-serif;
+  --headingFont: 'Roboto Slab', serif;
+  --bodyFont: 'Roboto Condensed', sans-serif;
 }
 
 html {
@@ -21,18 +21,21 @@ body {
   color: var(--textColor);
 }
 
-
 p {
   color: var(--black);
   margin-bottom: 1rem;
-  max-width: 50%;;
+  max-width: 50%;
 }
 
 a {
   letter-spacing: 1px;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 3rem 0 1.38rem;
   font-family: var(--headingFont);
   font-weight: 400;
@@ -44,13 +47,21 @@ h1 {
   font-size: 3.052rem;
 }
 
-h2 {font-size: 2.441rem;}
+h2 {
+  font-size: 2.441rem;
+}
 
-h3 {font-size: 1.953rem;}
+h3 {
+  font-size: 1.953rem;
+}
 
-h4 {font-size: 1.563rem;}
+h4 {
+  font-size: 1.563rem;
+}
 
-h5 {font-size: 1.25rem;}
+h5 {
+  font-size: 1.25rem;
+}
 
 h1,
 h3,
@@ -67,7 +78,7 @@ footer {
   text-align: center;
 }
 
-input[type="number"] {
+input[type='number'] {
   margin-bottom: 4px;
 }
 
@@ -81,11 +92,6 @@ li {
 }
 
 select {
-  border: 0;
-  outline: 0;
-  margin: 0.1rem 0.1rem 0.1rem 1rem;
-  padding: 0.75rem;
-  width: 6rem;
 }
 
 select:hover {
@@ -95,13 +101,19 @@ select:hover {
 .power-select {
   -webkit-appearance: none;
   -moz-appearance: none;
+  border: 0;
+  outline: 0;
+  margin: 0.1rem 0.1rem 0.1rem 1rem;
+  padding: 0.75rem;
+  width: 6rem;
 }
 
 select::-ms-expand {
   display: none;
 }
 
-ul, li {
+ul,
+li {
   color: var(--black);
 }
 
@@ -156,12 +168,13 @@ ul, li {
   width: 100vw;
 }
 
-.MuiButton-root, .MuiSnackbar-root {
+.MuiButton-root,
+.MuiSnackbar-root {
   font-family: var(--bodyFont) !important;
 }
 
-
-.navbar a, .navbar a:visited {
+.navbar a,
+.navbar a:visited {
   color: white;
   font-size: 1rem;
   padding: 0 1.4rem;

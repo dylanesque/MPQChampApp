@@ -286,16 +286,3 @@ export function getFiveStatus(level) {
   }
 }
 
-// If both row and column index are zero, return zero
-// If row index is zero, return column index
-// If column index is zero, return row index times (column index  + 1)
-// else, return  row index times column index
-
-/*
-function calculateCharIndex(rowIndex, columnIndex) {
-  if (rowIndex === 0) {
-    return columnIndex;
-  }
-  return rowIndex * columnIndex;
-}
-*/

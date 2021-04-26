@@ -101,16 +101,6 @@ const CharCard = ({ character, characters, user }) => {
     }
   }
 
-  function calculatedLevels(limit) {
-    if (limit >= 5) {
-      return powerLevels;
-    } else if (limit == 4) {
-      return powerLevels.slice(0, 5);
-    } else {
-      return powerLevels.slice(0, 4);
-    }
-  }
-
   function shardChange(e) {
     e.preventDefault();
     setShardCount(e.target.value);
@@ -152,7 +142,10 @@ const CharCard = ({ character, characters, user }) => {
           alt={`Cover picture for ${name}`}
         />
         <div className={classes.powerSelect}>
-          <select
+          <input
+            type="number"
+            min="0"
+            max={state.powerOneLimit}
             className="power-select"
             aria-label="Power One Color"
             style={generateColors(`${power_one_color}`)}
@@ -160,13 +153,11 @@ const CharCard = ({ character, characters, user }) => {
               dispatch({ type: 'one', payload: event.target.value })
             }
             value={state.powerOneLevel}
-          >
-            {calculatedLevels(state.powerOneLimit).map((level) => {
-              return <option key={level}>{level}</option>;
-            })}
-          </select>
-
-          <select
+          />
+          <input
+            type="number"
+            min="0"
+            max={state.powerTwoLimit}
             className="power-select"
             aria-label="Power Two Color"
             style={generateColors(`${power_two_color}`)}
@@ -174,13 +165,12 @@ const CharCard = ({ character, characters, user }) => {
               dispatch({ type: 'two', payload: event.target.value })
             }
             value={state.powerTwoLevel}
-          >
-            {calculatedLevels(state.powerTwoLimit).map((level) => {
-              return <option key={level}>{level}</option>;
-            })}
-          </select>
+          />
 
-          <select
+          <input
+            type="number"
+            min="0"
+            max={state.powerThreeLimit}
             className="power-select"
             aria-label="Power Three Color"
             style={generateColors(`${power_three_color}`)}
@@ -188,11 +178,7 @@ const CharCard = ({ character, characters, user }) => {
               dispatch({ type: 'three', payload: event.target.value })
             }
             value={state.powerThreeLevel}
-          >
-            {calculatedLevels(state.powerThreeLimit).map((level) => {
-              return <option key={level}>{level}</option>;
-            })}
-          </select>
+          />
         </div>
       </div>
       <label htmlFor={name}>Character Level</label>
@@ -206,22 +192,20 @@ const CharCard = ({ character, characters, user }) => {
         }
         value={state.charLevel}
       />
-      {rarity > 2 && (
-        <>
-          <label htmlFor={name + 'shards'}>Shards</label>
-          <input
-            onChange={shardChange}
-            autoFocus
-            style={{ marginBottom: '1rem' }}
-            type="number"
-            id={name + 'shards'}
-            name="shards"
-            value={shardCount}
-            min="0"
-            max={rarity * 100}
-          />
-        </>
-      )}
+      <div style={{ visibility: rarity < 3 ? 'hidden' : 'visible', display: 'flex', flexDirection: 'column' }}>
+        <label htmlFor={name + 'shards'}>Shards</label>
+        <input
+          onChange={shardChange}
+          autoFocus
+          style={{ marginBottom: '1rem' }}
+          type="number"
+          id={name + 'shards'}
+          name="shards"
+          value={shardCount}
+          min="0"
+          max={rarity * 100}
+        />
+      </div>
       <UpdateCharacter
         characters={characters}
         user={user}
