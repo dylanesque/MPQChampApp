@@ -11,6 +11,7 @@ const useStyles = makeStyles({
     justifyContent: 'spaceBetween',
     alignItems: 'center',
     textAlign: 'center',
+    width: '300px'
   },
   levelSelect: {
     backGroundColor: 'gray',
@@ -22,6 +23,11 @@ const useStyles = makeStyles({
   },
   name: {
     marginTop: '0.5rem',
+    marginBottom: '0'
+  },
+  subtitle: {
+    marginTop: '0',
+    marginBottom: '0.5rem',
   },
   powerSelect: {
     display: 'flex',
@@ -59,6 +65,9 @@ const CharCard = ({ character, characters, user }) => {
   });
 
   const [shardCount, setShardCount] = React.useState(shards);
+  const fullName = name.split(/[(]+/).filter(function (e) {
+    return e;
+  });
   const powerLevels = [0, 1, 2, 3, 4, 5];
   const charLevels = calculateDynamicLevelRange(rarity, state.totalPowers);
 
@@ -132,7 +141,8 @@ const CharCard = ({ character, characters, user }) => {
   }
   return (
     <Card className={classes.root} key={id}>
-      <p className={classes.name}>{name}</p>
+      <p className={classes.name}>{fullName[0]}</p>
+      <p className={classes.subtitle}>({fullName[1]}</p>
       <div className={classes.middle}>
         <img
           className="char-image"
@@ -192,7 +202,13 @@ const CharCard = ({ character, characters, user }) => {
         }
         value={state.charLevel}
       />
-      <div style={{ visibility: rarity < 3 ? 'hidden' : 'visible', display: 'flex', flexDirection: 'column' }}>
+      <div
+        style={{
+          visibility: rarity < 3 ? 'hidden' : 'visible',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
         <label htmlFor={name + 'shards'}>Shards</label>
         <input
           onChange={shardChange}

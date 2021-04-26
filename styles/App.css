@@ -24,7 +24,7 @@ body {
 p {
   color: var(--black);
   margin-bottom: 1rem;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 a {
@@ -91,9 +91,6 @@ li {
   width: 36em;
 }
 
-select {
-}
-
 select:hover {
   cursor: pointer;
 }
@@ -119,7 +116,7 @@ li {
 
 .character-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 2rem;
   padding-left: 1rem;
   padding-top: 3rem;
