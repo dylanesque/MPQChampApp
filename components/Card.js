@@ -123,7 +123,7 @@ const CharCard = ({ character, characters, user }) => {
         palette = { color: 'white', backgroundColor: 'fireBrick' };
         break;
       case 'yellow':
-        palette = { color: 'white', backgroundColor: '#bb9125' };
+        palette = { color: 'white', backgroundColor: '#d29506' };
         break;
       case 'blue':
         palette = { color: 'white', backgroundColor: '#00c' };
@@ -196,17 +196,16 @@ const CharCard = ({ character, characters, user }) => {
         </div>
       </div>
       <label htmlFor={name}>Character Level</label>
-      <select
+      <input
+        type="number"
+        min={charLevels[0]}
+        max={charLevels[1]}
         id={name}
         onChange={(event) =>
           dispatch({ type: 'level', payload: event.target.value })
         }
         value={state.charLevel}
-      >
-        {charLevels.map((level) => {
-          return <option key={level}>{level}</option>;
-        })}
-      </select>
+      />
       {rarity > 2 && (
         <>
           <label htmlFor={name + 'shards'}>Shards</label>

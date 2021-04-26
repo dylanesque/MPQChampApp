@@ -67,6 +67,10 @@ footer {
   text-align: center;
 }
 
+input[type="number"] {
+  margin-bottom: 4px;
+}
+
 option {
   text-align: center;
 }

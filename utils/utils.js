@@ -49,34 +49,24 @@ export function calculateDynamicLevelRange(rarity, totalLevel) {
 
   if (totalLevel < 2) {
     if (rarity === 2) {
-      return [twoStarLevels[0]];
+      return [twoStarLevels[0], twoStarLevels[0]];
     } else if (rarity === 3) {
-      return [threeStarLevels[0]];
+      return [threeStarLevels[0], threeStarLevels[0]];
     } else if (rarity === 4) {
-      return [fourStarLevels[0]];
+      return [fourStarLevels[0], fourStarLevels[0]];
     } else {
-      return [fiveStarLevels[0]];
-    }
-  }
-
-  function range(start, end) {
-    if (end <= 0) {
-      return [start];
-    } else {
-      return new Array(end - start + 1)
-        .fill(undefined)
-        .map((_, i) => i + start);
+      return [fiveStarLevels[0], fiveStarLevels[0]];
     }
   }
 
   if (rarity === 2) {
-    return range(twoStarLevels[0], twoStarLevels[totalLevel - 1]);
+    return [twoStarLevels[0], twoStarLevels[totalLevel - 1]];
   } else if (rarity === 3) {
-    return range(threeStarLevels[0], threeStarLevels[totalLevel - 1]);
+    return [threeStarLevels[0], threeStarLevels[totalLevel - 1]];
   } else if (rarity === 4) {
-    return range(fourStarLevels[0], fourStarLevels[totalLevel - 1]);
+    return [fourStarLevels[0], fourStarLevels[totalLevel - 1]];
   } else {
-    return range(fiveStarLevels[0], fiveStarLevels[totalLevel - 1]);
+    return [fiveStarLevels[0], fiveStarLevels[totalLevel - 1]];
   }
 }
 
