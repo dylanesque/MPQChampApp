@@ -34,7 +34,7 @@ In mid-November 2019, MPQ made significant changes to its reward structure, repl
 
 - React, specifically the [Next.js](https://nextjs.org/) framework. Next is an attractive choice for a project like this for a number of reasons that include server-side rendering and (future) image optimization. 
 
-- [Cloudinary](https://cloudinary.com/) for asset storage and image optimization. The app currently has close to 200 image assets, and that number will increase if and when MPQ adds new feeders/feedees. Cloudinary lets optimize images for performance and saves me the trouble of having to save image assets in the codebase, which makes the application much faster.
+- ~~[Cloudinary](https://cloudinary.com/) for asset storage and image optimization. The app currently has close to 200 image assets, and that number will increase if and when MPQ adds new feeders/feedees. Cloudinary lets optimize images for performance and saves me the trouble of having to save image assets in the codebase, which makes the application much faster.~~ **Cloudinary ended up not being a goof fit for this project, more on that below**
 
 - Any and all front end testing will likely be done with a mix of [react-testing-library](https://testing-library.com/docs/react-testing-library/intro), [Jest](https://jestjs.io/), and [Cypress.io](https://www.cypress.io/).
 
@@ -65,7 +65,7 @@ Some things for me to consider in the future after the MVP is finished:
 - Adding [progressive web app](https://web.dev/what-are-pwas/) functionality.
 - Creating a mobile version of the app in [React Native](https://reactnative.dev/)
 - Deeper logic in the application that accounts for some cover rewards being more useful than others, some characters being more useful than others, and other (somewhat subjective) metrics.
-- 
+  
 # What I learned from this project:
 
 **Don't Finalize the Data Models Without Writing Specs For Front-End Data Flow, Or Considering Back-End Quirks:**: There was a small amount of wasted effort in the character models in the form of:
@@ -75,6 +75,8 @@ Some things for me to consider in the future after the MVP is finished:
 
 All of the above could have been caught sooner had I taken a more careful approach to planning, including drafting UI components using a solution like Storybook. 
 
+**Don't rely on automated image optimizatios services to do the whole job for you**: 
+
 **Use TypeScript for any full-fledged web applications:**
 
 - This was a minor concern for this particular project, but I've gradually come around to the time that TS saves
@@ -82,4 +84,6 @@ All of the above could have been caught sooner had I taken a more careful approa
 
 **Vetting third-party libraries more thoroughly**
 
-- The Auth0 library used in the application is still experimental as of the time of this writing: despite it working very well and setup with the provided boilerplate being a breeze, I prefer not to use any libraries or features that aren't fully vetted for production use (Looking at you, [Suspense}(https://reactjs.org/docs/concurrent-mode-suspense.html)). I'm not going to change it, but a definite reminder to look before I leap.
+- The Auth0 library used in the application is still experimental as of the time of this writing: despite it working very well and setup with the provided boilerplate being a breeze, I prefer not to use any libraries or features that aren't fully vetted for production use (Looking at you, [Suspense](https://reactjs.org/docs/concurrent-mode-suspense.html)). I'm not going to change it, but a definite reminder to look before I leap.
+
+**Picking input elements that do the job, but aren't the best for the job.**: 
