@@ -1,37 +1,62 @@
 import Link from 'next/link';
+import IconButton from '@material-ui/core/IconButton';
+import styled from '@emotion/styled'
 
 import { useFetchUser } from '../lib/user';
 
 const NavBar = () => {
   const { user } = useFetchUser();
   return (
-    <nav className="navbar">
+    <Nav>
       <>
-        <Link href="/">
+        <StyledLink href="/">
           <a>HOME</a>
-        </Link>
+        </StyledLink>
       </>
-      <div>
+      <>
         {user && (
-          <Link href="/report">
+          <StyledLink href="/report">
             <a>ROSTER REPORT</a>
-          </Link>
+          </StyledLink>
         )}
 
-        <Link href="/about">
+        <StyledLink href="/about">
           <a>ABOUT</a>
-        </Link>
+        </StyledLink>
 
-        <Link href="/faqs">
+        <StyledLink href="/faqs">
           <a>FAQS</a>
-        </Link>
+        </StyledLink>
 
-        <Link href="/contact">
+        <StyledLink href="/contact">
           <a>CONTACT US</a>
-        </Link>
-      </div>
-    </nav>
+        </StyledLink>
+      </>
+    </Nav>
   );
 };
+
+const Nav = styled.nav`
+  background-color: var(--darkBlue);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 1rem;
+  top: 0;
+  width: 100vw;
+`;
+
+const StyledLink = styled.a`
+  color: white;
+  font-size: 1rem;
+  padding: 0 1.4rem 0 0;
+  text-decoration: none;
+
+  & :hover {
+    color: var(--lightBlue);
+  }
+`;
 
 export default NavBar;
