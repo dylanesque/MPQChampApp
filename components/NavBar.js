@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import IconButton from '@material-ui/core/IconButton';
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 import { useFetchUser } from '../lib/user';
 
@@ -9,28 +8,28 @@ const NavBar = () => {
   return (
     <Nav>
       <>
-        <StyledLink href="/">
-          <a>HOME</a>
-        </StyledLink>
+        <Link className="link" href="/">
+          <StyledLink>HOME</StyledLink>
+        </Link>
       </>
       <>
         {user && (
-          <StyledLink href="/report">
-            <a>ROSTER REPORT</a>
-          </StyledLink>
+          <Link className="link" href="/report">
+            <StyledLink>ROSTER REPORT</StyledLink>
+          </Link>
         )}
 
-        <StyledLink href="/about">
-          <a>ABOUT</a>
-        </StyledLink>
+        <Link className="link" href="/about">
+          <StyledLink>ABOUT</StyledLink>
+        </Link>
 
-        <StyledLink href="/faqs">
-          <a>FAQS</a>
-        </StyledLink>
+        <Link className="link" href="/faqs">
+          <StyledLink>FAQS</StyledLink>
+        </Link>
 
-        <StyledLink href="/contact">
-          <a>CONTACT US</a>
-        </StyledLink>
+        <Link className="link" href="/contact">
+          <StyledLink>CONTACT US</StyledLink>
+        </Link>
       </>
     </Nav>
   );
@@ -54,7 +53,7 @@ const StyledLink = styled.a`
   padding: 0 1.4rem 0 0;
   text-decoration: none;
 
-  & :hover {
+  &:hover {
     color: var(--lightBlue);
   }
 `;

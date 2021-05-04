@@ -8,6 +8,10 @@
 
   --headingFont: 'Roboto Slab', serif;
   --bodyFont: 'Roboto Condensed', sans-serif;
+
+  --tabletMin: 550px;
+  --laptopMin: 1100px;
+  --desktopMin: 1500px;
 }
 
 html {
@@ -173,3 +177,4 @@ li {
 .save-button {
   margin-bottom: 1.5rem;
 }
+
