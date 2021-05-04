@@ -261,7 +261,6 @@ export function getFourStatus(level, feedee) {
   }
 }
 
-// TODO: The five star major rewards pattern repeats, find a way to detect that pattern
 export function getFiveStatus(level) {
   if (level < 451) {
     return `${451 - level} level(s) to Latest Legends Token`;
