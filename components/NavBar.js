@@ -6,7 +6,7 @@ import { useFetchUser } from '../lib/user';
 const NavBar = () => {
   const { user } = useFetchUser();
   return (
-    <Nav>
+    <Navbar>
       <>
         <Link className="link" href="/">
           <StyledLink>HOME</StyledLink>
@@ -31,20 +31,17 @@ const NavBar = () => {
           <StyledLink>CONTACT US</StyledLink>
         </Link>
       </>
-    </Nav>
+    </Navbar>
   );
 };
 
-const Nav = styled.nav`
-  background-color: var(--darkBlue);
+const Navbar = styled.div`
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 auto;
-  padding: 1rem;
-  top: 0;
-  width: 100vw;
+  flex-direction: column;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
 `;
 
 const StyledLink = styled.a`
