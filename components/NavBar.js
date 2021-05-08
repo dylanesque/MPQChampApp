@@ -8,26 +8,26 @@ const NavBar = () => {
   return (
     <Navbar>
       <>
-        <Link className="link" href="/">
+        <Link href="/">
           <StyledLink>HOME</StyledLink>
         </Link>
       </>
       <>
         {user && (
-          <Link className="link" href="/report">
+          <Link href="/report">
             <StyledLink>ROSTER REPORT</StyledLink>
           </Link>
         )}
 
-        <Link className="link" href="/about">
+        <Link href="/about">
           <StyledLink>ABOUT</StyledLink>
         </Link>
 
-        <Link className="link" href="/faqs">
+        <Link href="/faqs">
           <StyledLink>FAQS</StyledLink>
         </Link>
 
-        <Link className="link" href="/contact">
+        <Link href="/contact">
           <StyledLink>CONTACT US</StyledLink>
         </Link>
       </>

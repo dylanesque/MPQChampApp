@@ -3,13 +3,12 @@ import { useQuery } from '@apollo/react-hooks';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 import { withApollo } from '../lib/withApollo';
-import { useFetchUser } from '../lib/user';
 import { getTwoStatus, getThreeStatus, getFourStatus, getFiveStatus } from '../utils/utils';
 import { GET_CHARACTERS } from '../utils/graphql';
 
 
 const Report = () => {
-  // const { user, loading } = useFetchUser();
+
   let user;
 
   if (typeof window !== 'undefined') {
@@ -31,15 +30,15 @@ const Report = () => {
   const fiveStars = activeCharacters
     .filter((character) => character.rarity === 5)
     .sort((a, b) => b.char_level - a.char_level);
-  // flag for how far a character is from shards, covers, or 10 or more CP
+ 
   const fourStars = activeCharacters
     .filter((character) => character.rarity === 4)
     .sort((a, b) => b.char_level - a.char_level);
-  // flag for how far a character is from shards, covers, or 10 or more CP
+
   const threeStars = activeCharacters
     .filter((character) => character.rarity === 3)
     .sort((a, b) => b.char_level - a.char_level);
-  // flag for far a character is from feedee covers and 8 or more CP
+
   const twoStars = activeCharacters
     .filter((character) => character.rarity === 2)
     .sort((a, b) => b.char_level - a.char_level);
