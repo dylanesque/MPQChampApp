@@ -122,7 +122,7 @@ const CharCard = ({ character, characters, user }) => {
         palette = { color: 'white', backgroundColor: 'fireBrick' };
         break;
       case 'yellow':
-        palette = { color: 'black', backgroundColor: '#ffd700' };
+        palette = { color: 'white', backgroundColor: 'goldenrod' };
         break;
       case 'blue':
         palette = { color: 'white', backgroundColor: '#00c' };

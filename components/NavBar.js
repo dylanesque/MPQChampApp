@@ -1,37 +1,58 @@
 import Link from 'next/link';
+import styled from '@emotion/styled';
 
 import { useFetchUser } from '../lib/user';
 
 const NavBar = () => {
   const { user } = useFetchUser();
   return (
-    <nav className="navbar">
+    <Navbar>
       <>
         <Link href="/">
-          <a>HOME</a>
+          <StyledLink>HOME</StyledLink>
         </Link>
       </>
-      <div>
+      <>
         {user && (
           <Link href="/report">
-            <a>ROSTER REPORT</a>
+            <StyledLink>ROSTER REPORT</StyledLink>
           </Link>
         )}
 
         <Link href="/about">
-          <a>ABOUT</a>
+          <StyledLink>ABOUT</StyledLink>
         </Link>
 
         <Link href="/faqs">
-          <a>FAQS</a>
+          <StyledLink>FAQS</StyledLink>
         </Link>
 
         <Link href="/contact">
-          <a>CONTACT US</a>
+          <StyledLink>CONTACT US</StyledLink>
         </Link>
-      </div>
-    </nav>
+      </>
+    </Navbar>
   );
 };
+
+const Navbar = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+`;
+
+const StyledLink = styled.a`
+  color: white;
+  font-size: 1rem;
+  padding: 0 1.4rem 0 0;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--lightBlue);
+  }
+`;
 
 export default NavBar;

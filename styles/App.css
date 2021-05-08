@@ -8,10 +8,15 @@
   
   --headingFont: 'Roboto Slab', serif;
   --bodyFont: 'Roboto Condensed', sans-serif;
+
+  --tabletMin: 550px;
+  --laptopMin: 1100px;
+  --desktopMin: 1500px;
 }
 
-html {
+html, body {
   font-size: 112.5%;
+  width: 100%;
 }
 
 body {
@@ -123,6 +128,7 @@ li {
 }
 
 .char-image {
+  align-self: start;
   display: inline-block;
   margin-top: 0.5rem;
   width: 84.5px;
@@ -131,13 +137,13 @@ li {
 
 .index-background {
   background-image: url('../public/background.webp');
-  background-size: 100vw 100vh; /* <------ */
-  background-repeat: repeat-y;
-  width: 100vw;
+  background-size: 50%;
+  background-repeat: repeat;
+  width: 100%;
 }
 
 .loading-page {
-  height: 73vh;
+  height: 73%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -149,37 +155,13 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-.navbar {
-  background-color: var(--darkBlue);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 auto;
-  padding: 1rem;
-  top: 0;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .MuiButton-root,
 .MuiSnackbar-root {
   font-family: var(--bodyFont) !important;
-}
-
-.navbar a,
-.navbar a:visited {
-  color: white;
-  font-size: 1rem;
-  padding: 0 1.4rem;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: var(--lightBlue);
 }
 
 .page-heading {
@@ -197,3 +179,4 @@ li {
 .save-button {
   margin-bottom: 1.5rem;
 }
+
