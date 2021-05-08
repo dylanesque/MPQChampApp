@@ -77,15 +77,15 @@ All of the above could have been caught sooner had I taken a more careful approa
 
 **Don't rely on automated image optimizatios services to do the whole job for you**: I walked into this with the assumption that Cloudinary's in-flight image optimization would be sufficient, and that was a huge mistake. I didn't have the granularity that I wanted, and the unique filenames that Cloudinary uses made uploading new versions of an image very costly to maintain in the codebase. Cloudinary's customer support was pretty responsive, but ultimately unhelpful. In the future, I will never, ever count on a library like this to optimize images as opposed to doing everything reasonable to manually shrink image sizes using tools like [Squoosh](https://squoosh.app/), lazy-loading, stripping metadata, etc.
 
-**Use TypeScript for any full-fledged web applications:**
+**Use TypeScript for any full-fledged web applications**:
 
-- This was a minor concern for this particular project, but I've gradually come around to the time that TS saves
+- This was a minor concern for this particular project, but I've gradually come around to the time that TS saves a ;lot of pain
   via static analysis of code and catching errors faster. Having said this, I may bolster the codebase with some TS in the future.
 
 **Vetting third-party libraries more thoroughly**
 
 - The Auth0 library used in the application is still experimental as of the time of this writing: despite it working very well and setup with the provided boilerplate being a breeze, I prefer not to use any libraries or features that aren't fully vetted for production use (Looking at you, [Suspense](https://reactjs.org/docs/concurrent-mode-suspense.html)). I'm not going to change it, but a definite reminder to look before I leap.
 
-**Picking input elements that do the job, but aren't the best for the job.**: 
+**Picking input elements that do the job, but aren't the best for the job**: 
 
 - An earlier version of this application used `<select>` elements for dropdown elements in the roster editing page, a choice that resulted in an extra 20-90K elements rendered on the page. After doing some exploring, it occurred to me that `<input>` elements of the `number` type mapped more closely to what those interfaces were trying to do, with a massive savings of rendered elements, and is easier to style as well. This change resulted in a page load that was a starkly noticeable 2+ seconds faster, and in the future, I'll be more mindful of choosing input elements that are ideal for the work they need to accomplish, instead of something that's 'good enough'. 
