@@ -1,4 +1,3 @@
-
 // Splits a character's main and subtitled name, for formatting purposes
 export function splitName(name) {
   return name.split(/[(]+/).filter(function (e) {
@@ -270,25 +269,24 @@ export function getFourStatus(level, feedee) {
 
 export function getFiveStatus(level) {
   if (level < 451) {
-    return `${451 - level} level(s) to Latest Legends Token`;
+    return `${451 - level} level(s) to: Latest Legends Token`;
   } else if (level < 453 && level >= 451) {
-    return `${453 - level} level(s) to 25 Command Points`;
+    return `${453 - level} level(s) to: 25 Command Points`;
   } else if (level < 455 && level >= 453) {
-    return `${455 - level} level(s) to Latest Legends Token`;
+    return `${455 - level} level(s) to: Latest Legends Token`;
   } else if (level < 457 && level >= 455) {
-    return `${457 - level} level(s) to 25 Command Points`;
+    return `${457 - level} level(s) to: 25 Command Points`;
   } else if (level < 459 && level >= 457) {
-    return `${459 - level} level(s) to Latest Legends Token`;
+    return `${459 - level} level(s) to: Latest Legends Token`;
   } else if (level < 461 && level >= 459) {
-    return `${461 - level} level(s) to 25 Command Points`;
+    return `${461 - level} level(s) to: 25 Command Points`;
   } else if (level < 461 && level >= 461) {
-    return `${463 - level} level(s) to Latest Legends Token`;
+    return `${463 - level} level(s) to: Latest Legends Token`;
   } else if (level < 465 && level >= 463) {
-    return `${465 - level} level(s) to 25 Command Points`;
+    return `${465 - level} level(s) to: 25 Command Points`;
   } else if (level < 467 && level >= 465) {
-    return `${467 - level} level(s) to Latest Legends Token`;
+    return `${467 - level} level(s) to: Latest Legends Token`;
   } else {
     return 'Further 5* rewards forthcoming';
   }
 }
-

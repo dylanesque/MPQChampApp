@@ -111,6 +111,7 @@ const Report = () => {
                   minWidth: '240px',
                   alignItems: 'center',
                   marginRight: '1rem',
+                  marginBottom: '1rem',
                   padding: '0.25rem',
                 }}
               >
@@ -156,6 +157,7 @@ const Report = () => {
                   minWidth: '240px',
                   alignItems: 'center',
                   marginRight: '1rem',
+                  marginBottom: '1rem',
                   padding: '0.25rem',
                 }}
               >
@@ -201,6 +203,7 @@ const Report = () => {
                   minWidth: '240px',
                   alignItems: 'center',
                   marginRight: '1rem',
+                  marginBottom: '1rem',
                   padding: '0.25rem',
                 }}
               >
