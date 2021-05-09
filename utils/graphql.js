@@ -6,6 +6,7 @@ import  Router  from 'next/router';
 
 import { seedDB } from '../db/seed';
 
+// Adds characters to a brand-new user lineup
 export const ADD_CHAR_DB = gql`
   mutation addCharacters($objects: [characters_insert_input!]!) {
     insert_characters(objects: $objects) {
@@ -40,6 +41,7 @@ export const AddDB = (user) => {
   );
 };
 
+// Checks that the character count is what we expect it to be.
 export const CHECK_CHAR_LIST = gql`
   query checkCharacters($id: String!) {
     users(where: { id: { _eq: $id } }) {

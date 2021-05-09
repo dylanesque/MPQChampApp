@@ -49,6 +49,7 @@ const StyledLink = styled.a`
   font-size: 1rem;
   padding: 0 1.4rem 0 0;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     color: var(--lightBlue);

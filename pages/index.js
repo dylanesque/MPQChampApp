@@ -8,7 +8,7 @@ import CharEdit from '../components/CharEditor';
 
 const IndexPage = () => {
   // Variables
-  const { user, loading } = useFetchUser();
+  const { user, loading, error } = useFetchUser();
   if (user && typeof window !== 'undefined') {
     localStorage.setItem('userKey', user.sub);
   }
@@ -16,6 +16,9 @@ const IndexPage = () => {
   if (loading) {
     return <div>Loading...</div>;
   }
+
+  if (error) return `Error! ${error}`;
+  
   if (!loading && !user) {
     return <Login />;
   } else {

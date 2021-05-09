@@ -2,7 +2,7 @@ import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { UpdateCharacter } from '../utils/graphql';
-import { calculateDynamicLevelRange } from '../utils/utils';
+import { calculateDynamicLevelRange, splitName } from '../utils/utils';
 
 const useStyles = makeStyles({
   root: {
@@ -65,9 +65,7 @@ const CharCard = ({ character, characters, user }) => {
   });
 
   const [shardCount, setShardCount] = React.useState(shards);
-  const fullName = name.split(/[(]+/).filter(function (e) {
-    return e;
-  });
+  const fullName = splitName(name);
   const powerLevels = [0, 1, 2, 3, 4, 5];
   const charLevels = calculateDynamicLevelRange(rarity, state.totalPowers);
 

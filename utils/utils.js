@@ -1,4 +1,12 @@
-// helper function to generate ranged array of possible character levels
+
+// Splits a character's main and subtitled name, for formatting purposes
+export function splitName(name) {
+  return name.split(/[(]+/).filter(function (e) {
+    return e;
+  });
+}
+
+// helper function to dictate possible character levels based on total power quantity
 export function calculateDynamicLevelRange(rarity, totalLevel) {
   const twoStarLevels = [15, 22, 30, 38, 46, 47, 54, 62, 70, 78, 79, 86, 144];
   const threeStarLevels = [
@@ -103,7 +111,6 @@ export function getTwoStatus(level, feedee) {
 }
 
 // Calculates next major reward for three star character
-
 export function getThreeStatus(level, feedee) {
   const feedees = parseFeeds(feedee);
   if (level === 266) {

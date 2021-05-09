@@ -3,12 +3,11 @@ import { useQuery } from '@apollo/react-hooks';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 import { withApollo } from '../lib/withApollo';
-import { getTwoStatus, getThreeStatus, getFourStatus, getFiveStatus } from '../utils/utils';
+import { getTwoStatus, getThreeStatus, getFourStatus, getFiveStatus, splitName } from '../utils/utils';
 import { GET_CHARACTERS } from '../utils/graphql';
 
 
 const Report = () => {
-
   let user;
 
   if (typeof window !== 'undefined') {
@@ -56,6 +55,7 @@ const Report = () => {
           }}
         >
           {fiveStars.map((char) => {
+            const name = splitName(char.name);
             return (
               <Card
                 key={char.name}
@@ -65,10 +65,16 @@ const Report = () => {
                   minWidth: '240px',
                   alignItems: 'center',
                   marginRight: '1rem',
+                  marginBottom: '1rem',
                   padding: '0.25rem',
                 }}
               >
-                <p>{char.name}</p>
+                <p style={{ marginTop: '0.5rem', marginBottom: '0' }}>
+                  {name[0]}
+                </p>
+                <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
+                  ({name[1]}
+                </p>
                 <img className="char-image" src={char.image} />
                 <p>Level {char.char_level}</p>
                 <p>{getFiveStatus(char.char_level)}</p>
@@ -95,6 +101,7 @@ const Report = () => {
           }}
         >
           {fourStars.map((char) => {
+            const name = splitName(char.name);
             return (
               <Card
                 key={char.name}
@@ -107,7 +114,12 @@ const Report = () => {
                   padding: '0.25rem',
                 }}
               >
-                <p>{char.name}</p>
+                <p style={{ marginTop: '0.5rem', marginBottom: '0' }}>
+                  {name[0]}
+                </p>
+                <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
+                  ({name[1]}
+                </p>
                 <img className="char-image" src={char.image} />
                 <p>Level {char.char_level}</p>
                 <p>{getFourStatus(char.char_level, char.feedees)}</p>
@@ -134,6 +146,7 @@ const Report = () => {
           }}
         >
           {threeStars.map((char) => {
+            const name = splitName(char.name);
             return (
               <Card
                 key={char.name}
@@ -146,12 +159,19 @@ const Report = () => {
                   padding: '0.25rem',
                 }}
               >
-                <p>{char.name}</p>
+                <p style={{ marginTop: '0.5rem', marginBottom: '0' }}>
+                  {name[0]}
+                </p>
+                <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
+                  ({name[1]}
+                </p>
                 <img className="char-image" src={char.image} />
                 <p>Level {char.char_level}</p>
                 <p>{getThreeStatus(char.char_level, char.feedees)}</p>
-                <p>Shards: {char.shards} / {char.rarity * 100}</p>
-                <div style={{ width: '55%'}}>
+                <p>
+                  Shards: {char.shards} / {char.rarity * 100}
+                </p>
+                <div style={{ width: '55%' }}>
                   <LinearProgress
                     variant="determinate"
                     value={char.shards / char.rarity}
@@ -171,6 +191,7 @@ const Report = () => {
           }}
         >
           {twoStars.map((char) => {
+            const name = splitName(char.name);
             return (
               <Card
                 key={char.name}
@@ -183,7 +204,12 @@ const Report = () => {
                   padding: '0.25rem',
                 }}
               >
-                <p>{char.name}</p>
+                <p style={{ marginTop: '0.5rem', marginBottom: '0' }}>
+                  {name[0]}
+                </p>
+                <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
+                  ({name[1]}
+                </p>
                 <img className="char-image" src={char.image} />
                 <p>{char.feedees}</p>
                 <p>Level {char.char_level}</p>
