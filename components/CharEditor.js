@@ -12,6 +12,10 @@ const CharEdit = ({ user }) => {
     variables: { id: user },
   });
 
+  if (dbCheck.error) {
+    return `An unexpected error occurred: ${dbCheck.error}`
+  }
+
   if (!dbCheck.loading) {
     charCount = dbCheck.data.users[0].characters_aggregate.aggregate.count;
   }
@@ -20,16 +24,18 @@ const CharEdit = ({ user }) => {
     variables: { user_id: user },
   });
 
-  if (characterDb.loading) {
+  if (!characterDb.loading) {
     return (
       <div className="loading-page">
-        <Card style={{ padding: '4rem 6rem' }}>
+        <Card style={{ borderRadius: '0', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '72px 80px' }}>
           <CircularProgress />
-          <p style={{ marginTop: '1rem' }}>Loading</p>
+          <p style={{ marginTop: '1rem', display: 'inline-block', paddingRight: '8px' }}>Loading</p>
         </Card>
       </div>
     );
-  } else if (charCount === 0) {
+  }
+
+  if (charCount === 0) {
     return (
       <div className="login-page">
         <p style={{ backgroundColor: 'white', padding: '1rem' }}>
@@ -39,7 +45,10 @@ const CharEdit = ({ user }) => {
         <AddDB user={user} />
       </div>
     );
+  } else if (characterDb.error) {
+    return <h3>{characterDb.error}</h3>;
   } else {
+    console.log(characterDb.client.cache);
     return (
       <>
         <h2 style={{ textAlign: 'center' }}>Edit Roster</h2>

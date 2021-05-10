@@ -13,11 +13,12 @@ const Report = () => {
   if (typeof window !== 'undefined') {
     user = localStorage.getItem('userKey');
   }
-  const { data, loading} = useQuery(GET_CHARACTERS, {
+  const { data, loading, error } = useQuery(GET_CHARACTERS, {
     variables: { user_id: user },
   });
 
   if (loading) return 'Loading...';
+  if (error) return `An error has occurred: ${error}`
 
   const activeCharacters = data.characters.filter(
     (character) =>
