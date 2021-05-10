@@ -24,7 +24,7 @@ const CharEdit = ({ user }) => {
     variables: { user_id: user },
   });
 
-  if (!characterDb.loading) {
+  if (characterDb.loading) {
     return (
       <div className="loading-page">
         <Card style={{ borderRadius: '0', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '72px 80px' }}>
@@ -48,7 +48,6 @@ const CharEdit = ({ user }) => {
   } else if (characterDb.error) {
     return <h3>{characterDb.error}</h3>;
   } else {
-    console.log(characterDb.client.cache);
     return (
       <>
         <h2 style={{ textAlign: 'center' }}>Edit Roster</h2>
