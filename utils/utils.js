@@ -192,8 +192,7 @@ export function getFourStatus(level, feedee) {
     return `${300 - level} level(s) to: 250 ${feedee} shards`;
   } else if (level < 310 && level >= 300) {
     return (
-      `${310 - level} level(s) to: ` +
-      (noFeedee ? 'Latest Legends Token' : `${feedee} cover`)
+      `${310 - level} level(s) to: Latest Legends Token`
     );
   } else if (level < 315 && level >= 310) {
     return (
