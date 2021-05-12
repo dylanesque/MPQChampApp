@@ -849,7 +849,7 @@ export const seedDB = [
     power_one_color: 'yellow',
     power_two_color: 'blue',
     power_three_color: 'green',
-    feedees: 'none',
+    feedees: 'Doctor Doom (God Emperor)',
     shards: 0,
     char_level: 70,
   },

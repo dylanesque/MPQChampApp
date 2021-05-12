@@ -205,7 +205,7 @@ export function getFourStatus(level, feedee) {
       (noFeedee ? '5 Command Points' : `150 ${feedee} shards`)
     );
   } else if (level < 320 && level >= 318) {
-    return `${320 - level} level(s) to: 250 ${feedee} shards`;
+    return `${320 - level} level(s) to: Latest Legends Token`;
   } else if (level < 330 && level >= 320) {
     return `${330 - level} level(s) to: Latest Legends Token`;
   } else if (level < 335 && level >= 330) {
