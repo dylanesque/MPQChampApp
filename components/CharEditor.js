@@ -7,13 +7,14 @@ import CharacterGrid from '../components/CharacterGrid';
 import { CHECK_CHAR_LIST, GET_CHARACTERS, AddDB } from '../utils/graphql';
 
 const CharEdit = ({ user }) => {
+  const [selectedRarity, useSelectedRarity] = React.useState(2);
   let charCount = null;
   let dbCheck = useQuery(CHECK_CHAR_LIST, {
     variables: { id: user },
   });
 
   if (dbCheck.error) {
-    return `An unexpected error occurred: ${dbCheck.error}`
+    return `An unexpected error occurred: ${dbCheck.error}`;
   }
 
   if (!dbCheck.loading) {
@@ -27,9 +28,26 @@ const CharEdit = ({ user }) => {
   if (characterDb.loading) {
     return (
       <div className="loading-page">
-        <Card style={{ borderRadius: '0', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '72px 80px' }}>
+        <Card
+          style={{
+            borderRadius: '0',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '72px 80px',
+          }}
+        >
           <CircularProgress />
-          <p style={{ marginTop: '1rem', display: 'inline-block', paddingRight: '8px' }}>Loading</p>
+          <p
+            style={{
+              marginTop: '1rem',
+              display: 'inline-block',
+              paddingRight: '8px',
+            }}
+          >
+            Loading
+          </p>
         </Card>
       </div>
     );
@@ -48,13 +66,35 @@ const CharEdit = ({ user }) => {
   } else if (characterDb.error) {
     return <h3>{characterDb.error}</h3>;
   } else {
+    function filterByRarity(rarity) {
+      return characterDb.data.characters.filter(
+        (char) => char.rarity == rarity
+      );
+    }
+
+    const selectedChars = filterByRarity(selectedRarity);
     return (
       <>
         <h2 style={{ textAlign: 'center' }}>Edit Roster</h2>
+        <div
+          style={{ display: 'flex', flexDirection: 'column', backgroundColor: 'white', color: 'black' }}
+        >
+          <h3 style={{ textAlign: 'center'}}>Select Rarity</h3>
+          <div style={{ display: 'flex', justifyContent: 'center'}}>
+            <input type="radio" value="2" name="rarity" />
+            Two Star
+            <input type="radio" value="3" name="rarity" />
+            Three Star
+            <input type="radio" value="4" name="rarity" />
+            Four Star
+            <input type="radio" value="5" name="rarity" />
+            Five Star
+          </div>
+        </div>
         {characterDb.loading && <div>Loading...</div>}
         {characterDb.data && (
           <CharacterGrid>
-            {characterDb.data.characters.map((character) => {
+            {selectedChars.map((character) => {
               return (
                 <CharCard
                   user={user}

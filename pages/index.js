@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { withApollo } from '../lib/withApollo';
 
+import { withApollo } from '../lib/withApollo';
 import { useFetchUser } from '../lib/user';
 import Login from '../components/Auth/Login';
 import LogoutBtn from '../components/Auth/Logout';
