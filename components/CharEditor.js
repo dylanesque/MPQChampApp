@@ -1,17 +1,40 @@
 import { useQuery } from '@apollo/react-hooks';
 import { withApollo } from '../lib/withApollo';
-import { Card, CircularProgress } from '@material-ui/core';
+import {
+  Card,
+  CircularProgress,
+  FormControlLabel,
+  Radio,
+  RadioGroup,
+} from '@material-ui/core';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import blue from '@material-ui/core/colors/blue';
+
+
+
 
 import CharCard from '../components/Card';
 import CharacterGrid from '../components/CharacterGrid';
 import { CHECK_CHAR_LIST, GET_CHARACTERS, AddDB } from '../utils/graphql';
 
 const CharEdit = ({ user }) => {
-  const [selectedRarity, useSelectedRarity] = React.useState(2);
+  const theme = createMuiTheme({
+    palette: {
+      primary: {
+        main: blue[700],
+      },
+    },
+  });
+  const [selectedRarity, setSelectedRarity] = React.useState(2);
   let charCount = null;
   let dbCheck = useQuery(CHECK_CHAR_LIST, {
     variables: { id: user },
   });
+
+  const handleChange = (event) => {
+    return setSelectedRarity(parseInt(event.target.value));
+  };
 
   if (dbCheck.error) {
     return `An unexpected error occurred: ${dbCheck.error}`;
@@ -77,19 +100,56 @@ const CharEdit = ({ user }) => {
       <>
         <h2 style={{ textAlign: 'center' }}>Edit Roster</h2>
         <div
-          style={{ display: 'flex', flexDirection: 'column', backgroundColor: 'white', color: 'black' }}
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            backgroundColor: 'white',
+            color: 'black',
+            maxWidth: '60%',
+            margin: '0 auto',
+          }}
         >
-          <h3 style={{ textAlign: 'center'}}>Select Rarity</h3>
-          <div style={{ display: 'flex', justifyContent: 'center'}}>
-            <input type="radio" value="2" name="rarity" />
-            Two Star
-            <input type="radio" value="3" name="rarity" />
-            Three Star
-            <input type="radio" value="4" name="rarity" />
-            Four Star
-            <input type="radio" value="5" name="rarity" />
-            Five Star
-          </div>
+          <h3 style={{ textAlign: 'center' }}>Select Rarity</h3>
+          <ThemeProvider theme={theme}>
+            <RadioGroup
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginBottom: '24px',
+              }}
+              aria-label="rarity"
+              name="char-rarity"
+              value={selectedRarity}
+              onChange={handleChange}
+            >
+              <FormControlLabel
+                value="2"
+                control={<Radio color="primary" />}
+                label="Two Star"
+                checked={selectedRarity === 2}
+              />
+              <FormControlLabel
+                value="3"
+                control={<Radio color="primary" />}
+                label="Three Star"
+                checked={selectedRarity === 3}
+              />
+              <FormControlLabel
+                value="4"
+                control={<Radio color="primary" />}
+                label="Four Star"
+                checked={selectedRarity === 4}
+              />
+              <FormControlLabel
+                value="5"
+                control={<Radio color="primary" />}
+                label="Five Star"
+                checked={selectedRarity === 5}
+              />
+            </RadioGroup>
+          </ThemeProvider>
         </div>
         {characterDb.loading && <div>Loading...</div>}
         {characterDb.data && (
