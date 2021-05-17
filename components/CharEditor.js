@@ -11,9 +11,6 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import blue from '@material-ui/core/colors/blue';
 
-
-
-
 import CharCard from '../components/Card';
 import CharacterGrid from '../components/CharacterGrid';
 import { CHECK_CHAR_LIST, GET_CHARACTERS, AddDB } from '../utils/graphql';
@@ -26,13 +23,16 @@ const CharEdit = ({ user }) => {
       },
     },
   });
-  const [selectedRarity, setSelectedRarity] = React.useState(2);
+  const [selectedRarity, setSelectedRarity] = React.useState(
+    localStorage.getItem('selectedRarity') || 2
+  );
   let charCount = null;
   let dbCheck = useQuery(CHECK_CHAR_LIST, {
     variables: { id: user },
   });
 
   const handleChange = (event) => {
+    localStorage.setItem('selectedRarity', parseInt(event.target.value));
     return setSelectedRarity(parseInt(event.target.value));
   };
 
@@ -76,6 +76,8 @@ const CharEdit = ({ user }) => {
     );
   }
 
+  // TODO: Bolster this functionality so that it not only checks for empty databases, but databases that
+  // are less than the current character count, and updates the missing character(s)
   if (charCount === 0) {
     return (
       <div className="login-page">
