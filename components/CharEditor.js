@@ -24,8 +24,9 @@ const CharEdit = ({ user }) => {
     },
   });
   const [selectedRarity, setSelectedRarity] = React.useState(
-    localStorage.getItem('selectedRarity') || 2
+    parseInt(localStorage.getItem('selectedRarity')) || 2
   );
+
   let charCount = null;
   let dbCheck = useQuery(CHECK_CHAR_LIST, {
     variables: { id: user },
