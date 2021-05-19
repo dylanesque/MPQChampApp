@@ -41,6 +41,14 @@ export const AddDB = (user) => {
   );
 };
 
+// Add new characters mutation
+// Fires if the char count is less than the current length of the seed db
+// In that case, creates an array of the names from the seed db
+// Iterate over the user's personal lineup, and checks each name versus the array of names
+// When a name is found missing, that char object gets pushed to an (initially empty) array 
+// Use that array as the db for a mutation that updates that user's lineup
+
+
 // Checks that the character count is what we expect it to be.
 export const CHECK_CHAR_LIST = gql`
   query checkCharacters($id: String!) {

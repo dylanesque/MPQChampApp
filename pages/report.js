@@ -76,7 +76,7 @@ const Report = () => {
                 <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
                   ({name[1]}
                 </p>
-                <img className="char-image" src={char.image} />
+                <img className="char-image" src={char.image} alt={char.name} />
                 <p>Level {char.char_level}</p>
                 <p>{getFiveStatus(char.char_level)}</p>
                 <p>
@@ -84,6 +84,7 @@ const Report = () => {
                 </p>
                 <div style={{ width: '55%' }}>
                   <LinearProgress
+                    aria-label="shard progress"
                     variant="determinate"
                     value={char.shards / char.rarity}
                   />
@@ -122,7 +123,7 @@ const Report = () => {
                 <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
                   ({name[1]}
                 </p>
-                <img className="char-image" src={char.image} />
+                <img className="char-image" src={char.image} alt={char.name} />
                 <p>Level {char.char_level}</p>
                 <p>{getFourStatus(char.char_level, char.feedees)}</p>
                 <p>
@@ -130,6 +131,7 @@ const Report = () => {
                 </p>
                 <div style={{ width: '55%' }}>
                   <LinearProgress
+                    aria-label="shard progress"
                     variant="determinate"
                     value={char.shards / char.rarity}
                   />
@@ -168,7 +170,7 @@ const Report = () => {
                 <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
                   ({name[1]}
                 </p>
-                <img className="char-image" src={char.image} />
+                <img className="char-image" src={char.image} alt={char.name} />
                 <p>Level {char.char_level}</p>
                 <p>{getThreeStatus(char.char_level, char.feedees)}</p>
                 <p>
@@ -176,6 +178,7 @@ const Report = () => {
                 </p>
                 <div style={{ width: '55%' }}>
                   <LinearProgress
+                    aria-label="shard progress"
                     variant="determinate"
                     value={char.shards / char.rarity}
                   />
@@ -214,7 +217,7 @@ const Report = () => {
                 <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
                   ({name[1]}
                 </p>
-                <img className="char-image" src={char.image} />
+                <img className="char-image" src={char.image} alt={char.name} />
                 <p>{char.feedees}</p>
                 <p>Level {char.char_level}</p>
                 <p>{getTwoStatus(char.char_level, char.feedees)}</p>
