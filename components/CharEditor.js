@@ -13,7 +13,7 @@ import blue from '@material-ui/core/colors/blue';
 
 import CharCard from '../components/Card';
 import CharacterGrid from '../components/CharacterGrid';
-import { CHECK_CHAR_LIST, GET_CHARACTERS, AddDB } from '../utils/graphql';
+import { CHECK_CHAR_LIST, GET_CHARACTERS, AddDB, AddNewChars } from '../utils/graphql';
 import { seedDB } from '../db/seed';
 
 const CharEdit = ({ user }) => {
@@ -87,7 +87,22 @@ const CharEdit = ({ user }) => {
           We're detecting that you haven't set up a seed database yet. Please
           click the button below to get started!
         </p>
-        <AddDB user={user} />
+        <AddDB
+          user={user}
+        />
+      </div>
+    );
+  } else if (!characterDb.loading && charCount < seedDB.length) {
+    return (
+      <div className="login-page">
+        <p style={{ backgroundColor: 'white', padding: '1rem' }}>
+          New characters have been added to the application! Click the button below to
+          add them to your lineup!
+        </p>
+        <AddNewChars
+          user={user}
+          chars={characterDb.data.characters}
+        />
       </div>
     );
   } else if (characterDb.error) {

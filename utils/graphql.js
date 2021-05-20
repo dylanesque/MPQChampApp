@@ -2,9 +2,13 @@ import gql from 'graphql-tag';
 import { Button, Snackbar, IconButton } from '@material-ui/core';
 import { Mutation } from 'react-apollo';
 import { v4 as uuidv4 } from 'uuid';
-import  Router  from 'next/router';
+import Router from 'next/router';
 
 import { seedDB } from '../db/seed';
+
+function reloadWindow() {
+  return Router.reload(window.location.pathname);
+}
 
 // Adds characters to a brand-new user lineup
 export const ADD_CHAR_DB = gql`
@@ -18,40 +22,55 @@ export const ADD_CHAR_DB = gql`
 `;
 
 // TODO: Refactor the hell out of this function and remove the duplication
-export const AddDB = (user, count, chars) => {
-  function reloadWindow() {
-    return Router.reload(window.location.pathname);
-  }
-
-  if (count === 0) {
-    seedDB.forEach((char) => {
-      char.id = uuidv4();
-      char.user_id = user.user;
-    });
-    let db = seedDB;
-  } else if (count > 0) {
-    const names = seedDB.map(char => char.name);
-    const missingChars = [];
-    chars.map((char) => {
-      if (!names.includes(char.name)) {
-        missingChars.push(char);
-      }
-    });
-    missingChars.forEach((char) => {
-      char.id = uuidv4();
-      char.user_id = user.user;
-    });
-    let db = missingChars;
-  }
+export const AddDB = (user) => {
+  seedDB.forEach((char) => {
+    char.id = uuidv4();
+    char.user_id = user.user;
+  });
+  let db = seedDB;
 
   return (
-    <Mutation mutation={ADD_CHAR_DB}
-      onCompleted={reloadWindow}>
+    <Mutation mutation={ADD_CHAR_DB} onCompleted={reloadWindow}>
       {(insert_characters, { data }) => (
         <button
           onClick={() => insert_characters({ variables: { objects: db } })}
         >
-            Create Database
+          Update Database
+        </button>
+      )}
+    </Mutation>
+  );
+};
+
+export const AddNewChars = ({ user, chars }) => {
+  const names = chars.map((char) => char.name);
+  const missingChars = [];
+  console.log(user);
+
+  // loop over seedDB
+  // now loop over chars, and check for an occurence of the name
+  // if the name isn't 
+  seedDB.forEach((seedChar) => {
+    if (!names.includes(seedChar.name)) {
+      missingChars.push(seedChar);
+     }
+  })
+
+
+  missingChars.forEach((char) => {
+    char.id = uuidv4();
+    char.user_id = user;
+  });
+
+ 
+
+  return (
+    <Mutation mutation={ADD_CHAR_DB} onCompleted={reloadWindow}>
+      {(insert_characters, { data }) => (
+        <button
+          onClick={() => insert_characters({ variables: { objects: missingChars } })}
+        >
+          Update Database
         </button>
       )}
     </Mutation>
@@ -104,41 +123,42 @@ export const UPDATE_CHARACTER = gql`
   }
 `;
 
-
 export const UpdateCharacter = ({ id, changes, user }) => {
-   const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
 
-   const handleClick = () => {
-     setOpen(true);
-   };
+  const handleClick = () => {
+    setOpen(true);
+  };
 
-   const handleClose = (event, reason) => {
-     if (reason === 'clickaway') {
-       return;
-     }
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
 
-     setOpen(false);
-   };
+    setOpen(false);
+  };
   return (
     <>
       <Mutation
         user={user}
-      mutation={UPDATE_CHARACTER}
+        mutation={UPDATE_CHARACTER}
         onCompleted={(data) => handleClick()}
-        refetchQueries={() => [{query: GET_CHARACTERS, variables: { user_id: user }}]}
-    >
-      {(update_characters_by_pk, { data }) => (
-        <button
-          className="save-button"
-          onClick={() =>
-            update_characters_by_pk({ variables: { id, changes } })
-          }
-        >
-          Save Changes
-        </button>
-      )}
-    </Mutation>
-     <Snackbar
+        refetchQueries={() => [
+          { query: GET_CHARACTERS, variables: { user_id: user } },
+        ]}
+      >
+        {(update_characters_by_pk, { data }) => (
+          <button
+            className="save-button"
+            onClick={() =>
+              update_characters_by_pk({ variables: { id, changes } })
+            }
+          >
+            Save Changes
+          </button>
+        )}
+      </Mutation>
+      <Snackbar
         anchorOrigin={{
           vertical: 'bottom',
           horizontal: 'left',
@@ -152,13 +172,17 @@ export const UpdateCharacter = ({ id, changes, user }) => {
             <Button color="secondary" size="small" onClick={handleClose}>
               UNDO
             </Button>
-            <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+            <IconButton
+              size="small"
+              aria-label="close"
+              color="inherit"
+              onClick={handleClose}
+            >
               X
             </IconButton>
           </React.Fragment>
         }
       />
-      </>
+    </>
   );
 };
-
