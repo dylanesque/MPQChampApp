@@ -14,6 +14,7 @@ import blue from '@material-ui/core/colors/blue';
 import CharCard from '../components/Card';
 import CharacterGrid from '../components/CharacterGrid';
 import { CHECK_CHAR_LIST, GET_CHARACTERS, AddDB } from '../utils/graphql';
+import { seedDB } from '../db/seed';
 
 const CharEdit = ({ user }) => {
   const theme = createMuiTheme({

@@ -17,15 +17,32 @@ export const ADD_CHAR_DB = gql`
   }
 `;
 
-export const AddDB = (user) => {
+// TODO: Refactor the hell out of this function and remove the duplication
+export const AddDB = (user, count, chars) => {
   function reloadWindow() {
     return Router.reload(window.location.pathname);
   }
-  seedDB.forEach((char) => {
-    char.id = uuidv4();
-    char.user_id = user.user;
-  });
-  const db = seedDB;
+
+  if (count === 0) {
+    seedDB.forEach((char) => {
+      char.id = uuidv4();
+      char.user_id = user.user;
+    });
+    let db = seedDB;
+  } else if (count > 0) {
+    const names = seedDB.map(char => char.name);
+    const missingChars = [];
+    chars.map((char) => {
+      if (!names.includes(char.name)) {
+        missingChars.push(char);
+      }
+    });
+    missingChars.forEach((char) => {
+      char.id = uuidv4();
+      char.user_id = user.user;
+    });
+    let db = missingChars;
+  }
 
   return (
     <Mutation mutation={ADD_CHAR_DB}
@@ -41,15 +58,6 @@ export const AddDB = (user) => {
   );
 };
 
-// Add new characters mutation
-// Fires if the char count is less than the current length of the seed db
-// In that case, creates an array of the names from the seed db
-// Iterate over the user's personal lineup, and checks each name versus the array of names
-// When a name is found missing, that char object gets pushed to an (initially empty) array 
-// Use that array as the db for a mutation that updates that user's lineup
-
-
-// Checks that the character count is what we expect it to be.
 export const CHECK_CHAR_LIST = gql`
   query checkCharacters($id: String!) {
     users(where: { id: { _eq: $id } }) {
