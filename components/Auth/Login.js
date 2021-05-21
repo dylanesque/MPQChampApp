@@ -6,8 +6,7 @@ const Login = () => {
   return (
     <div className="login-page index-background">
       <h1>Welcome to MPQ Hall Of Champions!</h1>
-      <h2>We are currently down for database maintenance, but we'll be back soon!</h2>
-      {/*
+      <h2>Please login to continue</h2>
       <div>
         <Button
           id="qsLoginBtn"
@@ -20,7 +19,7 @@ const Login = () => {
           Log In
         </Button>
       </div>
-      */}
+
     </div>
   );
 };
