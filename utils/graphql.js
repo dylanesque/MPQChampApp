@@ -10,7 +10,7 @@ function reloadWindow() {
   return Router.reload(window.location.pathname);
 }
 
-// Adds characters to a brand-new user lineup
+// Adds to the character db
 export const ADD_CHAR_DB = gql`
   mutation addCharacters($objects: [characters_insert_input!]!) {
     insert_characters(objects: $objects) {
@@ -21,7 +21,7 @@ export const ADD_CHAR_DB = gql`
   }
 `;
 
-// TODO: Refactor the hell out of this function and remove the duplication
+// Adds entire db from scratch
 export const AddDB = (user) => {
   seedDB.forEach((char) => {
     char.id = uuidv4();
@@ -42,33 +42,29 @@ export const AddDB = (user) => {
   );
 };
 
+// Adds any missing characters that may have been detected
 export const AddNewChars = ({ user, chars }) => {
   const names = chars.map((char) => char.name);
   const missingChars = [];
-  console.log(user);
 
-  // loop over seedDB
-  // now loop over chars, and check for an occurence of the name
-  // if the name isn't 
   seedDB.forEach((seedChar) => {
     if (!names.includes(seedChar.name)) {
       missingChars.push(seedChar);
-     }
-  })
-
+    }
+  });
 
   missingChars.forEach((char) => {
     char.id = uuidv4();
     char.user_id = user;
   });
 
- 
-
   return (
     <Mutation mutation={ADD_CHAR_DB} onCompleted={reloadWindow}>
       {(insert_characters, { data }) => (
         <button
-          onClick={() => insert_characters({ variables: { objects: missingChars } })}
+          onClick={() =>
+            insert_characters({ variables: { objects: missingChars } })
+          }
         >
           Update Database
         </button>
@@ -77,6 +73,7 @@ export const AddNewChars = ({ user, chars }) => {
   );
 };
 
+// Get a count of the current user's character db
 export const CHECK_CHAR_LIST = gql`
   query checkCharacters($id: String!) {
     users(where: { id: { _eq: $id } }) {
@@ -90,6 +87,7 @@ export const CHECK_CHAR_LIST = gql`
   }
 `;
 
+// gets all characters belonging to an individual user
 export const GET_CHARACTERS = gql`
   query GetCharacters($user_id: String!) {
     characters(where: { user_id: { _eq: $user_id } }, order_by: { name: asc }) {
@@ -110,6 +108,7 @@ export const GET_CHARACTERS = gql`
   }
 `;
 
+// updates a character's power level, char level, or shard count
 export const UPDATE_CHARACTER = gql`
   mutation UpdateCharacter($id: String!, $changes: characters_set_input!) {
     update_characters_by_pk(pk_columns: { id: $id }, _set: $changes) {
@@ -123,6 +122,7 @@ export const UPDATE_CHARACTER = gql`
   }
 `;
 
+// fires the above function
 export const UpdateCharacter = ({ id, changes, user }) => {
   const [open, setOpen] = React.useState(false);
 

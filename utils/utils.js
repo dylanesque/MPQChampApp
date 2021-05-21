@@ -9,49 +9,13 @@ export function splitName(name) {
 export function calculateDynamicLevelRange(rarity, totalLevel) {
   const twoStarLevels = [15, 22, 30, 38, 46, 47, 54, 62, 70, 78, 79, 86, 144];
   const threeStarLevels = [
-    40,
-    50,
-    63,
-    76,
-    89,
-    91,
-    102,
-    114,
-    127,
-    140,
-    142,
-    153,
-    266,
+    40, 50, 63, 76, 89, 91, 102, 114, 127, 140, 142, 153, 266,
   ];
   const fourStarLevels = [
-    70,
-    86,
-    106,
-    127,
-    147,
-    152,
-    168,
-    188,
-    209,
-    229,
-    233,
-    250,
-    370,
+    70, 86, 106, 127, 147, 152, 168, 188, 209, 229, 233, 250, 370,
   ];
   const fiveStarLevels = [
-    270,
-    285,
-    300,
-    315,
-    330,
-    345,
-    360,
-    375,
-    390,
-    405,
-    420,
-    435,
-    550,
+    270, 285, 300, 315, 330, 345, 360, 375, 390, 405, 420, 435, 550,
   ];
 
   if (totalLevel < 2) {
@@ -191,9 +155,7 @@ export function getFourStatus(level, feedee) {
   } else if (level < 300 && level >= 298) {
     return `${300 - level} level(s) to: 250 ${feedee} shards`;
   } else if (level < 310 && level >= 300) {
-    return (
-      `${310 - level} level(s) to: Latest Legends Token`
-    );
+    return `${310 - level} level(s) to: Latest Legends Token`;
   } else if (level < 315 && level >= 310) {
     return (
       `${315 - level} level(s) to: ` +
