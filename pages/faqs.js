@@ -14,29 +14,27 @@ const FAQS = () => {
         <main className="page-main">
           <h3 className="page-heading">Q: How will my data be used?</h3>
           <p>
-            A: This app only requires login information, and that's all I ask. I
-            will NEVER, EVER sell your data.
+            <strong>A:</strong> This app only requires login information, and
+            that's all I ask. I will NEVER, EVER sell your data.
           </p>
-          <h3 className="page-heading">Q: Hey, where are shards?</h3>
+
+          <h3 className="page-heading">
+            Q: Can I have duplicate characters in my database?
+          </h3>
           <p>
-            For now, I don't have plans to add shards, especially since I see
-            "where should I put my shards?" as the main question that this
-            application is answering. Having said that, I will strongly consider
-            adding counts further down the road I hear a lot of requests for
-            this.
+            <strong>A:</strong> Duplicates have the problem here of both a)
+            taking up (relatively limited) database space, and b) not being a
+            consideration when it comes to feeding and rewards, so there are
+            currently no plans to change functionality to add feeders to the
+            application.
           </p>
+
           <h3 className="page-heading">Q: What's next for the app?</h3>
           <ul>
-            <li>Style & User Experience improvements</li>
-            <li>Improved loading times, and other performance improvements</li>
             <li>
-              More realistic behavior in the character editor that maps more
-              closely to the game. For example, you'll only be allowed to select
-              the levels for a character that would be available per the number
-              of covers they possess.
+              Improvements to styling and other aspects of user experience
             </li>
             <li>More detailed information in roster reports</li>
-            <li>Reward Status for Five Star Characters</li>
           </ul>
         </main>
       </div>

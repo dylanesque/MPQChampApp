@@ -10,7 +10,7 @@ const IndexPage = () => {
   // Variables
   const { user, loading, error } = useFetchUser();
   if (user && typeof window !== 'undefined') {
-    localStorage.setItem('userKey', user.sub);
+    sessionStorage.setItem('userKey', user.sub);
   }
 
   if (loading) {

@@ -11,7 +11,7 @@ const Report = () => {
   let user;
 
   if (typeof window !== 'undefined') {
-    user = localStorage.getItem('userKey');
+    user = sessionStorage.getItem('userKey');
   }
   const { data, loading, error } = useQuery(GET_CHARACTERS, {
     variables: { user_id: user },
@@ -218,7 +218,6 @@ const Report = () => {
                   ({name[1]}
                 </p>
                 <img className="char-image" src={char.image} alt={char.name} />
-                <p>{char.feedees}</p>
                 <p>Level {char.char_level}</p>
                 <p>{getTwoStatus(char.char_level, char.feedees)}</p>
               </Card>
