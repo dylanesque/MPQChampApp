@@ -36,7 +36,7 @@ This application will allow users to create an account, log in, and edit a datab
 
 - [Emotion](https://emotion.sh/docs/introduction) for styling components: I've found that using CSS-in-JS libraries like this or [styled-components](https://styled-components.com/) significantly speeds up SPA development for me because it's quicker for me to troubleshoot and maintain scoped CSS, not to mention that it allows me to circumvent the cascade when it would have undesired effects.
 
-- Any and all front end testing will likely be done with a mix of [react-testing-library](https://testing-library.com/docs/react-testing-library/intro), [Jest](https://jestjs.io/), and [Cypress.io](https://www.cypress.io/).
+- Any and all front end testing will be done with a mix of [react-testing-library](https://testing-library.com/docs/react-testing-library/intro), [Jest](https://jestjs.io/), and [Cypress.io](https://www.cypress.io/).
 
 
 Application flow works like this:
@@ -44,9 +44,9 @@ Application flow works like this:
 1. A user signs up for the app, and has a basic database of the relevant characters made available to work with.
 2. The user can then customize individual characters in the database via editing power and character levels to reflect the state of their in-game lineup, in an "Edit Roster" screen, and saving those changes.
 3. The user can then navigate to a "Roster Status" screen, which will do several things:
-
-   - Filter the list of characters, presenting only characters with one or more power levels added.
-   - Present lists of the characters, organized into individual rarity levels and sorted to highlight the characters closest to their next in-game reward.
+   - Filter the list of characters, presenting only characters with one or more power levels added.
+   - Present lists of the characters, organized into individual rarity levels and sorted to highlight 
+     the characters closest to their next in-game reward.
 
 # Development Phases:
 
@@ -68,14 +68,16 @@ Some things for me to consider in the future after the MVP is finished:
   
 # What I learned from this project:
 
-**Don't Finalize the Data Models Without Writing Specs For Front-End Data Flow, Or Considering Back-End Quirks:**: There was a small amount of wasted effort in the character models in the form of:
+**Don't Finalize the Data Models Without Writing Specs For Front-End Data Flow, Or Considering Back-End Quirks:** 
+There was a small amount of wasted effort in the character models in the form of:
+
 - a feeder attribute which played no part in the application flow
-- a convention of linking feeders/feedees via a system of character ids which turned out to be (a) unnecessary, (b) hard to reason about, and (c) formatted as the wrong type for Hasura, namely an array of integers. A minor quirk of Hasura is that it doesn't currently support arrays as a data type, only as many-to-one relationship, making them very awkward if you don't need them to be indexed, etc.
+- a convention of linking feeders/feedees via a system of character ids which turned out to be (a) unnecessary, (b) hard to reason about, and (c) formatted as the wrong type for Hasura, namely an array of integers. A minor quirk of Hasura (rooted in it's use of PostgreSQL as a database) is that it doesn't currently support arrays as a data type, only as many-to-one relationship, making them very awkward if you don't need them to be indexed, etc.
 - On that note, I still needed to store feedees as an array sometimes. The solution turned out to simply to store it as a string, and have a function that splits the string into an array if necessary. This is a minor annoyance in an app like there where there's a capped number of entities in the table that need this treatment, but something to keep in mind for future work where this could result in a lot of unnecessary processing.
 
 All of the above could have been caught sooner had I taken a more careful approach to planning, including drafting UI components using a solution like Storybook. 
 
-**Don't rely on automated image optimizatios services to do the whole job for you**: I walked into this with the assumption that Cloudinary's in-flight image optimization would be sufficient, and that was a huge mistake. I didn't have the granularity that I wanted, and the unique filenames that Cloudinary uses made uploading new versions of an image very costly to maintain in the codebase. Cloudinary's customer support was pretty responsive, but ultimately unhelpful. In the future, I will never, ever count on a library like this to optimize images as opposed to doing everything reasonable to manually shrink image sizes using tools like [Squoosh](https://squoosh.app/), lazy-loading, stripping metadata, etc.
+**Don't rely on automated image optimization services to do the whole job for you**: I walked into this with the assumption that Cloudinary's in-flight image optimization would be sufficient, and that was a huge mistake. I didn't have the granularity that I wanted, and the unique filenames that Cloudinary uses made uploading new versions of an image very costly to maintain in the codebase. Cloudinary's customer support was pretty responsive, but ultimately unhelpful. In the future, I will never, ever count on a library like this to optimize images as opposed to doing everything reasonable to manually shrink image sizes using tools like [Squoosh](https://squoosh.app/), lazy-loading, stripping metadata, etc.
 
 **Use TypeScript for any full-fledged web applications**:
 
@@ -85,6 +87,8 @@ All of the above could have been caught sooner had I taken a more careful approa
 **Vetting third-party libraries more thoroughly**
 
 - The Auth0 library used in the application is still experimental as of the time of this writing: despite it working very well and setup with the provided boilerplate being a breeze, I prefer not to use any libraries or features that aren't fully vetted for production use (Looking at you, [Suspense](https://reactjs.org/docs/concurrent-mode-suspense.html)). I'm not going to change it, but a definite reminder to look before I leap.
+
+UPDATE: This library is out of beta at this point, but my above point remains: I YOLO added the boilerplate code to make this library work without deeply understanding it, and I'm going to have to make up the difference in knowledge so this can be updated at some point.
 
 **Picking input elements that do the job, but aren't the best for the job**: 
 
