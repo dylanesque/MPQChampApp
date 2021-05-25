@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -17,7 +17,7 @@ const Header = () => {
     setOpen(false);
   };
   return (
-    <Nav>
+    <nav>
       <div className="mobile-menu">
         <IconButton
           aria-label="open drawer"
@@ -30,23 +30,13 @@ const Header = () => {
           <IconButton onClick={handleDrawerClose}>
             <ChevronLeftIcon />
           </IconButton>
+          <NavBar mobile />
         </Drawer>
       </div>
-      <NavBar />
-    </Nav>
+      <NavBar className="mobile-hide" />
+    </nav>
   );
 };
 
-const Nav = styled.nav`
-  background-color: var(--darkBlue);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 auto;
-  padding: 1rem;
-  top: 0;
-  max-width: 100%;
-`;
 
 export default Header;

@@ -5,7 +5,7 @@
   --black: #222;
   --darkBlue: #094b83;
   --lightBlue: #88b4db;
-  
+
   --headingFont: 'Roboto Slab', serif;
   --bodyFont: 'Roboto Condensed', sans-serif;
 
@@ -14,7 +14,8 @@
   --desktopMin: 1500px;
 }
 
-html, body {
+html,
+body {
   font-size: 112.5%;
   width: 100%;
 }
@@ -164,6 +165,36 @@ li {
   font-family: var(--bodyFont) !important;
 }
 
+.nav {
+  background-color: var(--darkBlue);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 1rem;
+  top: 0;
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: var(--darkBlue);
+  display: flex;
+  padding: 1rem;
+}
+
+.navbar-link, .navbar-link:visited {
+  color: white;
+  font-size: 1rem;
+  padding: 0 1.4rem 0 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  color: var(--lightBlue);
+}
+
 .page-heading {
   color: var(--black);
   text-align: center;
@@ -180,9 +211,14 @@ li {
   margin-bottom: 1.5rem;
 }
 
-  @media (min-width: 600px) {
-    .mobile-menu {
-      display: none;
-    }
+@media (min-width: 600px) {
+  .mobile-menu {
+    display: none;
   }
+}
 
+@media (max-width: 600) {
+  .mobile-hide {
+    display: none;
+  }
+}
