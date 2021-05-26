@@ -30,10 +30,10 @@ const Header = () => {
           <IconButton onClick={handleDrawerClose}>
             <ChevronLeftIcon />
           </IconButton>
-          <NavBar mobile />
+          <NavBar mobile={true} />
         </Drawer>
       </div>
-      <NavBar className="mobile-hide" />
+      <NavBar />
     </nav>
   );
 };

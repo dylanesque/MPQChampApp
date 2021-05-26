@@ -5,6 +5,12 @@
   "plugins": [
     [
       "graphql-tag"
+    ],
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
     ]
   ]
 }

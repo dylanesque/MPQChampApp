@@ -111,10 +111,6 @@ select:hover {
   width: 6rem;
 }
 
-select::-ms-expand {
-  display: none;
-}
-
 ul,
 li {
   color: var(--black);
@@ -160,22 +156,16 @@ li {
   width: 100%;
 }
 
+.mobile-hide {
+  background-color: orangered;
+  display: none;
+}
+
 .MuiButton-root,
 .MuiSnackbar-root {
   font-family: var(--bodyFont) !important;
 }
 
-.nav {
-  background-color: var(--darkBlue);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 auto;
-  padding: 1rem;
-  top: 0;
-  max-width: 100%;
-}
 
 .navbar {
   background-color: var(--darkBlue);
@@ -183,7 +173,8 @@ li {
   padding: 1rem;
 }
 
-.navbar-link, .navbar-link:visited {
+.navbar-link,
+.navbar-link:visited {
   color: white;
   font-size: 1rem;
   padding: 0 1.4rem 0 0;
@@ -217,8 +208,8 @@ li {
   }
 }
 
-@media (max-width: 600) {
+@media (min-width: 600px) {
   .mobile-hide {
-    display: none;
+    display: flex;
   }
 }
