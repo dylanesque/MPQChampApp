@@ -5,6 +5,7 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 import { withApollo } from '../lib/withApollo';
 import { getTwoStatus, getThreeStatus, getFourStatus, getFiveStatus, splitName } from '../utils/utils';
 import { GET_CHARACTERS } from '../utils/graphql';
+import { CharImage } from '../components/Card';
 
 
 const Report = () => {
@@ -76,7 +77,7 @@ const Report = () => {
                 <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
                   ({name[1]}
                 </p>
-                <img className="char-image" src={char.image} alt={char.name} />
+                <CharImage src={char.image} alt={char.name} />
                 <p>Level {char.char_level}</p>
                 <p>{getFiveStatus(char.char_level)}</p>
                 <p>
@@ -123,7 +124,7 @@ const Report = () => {
                 <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
                   ({name[1]}
                 </p>
-                <img className="char-image" src={char.image} alt={char.name} />
+                <CharImage src={char.image} alt={char.name} />
                 <p>Level {char.char_level}</p>
                 <p>{getFourStatus(char.char_level, char.feedees)}</p>
                 <p>
@@ -170,7 +171,7 @@ const Report = () => {
                 <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
                   ({name[1]}
                 </p>
-                <img className="char-image" src={char.image} alt={char.name} />
+                <CharImage src={char.image} alt={char.name} />
                 <p>Level {char.char_level}</p>
                 <p>{getThreeStatus(char.char_level, char.feedees)}</p>
                 <p>
@@ -217,7 +218,7 @@ const Report = () => {
                 <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
                   ({name[1]}
                 </p>
-                <img className="char-image" src={char.image} alt={char.name} />
+                <CharImage src={char.image} alt={char.name} />
                 <p>Level {char.char_level}</p>
                 <p>{getTwoStatus(char.char_level, char.feedees)}</p>
               </Card>

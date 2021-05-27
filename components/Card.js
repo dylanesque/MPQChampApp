@@ -243,7 +243,7 @@ const PowerSelect = styled.input`
   width: 6rem;
 `;
 
-const CharImage = styled.img`
+export const CharImage = styled.img`
   align-self: center;
   display: inline-block;
   margin-top: 0.5rem;
