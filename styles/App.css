@@ -88,44 +88,14 @@ input[type='number'] {
   margin-bottom: 4px;
 }
 
-option {
-  text-align: center;
-}
-
 .main-page p,
 li {
   width: 36em;
 }
 
-.power-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: 0;
-  outline: 0;
-  margin: 0.1rem 0.1rem 0.1rem 1rem;
-  padding: 0.75rem;
-  width: 6rem;
-}
-
 ul,
 li {
   color: var(--black);
-}
-
-.character-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 2rem;
-  padding-left: 1rem;
-  padding-top: 3rem;
-}
-
-.char-image {
-  align-self: center;
-  display: inline-block;
-  margin-top: 0.5rem;
-  width: 84.5px;
-  height: 127px;
 }
 
 .index-background {

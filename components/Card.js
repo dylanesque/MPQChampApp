@@ -1,4 +1,5 @@
 import Card from '@material-ui/core/Card';
+import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { UpdateCharacter } from '../utils/graphql';
@@ -142,19 +143,17 @@ const CharCard = ({ character, characters, user }) => {
       <p className={classes.name}>{fullName[0]}</p>
       <p className={classes.subtitle}>({fullName[1]}</p>
       <div className={classes.middle}>
-        <img
-          className="char-image"
+        <CharImage
           src={`/${image}`}
           loading="lazy"
           decoding="async"
           alt={`Cover picture for ${name}`}
         />
         <div className={classes.powerSelect}>
-          <input
+          <PowerSelect
             type="number"
             min="0"
             max={state.powerOneLimit}
-            className="power-select"
             aria-label="Power One Color"
             style={generateColors(`${power_one_color}`)}
             onChange={(event) =>
@@ -162,11 +161,10 @@ const CharCard = ({ character, characters, user }) => {
             }
             value={state.powerOneLevel}
           />
-          <input
+          <PowerSelect
             type="number"
             min="0"
             max={state.powerTwoLimit}
-            className="power-select"
             aria-label="Power Two Color"
             style={generateColors(`${power_two_color}`)}
             onChange={(event) =>
@@ -175,11 +173,10 @@ const CharCard = ({ character, characters, user }) => {
             value={state.powerTwoLevel}
           />
 
-          <input
+          <PowerSelect
             type="number"
             min="0"
             max={state.powerThreeLimit}
-            className="power-select"
             aria-label="Power Three Color"
             style={generateColors(`${power_three_color}`)}
             onChange={(event) =>
@@ -235,5 +232,24 @@ const CharCard = ({ character, characters, user }) => {
     </Card>
   );
 };
+
+const PowerSelect = styled.input`
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  outline: 0;
+  margin: 0.1rem 0.1rem 0.1rem 1rem;
+  padding: 0.75rem;
+  width: 6rem;
+`;
+
+const CharImage = styled.img`
+  align-self: center;
+  display: inline-block;
+  margin-top: 0.5rem;
+  width: 84.5px;
+  height: 127px;
+`;
+
 
 export default CharCard;
