@@ -1,8 +1,6 @@
 import { useQuery } from '@apollo/react-hooks';
 import { withApollo } from '../lib/withApollo';
 import {
-  Card,
-  CircularProgress,
   FormControlLabel,
   Radio,
   RadioGroup,
@@ -13,6 +11,7 @@ import blue from '@material-ui/core/colors/blue';
 
 import CharCard from '../components/Card';
 import CharacterGrid from '../components/CharacterGrid';
+import { LoadingPage } from './LoadingPage';
 import {
   CHECK_CHAR_LIST,
   GET_CHARACTERS,
@@ -61,29 +60,7 @@ const CharEdit = ({ user }) => {
 
   if (characterDb.loading) {
     return (
-      <div className="loading-page">
-        <Card
-          style={{
-            borderRadius: '0',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            padding: '72px 80px',
-          }}
-        >
-          <CircularProgress />
-          <p
-            style={{
-              marginTop: '1rem',
-              display: 'inline-block',
-              paddingRight: '8px',
-            }}
-          >
-            Loading
-          </p>
-        </Card>
-      </div>
+    <LoadingPage />
     );
   }
 
