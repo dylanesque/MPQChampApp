@@ -7,7 +7,6 @@ import LogoutBtn from '../components/Auth/Logout';
 import CharEdit from '../components/CharEditor';
 
 const IndexPage = () => {
-  // Variables
   const { user, loading, error } = useFetchUser();
   if (user && typeof window !== 'undefined') {
     sessionStorage.setItem('userKey', user.sub);

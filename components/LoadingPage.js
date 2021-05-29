@@ -4,9 +4,10 @@ import { Card, CircularProgress } from '@material-ui/core';
 export function LoadingPage() {
   return (
     <Loadingpage>
-      <LoadingCard />
+      <LoadingCard>
           <CircularProgress />
           <LoadingText>Loading...</LoadingText>
+          </LoadingCard>
     </Loadingpage>
   );
 }
