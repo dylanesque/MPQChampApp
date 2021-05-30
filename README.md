@@ -32,9 +32,9 @@ This application will allow users to create an account, log in, and edit a datab
 
 - ~~[Cloudinary](https://cloudinary.com/) for asset storage and image optimization. The app currently has close to 200 image assets, and that number will increase if and when MPQ adds new feeders/feedees. Cloudinary lets optimize images for performance and saves me the trouble of having to save image assets in the codebase, which makes the application much faster.~~ **Cloudinary ended up not being a good fit for this project, more on that below**
 
-- [Material UI]() for a component library. I also want this app to have that Material feel aesthetically, but not to the extent where it's using pure Material guidelines.
+- [Material UI](https://material-ui.com/) for a component library. I also want this app to have that Material feel aesthetically, but not to the extent where it's using pure Material guidelines.
 
-- [Emotion](https://emotion.sh/docs/introduction) for styling components: I've found that using CSS-in-JS libraries like this or [styled-components](https://styled-components.com/) significantly speeds up SPA development for me because it's quicker for me to troubleshoot and maintain scoped CSS, not to mention that it allows me to circumvent the cascade when it would have undesired effects.
+-  [styled-components](https://styled-components.com/)for styling components: I've found that using CSS-in-JS libraries like this or [Emotion](https://emotion.sh/docs/introduction) significantly speeds up SPA development for me because it's quicker for me to troubleshoot and maintain scoped CSS, not to mention that it allows me to circumvent the cascade when it would have undesired effects.
 
 - Any and all front end testing will be done with a mix of [react-testing-library](https://testing-library.com/docs/react-testing-library/intro), [Jest](https://jestjs.io/), and [Cypress.io](https://www.cypress.io/).
 
