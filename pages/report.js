@@ -1,4 +1,3 @@
-import Card from '@material-ui/core/Card';
 import { useQuery } from '@apollo/react-hooks';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
@@ -14,6 +13,7 @@ import { GET_CHARACTERS } from '../utils/graphql';
 import { CharImage } from '../components/Card';
 import { ReportChar } from '../components/ReportChar';
 import { TierWrapper } from '../components/TierWrapper';
+import { CharName, CharSubtitle } from '../components/Text';
 
 const Report = () => {
   let user;
@@ -55,17 +55,13 @@ const Report = () => {
     <div className="index-background">
       <h1 style={{ textAlign: 'center' }}>Roster Report</h1>
       <h2>Five Star Characters</h2>
-    <TierWrapper>
+      <TierWrapper>
         {fiveStars.map((char) => {
           const name = splitName(char.name);
           return (
             <ReportChar key={char.name}>
-              <p style={{ marginTop: '0.5rem', marginBottom: '0' }}>
-                {name[0]}
-              </p>
-              <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
-                ({name[1]}
-              </p>
+              <CharName>{name[0]}</CharName>
+              <CharSubtitle> {name[1]}</CharSubtitle>
               <CharImage src={char.image} alt={char.name} />
               <p>Level {char.char_level}</p>
               <p>{getFiveStatus(char.char_level)}</p>
@@ -84,18 +80,13 @@ const Report = () => {
         })}
       </TierWrapper>
       <h2>Four Star Characters</h2>
-      <TierWrapper
-      >
+      <TierWrapper>
         {fourStars.map((char) => {
           const name = splitName(char.name);
           return (
             <ReportChar key={char.name}>
-              <p style={{ marginTop: '0.5rem', marginBottom: '0' }}>
-                {name[0]}
-              </p>
-              <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
-                ({name[1]}
-              </p>
+              <CharName>{name[0]}</CharName>
+              <CharSubtitle> {name[1]}</CharSubtitle>
               <CharImage src={char.image} alt={char.name} />
               <p>Level {char.char_level}</p>
               <p>{getFourStatus(char.char_level, char.feedees)}</p>
@@ -114,18 +105,13 @@ const Report = () => {
         })}
       </TierWrapper>
       <h2>Three Star Characters</h2>
-      <TierWrapper
-      >
+      <TierWrapper>
         {threeStars.map((char) => {
           const name = splitName(char.name);
           return (
             <ReportChar key={char.name}>
-              <p style={{ marginTop: '0.5rem', marginBottom: '0' }}>
-                {name[0]}
-              </p>
-              <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
-                ({name[1]}
-              </p>
+              <CharName>{name[0]}</CharName>
+              <CharSubtitle> {name[1]}</CharSubtitle>
               <CharImage src={char.image} alt={char.name} />
               <p>Level {char.char_level}</p>
               <p>{getThreeStatus(char.char_level, char.feedees)}</p>
@@ -144,18 +130,13 @@ const Report = () => {
         })}
       </TierWrapper>
       <h2>Two Star Characters</h2>
-      <TierWrapper
-      >
+      <TierWrapper>
         {twoStars.map((char) => {
           const name = splitName(char.name);
           return (
             <ReportChar key={char.name}>
-              <p style={{ marginTop: '0.5rem', marginBottom: '0' }}>
-                {name[0]}
-              </p>
-              <p style={{ marginTop: '0rem', marginBottom: '0.5rem' }}>
-                ({name[1]}
-              </p>
+              <CharName>{name[0]}</CharName>
+              <CharSubtitle> {name[1]}</CharSubtitle>
               <CharImage src={char.image} alt={char.name} />
               <p>Level {char.char_level}</p>
               <p>{getTwoStatus(char.char_level, char.feedees)}</p>
