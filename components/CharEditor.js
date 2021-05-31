@@ -66,23 +66,23 @@ const CharEdit = ({ user }) => {
 
   if (charCount === 0) {
     return (
-      <div className="login-page">
+      <LoginPage>
         <p style={{ backgroundColor: 'white', padding: '1rem' }}>
           We're detecting that you haven't set up a seed database yet. Please
           click the button below to get started!
         </p>
         <AddDB user={user} />
-      </div>
+      </LoginPage>
     );
   } else if (!characterDb.loading && charCount < seedDB.length) {
     return (
-      <div className="login-page">
+      <LoginPage>
         <p style={{ backgroundColor: 'white', padding: '1rem' }}>
           New characters have been added to the application! Click the button
           below to add them to your lineup!
         </p>
         <AddNewChars user={user} chars={characterDb.data.characters} />
-      </div>
+      </LoginPage>
     );
   } else if (characterDb.error) {
     return <h3>{characterDb.error}</h3>;

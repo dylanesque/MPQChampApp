@@ -2,9 +2,11 @@ import Router from 'next/router';
 
 import { Button } from 'react-bootstrap';
 
+import { LoginPage } from '../LoginPage';
+
 const Login = () => {
   return (
-    <div className="login-page index-background">
+    <LoginPage className="index-background">
       <h1>Welcome to MPQ Hall Of Champions!</h1>
       <h2>Please login to continue</h2>
       <div>
@@ -19,7 +21,7 @@ const Login = () => {
           Log In
         </Button>
       </div>
-    </div>
+    </LoginPage>
   );
 };
 

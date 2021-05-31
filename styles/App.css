@@ -105,15 +105,6 @@ li {
   width: 100%;
 }
 
-.login-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 655px;
-  width: 100%;
-}
-
 .MuiButton-root,
 .MuiSnackbar-root {
   font-family: var(--bodyFont) !important;
