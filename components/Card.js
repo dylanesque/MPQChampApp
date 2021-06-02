@@ -1,9 +1,10 @@
 import Card from '@material-ui/core/Card';
-import styled from 'styled-components';
+
 import { makeStyles } from '@material-ui/core/styles';
 
 import { UpdateCharacter } from '../utils/graphql';
 import { calculateDynamicLevelRange, splitName } from '../utils/utils';
+import { CenterCard } from '../components/CardCenter'
 
 const useStyles = makeStyles({
   root: {
@@ -16,11 +17,6 @@ const useStyles = makeStyles({
   },
   levelSelect: {
     backGroundColor: 'gray',
-  },
-  middle: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
   },
   name: {
     marginTop: '0.5rem',
@@ -142,7 +138,7 @@ const CharCard = ({ character, characters, user }) => {
     <Card className={classes.root} key={id}>
       <p className={classes.name}>{fullName[0]}</p>
       <p className={classes.subtitle}>({fullName[1]}</p>
-      <div className={classes.middle}>
+     <CenterCard>
         <CharImage
           src={`/${image}`}
           loading="lazy"
@@ -185,7 +181,7 @@ const CharCard = ({ character, characters, user }) => {
             value={state.powerThreeLevel}
           />
         </div>
-      </div>
+      </CenterCard>
       <label htmlFor={name}>Character Level</label>
       <input
         type="number"
