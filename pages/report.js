@@ -53,6 +53,12 @@ const Report = () => {
 
   return (
     <div className="index-background">
+      <Head>
+        <meta
+          name="description"
+          content="The report page for the MPQ Hall of Champions application, where users can get information on their lineup of characters"
+        ></meta>
+      </Head>
       <h1 style={{ textAlign: 'center' }}>Roster Report</h1>
       <h2>Five Star Characters</h2>
       <TierWrapper>

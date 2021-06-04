@@ -17,18 +17,13 @@ const IndexPage = () => {
   }
 
   if (error) return `Error! ${error}`;
-  
+
   if (!loading && !user) {
     return <Login />;
   } else {
     return (
       <div className="index-background">
         <Head>
-          <title>MPQ Hall Of Champions</title>
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
           <meta
             name="description"
             content="The main page for the MPQ Hall of Champions application, where users can edit and view their roster of characters"

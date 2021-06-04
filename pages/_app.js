@@ -11,6 +11,7 @@ export default function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <title>MPQ Hall of Champions</title>
       </Head>
       <Component {...pageProps} />
     </Layout>
