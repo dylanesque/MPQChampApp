@@ -34,7 +34,7 @@ This application will allow users to create an account, log in, and edit a datab
 
 - [Material UI](https://material-ui.com/) for a component library. I also want this app to have that Material feel aesthetically, but not to the extent where it's using pure Material guidelines.
 
--  [styled-components](https://styled-components.com/)for styling components: I've found that using CSS-in-JS libraries like this or [Emotion](https://emotion.sh/docs/introduction) significantly speeds up SPA development for me because it's quicker for me to troubleshoot and maintain scoped CSS, not to mention that it allows me to circumvent the cascade when it would have undesired effects.
+-  [styled-components](https://styled-components.com/) for styling components: I've found that using CSS-in-JS libraries like this or [Emotion](https://emotion.sh/docs/introduction) significantly speeds up SPA development for me because it's quicker for me to troubleshoot and maintain scoped CSS, not to mention that it allows me to circumvent the cascade when it would have undesired effects. The tradeoff with this sort of solution is that it can result in slower loading times (not in this case, performance & page-load speeds are quite good here), so it's not the correct tool for every React styling situation.
 
 - Any and all front end testing will be done with a mix of [react-testing-library](https://testing-library.com/docs/react-testing-library/intro), [Jest](https://jestjs.io/), and [Cypress.io](https://www.cypress.io/).
 
@@ -81,7 +81,7 @@ All of the above could have been caught sooner had I taken a more careful approa
 
 **Use TypeScript for any full-fledged web applications**:
 
-- This was a minor concern for this particular project, but I've gradually come around to the time that TS saves a ;lot of pain
+- This was a minor concern for this particular project, but I've gradually come around to the time that TS saves a lot of pain
   via static analysis of code and catching errors faster. Having said this, I may bolster the codebase with some TS in the future.
 
 **Vetting third-party libraries more thoroughly**
