@@ -12,6 +12,7 @@ import blue from '@material-ui/core/colors/blue';
 import CharCard from '../components/Card';
 import CharacterGrid from '../components/CharacterGrid';
 import { LoadingPage } from './LoadingPage';
+import { LoginPage } from './LoginPage';
 import {
   CHECK_CHAR_LIST,
   GET_CHARACTERS,

@@ -1,6 +1,7 @@
 import Card from '@material-ui/core/Card';
 
 import { makeStyles } from '@material-ui/core/styles';
+import styled from "styled-components";
 
 import { UpdateCharacter } from '../utils/graphql';
 import { calculateDynamicLevelRange, splitName } from '../utils/utils';
