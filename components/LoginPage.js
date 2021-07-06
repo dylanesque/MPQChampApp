@@ -9,6 +9,6 @@ const Loginpage = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 655px;
+    height: 722px;
     width: 100%;
 `;

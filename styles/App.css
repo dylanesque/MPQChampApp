@@ -102,6 +102,7 @@ li {
   background-image: url('../public/background.webp');
   background-size: 50%;
   background-repeat: repeat;
+  height: 100%;
   width: 100%;
 }
 

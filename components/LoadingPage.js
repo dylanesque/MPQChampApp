@@ -13,7 +13,7 @@ export function LoadingPage() {
 }
 
 const Loadingpage = styled.div`
-  height: 655px;
+  height: 722px;
   display: flex;
   align-items: center;
   flex-direction: column;
