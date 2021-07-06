@@ -1,7 +1,10 @@
+import Head from "next/head";
+
 import { useQuery } from '@apollo/react-hooks';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 import { withApollo } from '../lib/withApollo';
+import { useFetchUser } from "../lib/user";
 import {
   getTwoStatus,
   getThreeStatus,
@@ -16,17 +19,19 @@ import { TierWrapper } from '../components/TierWrapper';
 import { CharName, CharSubtitle } from '../components/Text';
 
 const Report = () => {
-  let user;
+  const { user, loading: userLoading, error } = useFetchUser();
+  const {
+       data,
+       loading,
+       error: charError,
+     } = useQuery(GET_CHARACTERS, {
+       variables: { user_id: user?.sub },
+     });
 
-  if (typeof window !== 'undefined') {
-    user = sessionStorage.getItem('userKey');
-  }
-  const { data, loading, error } = useQuery(GET_CHARACTERS, {
-    variables: { user_id: user },
-  });
+ 
 
-  if (loading) return 'Loading...';
-  if (error) return `An error has occurred: ${error}`;
+if (loading || userLoading)  return 'Loading...'; 
+if (error || charError) return `An error has occurred: ${error || charError}`;
 
   const activeCharacters = data.characters.filter(
     (character) =>

@@ -8,9 +8,6 @@ import CharEdit from '../components/CharEditor';
 
 const IndexPage = () => {
   const { user, loading, error } = useFetchUser();
-  if (user && typeof window !== 'undefined') {
-    sessionStorage.setItem('userKey', user.sub);
-  }
 
   if (loading) {
     return <div>Loading...</div>;
